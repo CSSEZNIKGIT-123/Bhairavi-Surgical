@@ -24,10 +24,30 @@
         "unit": "per 500ml container (Bulk packs available)",
         "minimumOrderQuantity": 5,
         "tiers": [
-          { "minQty": 5, "maxQty": 19, "unitPrice": 520, "label": "Clinic Tier (5-19 units)" },
-          { "minQty": 20, "maxQty": 49, "unitPrice": 460, "label": "Panchkarma Center (20-49 units)" },
-          { "minQty": 50, "maxQty": 99, "unitPrice": 410, "label": "Wholesale Tier (50-99 units)" },
-          { "minQty": 100, "maxQty": null, "unitPrice": 360, "label": "Hospital Drum Tier (100+ units)" }
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 520,
+            "label": "Clinic Tier (5-19 units)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 460,
+            "label": "Panchkarma Center (20-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 99,
+            "unitPrice": 410,
+            "label": "Wholesale Tier (50-99 units)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 360,
+            "label": "Hospital Drum Tier (100+ units)"
+          }
         ]
       },
       "b2c": {
@@ -44,10 +64,34 @@
       }
     },
     "variants": [
-      { "id": "var-mn-200", "name": "200 ml Amber Glass", "sku": "YUG-OIL-MN-200", "price": 420, "available": true },
-      { "id": "var-mn-500", "name": "500 ml Classical Flacon", "sku": "YUG-OIL-MN-500", "price": 749, "available": true },
-      { "id": "var-mn-5000", "name": "5 Litre Clinic Jar", "sku": "YUG-OIL-MN-5L", "price": 4600, "available": true },
-      { "id": "var-mn-25000", "name": "25 Litre Factory Drum", "sku": "YUG-OIL-MN-25L", "price": 19500, "available": true }
+      {
+        "id": "var-mn-200",
+        "name": "200 ml Amber Glass",
+        "sku": "YUG-OIL-MN-200",
+        "price": 420,
+        "available": true
+      },
+      {
+        "id": "var-mn-500",
+        "name": "500 ml Classical Flacon",
+        "sku": "YUG-OIL-MN-500",
+        "price": 749,
+        "available": true
+      },
+      {
+        "id": "var-mn-5000",
+        "name": "5 Litre Clinic Jar",
+        "sku": "YUG-OIL-MN-5L",
+        "price": 4600,
+        "available": true
+      },
+      {
+        "id": "var-mn-25000",
+        "name": "25 Litre Factory Drum",
+        "sku": "YUG-OIL-MN-25L",
+        "price": 19500,
+        "available": true
+      }
     ],
     "benefits": [
       "Classical Abhyanga formula for soothing joint tightness and deep tissue stiffness",
@@ -116,9 +160,24 @@
         "unit": "per 100ml dropper / Clinic bulk",
         "minimumOrderQuantity": 3,
         "tiers": [
-          { "minQty": 3, "maxQty": 9, "unitPrice": 1100, "label": "Practitioner Tier (3-9 units)" },
-          { "minQty": 10, "maxQty": 29, "unitPrice": 980, "label": "Clinic Tier (10-29 units)" },
-          { "minQty": 30, "maxQty": null, "unitPrice": 850, "label": "Hospital Bulk Tier (30+ units)" }
+          {
+            "minQty": 3,
+            "maxQty": 9,
+            "unitPrice": 1100,
+            "label": "Practitioner Tier (3-9 units)"
+          },
+          {
+            "minQty": 10,
+            "maxQty": 29,
+            "unitPrice": 980,
+            "label": "Clinic Tier (10-29 units)"
+          },
+          {
+            "minQty": 30,
+            "maxQty": null,
+            "unitPrice": 850,
+            "label": "Hospital Bulk Tier (30+ units)"
+          }
         ]
       },
       "b2c": {
@@ -135,9 +194,27 @@
       }
     },
     "variants": [
-      { "id": "var-kb-50", "name": "50 ml Dropper", "sku": "YUG-OIL-KB-50", "price": 850, "available": true },
-      { "id": "var-kb-100", "name": "100 ml Pipette Bottle", "sku": "YUG-OIL-KB-100", "price": 1499, "available": true },
-      { "id": "var-kb-1000", "name": "1 Litre Clinical Flacon", "sku": "YUG-OIL-KB-1L", "price": 9800, "available": true }
+      {
+        "id": "var-kb-50",
+        "name": "50 ml Dropper",
+        "sku": "YUG-OIL-KB-50",
+        "price": 850,
+        "available": true
+      },
+      {
+        "id": "var-kb-100",
+        "name": "100 ml Pipette Bottle",
+        "sku": "YUG-OIL-KB-100",
+        "price": 1499,
+        "available": true
+      },
+      {
+        "id": "var-kb-1000",
+        "name": "1 Litre Clinical Flacon",
+        "sku": "YUG-OIL-KB-1L",
+        "price": 9800,
+        "available": true
+      }
     ],
     "benefits": [
       "101-fold Avarti concentration delivers exceptional neuromuscular bio-availability",
@@ -158,7 +235,7 @@
       "Storage Instruction": "Store in cool amber glassware away from direct sunlight",
       "Quality Standard": "NABL Heavy-Metal & Microbial Free Certified"
     },
-    "rating": 5.0,
+    "rating": 5,
     "reviewCount": 94,
     "stock": 180,
     "moq": 3,
@@ -201,9 +278,24 @@
         "unit": "per 30ml flacon / Wholesale case",
         "minimumOrderQuantity": 10,
         "tiers": [
-          { "minQty": 10, "maxQty": 29, "unitPrice": 850, "label": "Spa Retailer (10-29 units)" },
-          { "minQty": 30, "maxQty": 99, "unitPrice": 720, "label": "Wellness Chain (30-99 units)" },
-          { "minQty": 100, "maxQty": null, "unitPrice": 590, "label": "Bulk Distributor (100+ units)" }
+          {
+            "minQty": 10,
+            "maxQty": 29,
+            "unitPrice": 850,
+            "label": "Spa Retailer (10-29 units)"
+          },
+          {
+            "minQty": 30,
+            "maxQty": 99,
+            "unitPrice": 720,
+            "label": "Wellness Chain (30-99 units)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 590,
+            "label": "Bulk Distributor (100+ units)"
+          }
         ]
       },
       "b2c": {
@@ -220,9 +312,27 @@
       }
     },
     "variants": [
-      { "id": "var-kk-15", "name": "15 ml Travel Dropper", "sku": "YUG-OIL-KK-15", "price": 799, "available": true },
-      { "id": "var-kk-30", "name": "30 ml Standard Pipette", "sku": "YUG-OIL-KK-30", "price": 1299, "available": true },
-      { "id": "var-kk-100", "name": "100 ml Luxury Salon Size", "sku": "YUG-OIL-KK-100", "price": 3600, "available": true }
+      {
+        "id": "var-kk-15",
+        "name": "15 ml Travel Dropper",
+        "sku": "YUG-OIL-KK-15",
+        "price": 799,
+        "available": true
+      },
+      {
+        "id": "var-kk-30",
+        "name": "30 ml Standard Pipette",
+        "sku": "YUG-OIL-KK-30",
+        "price": 1299,
+        "available": true
+      },
+      {
+        "id": "var-kk-100",
+        "name": "100 ml Luxury Salon Size",
+        "sku": "YUG-OIL-KK-100",
+        "price": 3600,
+        "available": true
+      }
     ],
     "benefits": [
       "Pure Kashmiri Mongra Saffron promotes natural, radiant facial luminosity",
@@ -287,9 +397,24 @@
         "unit": "per 250g air-sealed pack",
         "minimumOrderQuantity": 20,
         "tiers": [
-          { "minQty": 20, "maxQty": 49, "unitPrice": 180, "label": "Retailer Tier (20-49 units)" },
-          { "minQty": 50, "maxQty": 99, "unitPrice": 150, "label": "Clinic Bulk (50-99 units)" },
-          { "minQty": 100, "maxQty": null, "unitPrice": 125, "label": "Wholesale Sack Tier (100+ units)" }
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 180,
+            "label": "Retailer Tier (20-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 99,
+            "unitPrice": 150,
+            "label": "Clinic Bulk (50-99 units)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 125,
+            "label": "Wholesale Sack Tier (100+ units)"
+          }
         ]
       },
       "b2c": {
@@ -306,9 +431,27 @@
       }
     },
     "variants": [
-      { "id": "var-tp-250", "name": "250g Resealable Jar", "sku": "YUG-CHR-TP-250", "price": 280, "available": true },
-      { "id": "var-tp-500", "name": "500g Value Pack", "sku": "YUG-CHR-TP-500", "price": 499, "available": true },
-      { "id": "var-tp-5000", "name": "5 kg Institutional Drum", "sku": "YUG-CHR-TP-5KG", "price": 3200, "available": true }
+      {
+        "id": "var-tp-250",
+        "name": "250g Resealable Jar",
+        "sku": "YUG-CHR-TP-250",
+        "price": 280,
+        "available": true
+      },
+      {
+        "id": "var-tp-500",
+        "name": "500g Value Pack",
+        "sku": "YUG-CHR-TP-500",
+        "price": 499,
+        "available": true
+      },
+      {
+        "id": "var-tp-5000",
+        "name": "5 kg Institutional Drum",
+        "sku": "YUG-CHR-TP-5KG",
+        "price": 3200,
+        "available": true
+      }
     ],
     "benefits": [
       "Gentle daily detoxification without creating dependency or electrolyte imbalance",
@@ -369,9 +512,24 @@
         "unit": "per set / Clinic packaging",
         "minimumOrderQuantity": 5,
         "tiers": [
-          { "minQty": 5, "maxQty": 14, "unitPrice": 950, "label": "Center Set (5-14 units)" },
-          { "minQty": 15, "maxQty": 39, "unitPrice": 820, "label": "Hospital Tier (15-39 units)" },
-          { "minQty": 40, "maxQty": null, "unitPrice": 690, "label": "Wholesale Bulk (40+ units)" }
+          {
+            "minQty": 5,
+            "maxQty": 14,
+            "unitPrice": 950,
+            "label": "Center Set (5-14 units)"
+          },
+          {
+            "minQty": 15,
+            "maxQty": 39,
+            "unitPrice": 820,
+            "label": "Hospital Tier (15-39 units)"
+          },
+          {
+            "minQty": 40,
+            "maxQty": null,
+            "unitPrice": 690,
+            "label": "Wholesale Bulk (40+ units)"
+          }
         ]
       },
       "b2c": {
@@ -388,9 +546,27 @@
       }
     },
     "variants": [
-      { "id": "var-kv-std", "name": "Standard Padabhyanga Bowl (3.5 inch)", "sku": "YUG-KAN-STD", "price": 1599, "available": true },
-      { "id": "var-kv-wand", "name": "Ergonomic Teak Wand Edition", "sku": "YUG-KAN-WAND", "price": 1899, "available": true },
-      { "id": "var-kv-trio", "name": "Master 3-Piece Suite (Foot, Face, Body)", "sku": "YUG-KAN-TRIO", "price": 4200, "available": true }
+      {
+        "id": "var-kv-std",
+        "name": "Standard Padabhyanga Bowl (3.5 inch)",
+        "sku": "YUG-KAN-STD",
+        "price": 1599,
+        "available": true
+      },
+      {
+        "id": "var-kv-wand",
+        "name": "Ergonomic Teak Wand Edition",
+        "sku": "YUG-KAN-WAND",
+        "price": 1899,
+        "available": true
+      },
+      {
+        "id": "var-kv-trio",
+        "name": "Master 3-Piece Suite (Foot, Face, Body)",
+        "sku": "YUG-KAN-TRIO",
+        "price": 4200,
+        "available": true
+      }
     ],
     "benefits": [
       "Sacred 79:21 bell metal alloy grounds electromagnetic tension and pacifies Pitta heat",
@@ -451,9 +627,24 @@
         "unit": "per unit with chain & valve",
         "minimumOrderQuantity": 1,
         "tiers": [
-          { "minQty": 1, "maxQty": 4, "unitPrice": 3200, "label": "Single Center (1-4 units)" },
-          { "minQty": 5, "maxQty": 9, "unitPrice": 2800, "label": "Panchkarma Hospital (5-9 units)" },
-          { "minQty": 10, "maxQty": null, "unitPrice": 2400, "label": "Institutional Network (10+ units)" }
+          {
+            "minQty": 1,
+            "maxQty": 4,
+            "unitPrice": 3200,
+            "label": "Single Center (1-4 units)"
+          },
+          {
+            "minQty": 5,
+            "maxQty": 9,
+            "unitPrice": 2800,
+            "label": "Panchkarma Hospital (5-9 units)"
+          },
+          {
+            "minQty": 10,
+            "maxQty": null,
+            "unitPrice": 2400,
+            "label": "Institutional Network (10+ units)"
+          }
         ]
       },
       "b2c": {
@@ -469,9 +660,27 @@
       }
     },
     "variants": [
-      { "id": "var-sd-25", "name": "2.5 Litre Heavy Gauge Brass Pot", "sku": "YUG-APP-SD-25", "price": 3200, "available": true },
-      { "id": "var-sd-35", "name": "3.5 Litre Extended Session Pot", "sku": "YUG-APP-SD-35", "price": 3900, "available": true },
-      { "id": "var-sd-arch", "name": "Complete Brass Pot + Stand + Arch Set", "sku": "YUG-APP-SD-SET", "price": 14500, "available": true }
+      {
+        "id": "var-sd-25",
+        "name": "2.5 Litre Heavy Gauge Brass Pot",
+        "sku": "YUG-APP-SD-25",
+        "price": 3200,
+        "available": true
+      },
+      {
+        "id": "var-sd-35",
+        "name": "3.5 Litre Extended Session Pot",
+        "sku": "YUG-APP-SD-35",
+        "price": 3900,
+        "available": true
+      },
+      {
+        "id": "var-sd-arch",
+        "name": "Complete Brass Pot + Stand + Arch Set",
+        "sku": "YUG-APP-SD-SET",
+        "price": 14500,
+        "available": true
+      }
     ],
     "benefits": [
       "Precision-machined brass needle valve ensures steady, continuous oil flow onto Ajna chakra",
@@ -491,7 +700,7 @@
       "Suspension Rig": "3-Point 36-Inch Heavy Brass Chains with S-Hooks Included",
       "Weight": "1.85 kg (Heavy-gauge thermal retention build)"
     },
-    "rating": 5.0,
+    "rating": 5,
     "reviewCount": 42,
     "stock": 65,
     "moq": 1,
@@ -534,8 +743,18 @@
         "unit": "per turnkey suite / Hospital delivery",
         "minimumOrderQuantity": 1,
         "tiers": [
-          { "minQty": 1, "maxQty": 2, "unitPrice": 145000, "label": "Sanctuary Setup (1-2 suites)" },
-          { "minQty": 3, "maxQty": null, "unitPrice": 128000, "label": "Hospital IPD Wing (3+ suites)" }
+          {
+            "minQty": 1,
+            "maxQty": 2,
+            "unitPrice": 145000,
+            "label": "Sanctuary Setup (1-2 suites)"
+          },
+          {
+            "minQty": 3,
+            "maxQty": null,
+            "unitPrice": 128000,
+            "label": "Hospital IPD Wing (3+ suites)"
+          }
         ]
       },
       "b2c": {
@@ -551,9 +770,27 @@
       }
     },
     "variants": [
-      { "id": "var-drn-8ft", "name": "8-Foot Classical Burmese Teak Droni", "sku": "YUG-DRN-8FT", "price": 185000, "available": true },
-      { "id": "var-drn-9ft", "name": "9-Foot Grand Presidential Sanctuary Suite", "sku": "YUG-DRN-9FT", "price": 225000, "available": true },
-      { "id": "var-drn-rose", "name": "Rare Indian Rosewood (Sheesham) Commission", "sku": "YUG-DRN-ROSE", "price": 260000, "available": true }
+      {
+        "id": "var-drn-8ft",
+        "name": "8-Foot Classical Burmese Teak Droni",
+        "sku": "YUG-DRN-8FT",
+        "price": 185000,
+        "available": true
+      },
+      {
+        "id": "var-drn-9ft",
+        "name": "9-Foot Grand Presidential Sanctuary Suite",
+        "sku": "YUG-DRN-9FT",
+        "price": 225000,
+        "available": true
+      },
+      {
+        "id": "var-drn-rose",
+        "name": "Rare Indian Rosewood (Sheesham) Commission",
+        "sku": "YUG-DRN-ROSE",
+        "price": 260000,
+        "available": true
+      }
     ],
     "benefits": [
       "Sculpted from a single seasoned mature timber log to eliminate seam cracking and leakage",
@@ -573,7 +810,7 @@
       "Shirodhara Rig": "Full-Height Solid Brass Arch with Universal Swivel Adapter",
       "Warranty": "25-Year Master Structural Integrity Guarantee"
     },
-    "rating": 5.0,
+    "rating": 5,
     "reviewCount": 18,
     "stock": 12,
     "moq": 1,
@@ -615,9 +852,24 @@
         "unit": "per 500g clinical bag",
         "minimumOrderQuantity": 10,
         "tiers": [
-          { "minQty": 10, "maxQty": 24, "unitPrice": 240, "label": "Panchkarma Clinic (10-24 units)" },
-          { "minQty": 25, "maxQty": 49, "unitPrice": 210, "label": "Hospital Pharmacy (25-49 units)" },
-          { "minQty": 50, "maxQty": null, "unitPrice": 175, "label": "Bulk Sack Tier (50+ units)" }
+          {
+            "minQty": 10,
+            "maxQty": 24,
+            "unitPrice": 240,
+            "label": "Panchkarma Clinic (10-24 units)"
+          },
+          {
+            "minQty": 25,
+            "maxQty": 49,
+            "unitPrice": 210,
+            "label": "Hospital Pharmacy (25-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 175,
+            "label": "Bulk Sack Tier (50+ units)"
+          }
         ]
       },
       "b2c": {
@@ -634,9 +886,27 @@
       }
     },
     "variants": [
-      { "id": "var-dm-500", "name": "500g Kwatha Pouch", "sku": "YUG-CHR-DM-500", "price": 380, "available": true },
-      { "id": "var-dm-1000", "name": "1 kg Clinic Pack", "sku": "YUG-CHR-DM-1KG", "price": 690, "available": true },
-      { "id": "var-dm-10000", "name": "10 kg Hospital Sack", "sku": "YUG-CHR-DM-10KG", "price": 5400, "available": true }
+      {
+        "id": "var-dm-500",
+        "name": "500g Kwatha Pouch",
+        "sku": "YUG-CHR-DM-500",
+        "price": 380,
+        "available": true
+      },
+      {
+        "id": "var-dm-1000",
+        "name": "1 kg Clinic Pack",
+        "sku": "YUG-CHR-DM-1KG",
+        "price": 690,
+        "available": true
+      },
+      {
+        "id": "var-dm-10000",
+        "name": "10 kg Hospital Sack",
+        "sku": "YUG-CHR-DM-10KG",
+        "price": 5400,
+        "available": true
+      }
     ],
     "benefits": [
       "Premier Ayurvedic remedy for deep musculoskeletal stiffness and respiratory vitality",
@@ -668,6 +938,2631 @@
     "isFeatured": false,
     "isBestSeller": false,
     "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-001",
+    "slug": "hanes-washable-reusable-gown",
+    "name": "Hanes Washable & Reusable Gown",
+    "subtitle": "Cotton Gown - Premium Quality",
+    "shortDescription": "Cotton Gown - Premium Quality",
+    "description": "Cotton Gown - Premium Quality",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-001",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NaeoEmw6_3MgMN7bXiT.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NaeoEnX39rBGDrmAqba.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NaeoEmw6_3MgMN7bXiT.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 500,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 2,
+        "tiers": [
+          {
+            "minQty": 2,
+            "maxQty": 6,
+            "unitPrice": 500,
+            "label": "Standard Tier (2-6 units)"
+          },
+          {
+            "minQty": 7,
+            "maxQty": 16,
+            "unitPrice": 450,
+            "label": "Clinic Bulk (7-16 units)"
+          },
+          {
+            "minQty": 17,
+            "maxQty": null,
+            "unitPrice": 400,
+            "label": "Institutional Tier (17+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 500,
+        "salePrice": 180,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 1000,
+    "moq": 2,
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-002",
+    "slug": "disposable-facial-gown",
+    "name": "Disposable Facial Gown",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Disposable Facial Gown by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Disposable Facial Gown supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-002",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NvC1wWp3ybWgkKqRbpv.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NvC1wWKrUfipXarnQb2.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NvC1wWgkLULeouG--f_.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NvC1wWteOi0PLaR6dkx.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NvC1wX3OFpYdDj3_Fqh.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NvC1wWp3ybWgkKqRbpv.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 30,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 30,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 27,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 24,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 30,
+        "salePrice": 12,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 2000,
+    "moq": 10,
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-003",
+    "slug": "bajaj-hand-sanitizer-5ltr",
+    "name": "Bajaj Hand Sanitizer 5Ltr",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Bajaj Hand Sanitizer 5Ltr by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Bajaj Hand Sanitizer 5Ltr supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-003",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKsykgskXlzVQWzs.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUog6a1rpGX9B6tiNh4.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKsykgskXlzVQWzs.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 1300,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 2,
+        "tiers": [
+          {
+            "minQty": 2,
+            "maxQty": 6,
+            "unitPrice": 1300,
+            "label": "Standard Tier (2-6 units)"
+          },
+          {
+            "minQty": 7,
+            "maxQty": 16,
+            "unitPrice": 1170,
+            "label": "Clinic Bulk (7-16 units)"
+          },
+          {
+            "minQty": 17,
+            "maxQty": null,
+            "unitPrice": 1040,
+            "label": "Institutional Tier (17+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 1300,
+        "salePrice": 350,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 1,
+    "moq": 2,
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-004",
+    "slug": "plastic-hand-gloves",
+    "name": "Plastic Hand Gloves",
+    "subtitle": "Pack of 100pc",
+    "shortDescription": "Pack of 100pc",
+    "description": "Pack of 100pc",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-004",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvIM3FeuDjZm4t5.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUohWNvkmD8oOpIuh6.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvIM3FeuDjZm4t5.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 250,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 250,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 225,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 200,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 250,
+        "salePrice": 50,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Pack of 100pc"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 5,
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-005",
+    "slug": "disposable-bedsheet",
+    "name": "Disposable BedSheet",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Disposable BedSheet by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Disposable BedSheet supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-005",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvp40nDFLarvzNp.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvp40nDFLarvzNp.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 30,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 30,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 27,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 24,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 30,
+        "salePrice": 12,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 3,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-006",
+    "slug": "cottan-roll-500gm",
+    "name": "Cottan Roll 500Gm",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Cottan Roll 500Gm by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Cottan Roll 500Gm supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-006",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKwkSe65SFjBe0hP.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKwkSe65SFjBe0hP.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 150,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 150,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 135,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 120,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 150,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-007",
+    "slug": "steripore-surgical-tapes",
+    "name": "Steripore Surgical Tapes",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Steripore Surgical Tapes by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Steripore Surgical Tapes supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-007",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKpSh1f_DBeS2RCQ.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKpSh1f_DBeS2RCQ.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 180,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 180,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 162,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 144,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 180,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 3,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-008",
+    "slug": "plastic-apron-disposable",
+    "name": "Plastic Apron Disposable",
+    "subtitle": "100pc Packet",
+    "shortDescription": "100pc Packet",
+    "description": "100pc Packet",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-008",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKp-zfzyRB-Qdjlj.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NvC7VUgAnzHMHiGOWCX.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKp-zfzyRB-Qdjlj.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 15,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 15,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 14,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 12,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 15,
+        "salePrice": 5,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "100pc Packet"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 16000,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-009",
+    "slug": "disposable-pillow-cover",
+    "name": "Disposable Pillow Cover",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Disposable Pillow Cover by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Disposable Pillow Cover supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-009",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKq3iLMTZwGzRNB7.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKq3iLMTZwGzRNB7.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 30,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 30,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 27,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 24,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 30,
+        "salePrice": 9,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 1,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-010",
+    "slug": "disposable-gown",
+    "name": "Disposable Gown",
+    "subtitle": "SMS Frabric",
+    "shortDescription": "SMS Frabric",
+    "description": "SMS Frabric",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-010",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKqdo2E8ReH_mKHZ.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKqdo2E8ReH_mKHZ.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 50,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 50,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 45,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 40,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 50,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-011",
+    "slug": "enema-pot-1500ml",
+    "name": "Enema Pot 1500ml",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Enema Pot 1500ml by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Enema Pot 1500ml supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-011",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKrHcqghl12vZwXa.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKrHcqghl12vZwXa.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 149,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 149,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 134,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 119,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 149,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-012",
+    "slug": "nitril-hand-gloves",
+    "name": "Nitril Hand gloves",
+    "subtitle": "Box of 100pc\n",
+    "shortDescription": "Box of 100pc\n",
+    "description": "Box of 100pc\n",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-012",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKz0XIit5s83dDlJ.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKz0XIit5s83dDlJ.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 1500,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 2,
+        "tiers": [
+          {
+            "minQty": 2,
+            "maxQty": 6,
+            "unitPrice": 1500,
+            "label": "Standard Tier (2-6 units)"
+          },
+          {
+            "minQty": 7,
+            "maxQty": 16,
+            "unitPrice": 1350,
+            "label": "Clinic Bulk (7-16 units)"
+          },
+          {
+            "minQty": 17,
+            "maxQty": null,
+            "unitPrice": 1200,
+            "label": "Institutional Tier (17+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 1500,
+        "salePrice": 200,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 3,
+    "moq": 2,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-013",
+    "slug": "rubber-enema-syringe",
+    "name": "Rubber Enema Syringe",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Rubber Enema Syringe by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Rubber Enema Syringe supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-013",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKza8SU35xcZ_aVV.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKza8SU35xcZ_aVV.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 200,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 200,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 180,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 160,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 200,
+        "salePrice": 70,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-014",
+    "slug": "yugan-enema-pot-750ml",
+    "name": "Yugan Enema Pot 750ml",
+    "subtitle": "Simple & Elegant Design ",
+    "shortDescription": "Simple & Elegant Design ",
+    "description": "Simple & Elegant Design ",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-014",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL-5mAyV-9-b_CrY.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL-5mAyV-9-b_CrY.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 450,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 450,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 405,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 360,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 450,
+        "salePrice": 100,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-015",
+    "slug": "surgical-spirit-4-5ltr",
+    "name": "Surgical Spirit 4.5Ltr",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Surgical Spirit 4.5Ltr by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Surgical Spirit 4.5Ltr supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-015",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL-XVBeqlWi7j1Ck.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL-XVBeqlWi7j1Ck.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 600,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 2,
+        "tiers": [
+          {
+            "minQty": 2,
+            "maxQty": 6,
+            "unitPrice": 600,
+            "label": "Standard Tier (2-6 units)"
+          },
+          {
+            "minQty": 7,
+            "maxQty": 16,
+            "unitPrice": 540,
+            "label": "Clinic Bulk (7-16 units)"
+          },
+          {
+            "minQty": 17,
+            "maxQty": null,
+            "unitPrice": 480,
+            "label": "Institutional Tier (17+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 600,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 2,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-016",
+    "slug": "surgical-spirit-450ml",
+    "name": "Surgical Spirit 450ml",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Surgical Spirit 450ml by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Surgical Spirit 450ml supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-016",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL0V8gqN6ap6IkWV.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL0V8gqN6ap6IkWV.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 60,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 60,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 54,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 48,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 60,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-017",
+    "slug": "yugan-ceramic-neti-pot",
+    "name": "Yugan Ceramic Neti Pot",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Yugan Ceramic Neti Pot by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Yugan Ceramic Neti Pot supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-017",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL0sP5MHgbfsFKDL.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL0sP5MHgbfsFKDL.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 250,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 250,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 225,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 200,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 250,
+        "salePrice": 80,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-018",
+    "slug": "yugan-plastic-neti-pot",
+    "name": "Yugan Plastic Neti Pot",
+    "subtitle": "Available in 3 Colours ",
+    "shortDescription": "Available in 3 Colours ",
+    "description": "Available in 3 Colours ",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-018",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL1MSOTtoZbLmwPj.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUon51cpLVX74iaXK37.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL1MSOTtoZbLmwPj.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 80,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 80,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 72,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 64,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 80,
+        "salePrice": 25,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-019",
+    "slug": "red-rubber-catheter",
+    "name": "Red Rubber Catheter",
+    "subtitle": "Superior quality and fully flexible\nSize 3 To 12 available",
+    "shortDescription": "Superior quality and fully flexible\nSize 3 To 12 available",
+    "description": "Superior quality and fully flexible\nSize 3 To 12 available",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-019",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL2IEtZOGJAntJuD.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUonq1wBE28bERpO0JO.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL2IEtZOGJAntJuD.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 20,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 20,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 18,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 16,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 20,
+        "salePrice": 6,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 10,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-020",
+    "slug": "enema-tube-for-enema-pot",
+    "name": "Enema Tube For Enema Pot",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Enema Tube For Enema Pot by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Enema Tube For Enema Pot supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-020",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL3f4v01nOH3BS-p.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL3f4v01nOH3BS-p.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 45,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 45,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 41,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 36,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 45,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-021",
+    "slug": "enema-pot-1000ml",
+    "name": "Enema Pot 1000ml",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Enema Pot 1000ml by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Enema Pot 1000ml supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-021",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL461s-nq7bX3wX_.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL461s-nq7bX3wX_.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 120,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 120,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 108,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 96,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 120,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-022",
+    "slug": "latex-examination-hand-gloves",
+    "name": "Latex Examination Hand Gloves",
+    "subtitle": "Box of 100pc\n",
+    "shortDescription": "Box of 100pc\n",
+    "description": "Box of 100pc\n",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-022",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKxZI2xjJ_VxcI19.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKxZI2xjJ_VxcI19.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 1200,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 2,
+        "tiers": [
+          {
+            "minQty": 2,
+            "maxQty": 6,
+            "unitPrice": 1200,
+            "label": "Standard Tier (2-6 units)"
+          },
+          {
+            "minQty": 7,
+            "maxQty": 16,
+            "unitPrice": 1080,
+            "label": "Clinic Bulk (7-16 units)"
+          },
+          {
+            "minQty": 17,
+            "maxQty": null,
+            "unitPrice": 960,
+            "label": "Institutional Tier (17+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 1200,
+        "salePrice": 190,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 3,
+    "moq": 2,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-023",
+    "slug": "iui-cannula-uttarabasti",
+    "name": "IUI Cannula (Uttarabasti)",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original IUI Cannula (Uttarabasti) by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "IUI Cannula (Uttarabasti) supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-023",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKy4Ao8MjYfPQ7tx.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKy4Ao8MjYfPQ7tx.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 175,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 175,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 158,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 140,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 175,
+        "salePrice": 50,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-024",
+    "slug": "sterile-surgical-gloves",
+    "name": "Sterile Surgical Gloves",
+    "subtitle": "14/- Per Pair\nBox of 50 Pair \n\n",
+    "shortDescription": "14/- Per Pair\nBox of 50 Pair \n\n",
+    "description": "14/- Per Pair\nBox of 50 Pair \n\n",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-024",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKyXlkn2FuwMgYjJ.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUokgDmWH8-7Q8qwdHZ.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKyXlkn2FuwMgYjJ.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 14,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 14,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 13,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 11,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 14,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 5,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-025",
+    "slug": "satguru-enema-syringe-100ml",
+    "name": "Satguru Enema Syringe 100ml",
+    "subtitle": "High Quality Syringe ",
+    "shortDescription": "High Quality Syringe ",
+    "description": "High Quality Syringe ",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-025",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL6WKccctpgUS5Jb.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL6WKccctpgUS5Jb.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 80,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 80,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 72,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 64,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 80,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-026",
+    "slug": "savlon-multipurpose-1ltr",
+    "name": "Savlon Multipurpose 1Ltr",
+    "subtitle": "Disinfectant multipurpose Liquid ",
+    "shortDescription": "Disinfectant multipurpose Liquid ",
+    "description": "Disinfectant multipurpose Liquid ",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-026",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBLA-RsCN3EGUNjBx.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBLA-RsCN3EGUNjBx.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 200,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 200,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 180,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 160,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 200,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-027",
+    "slug": "cotton-roller-bandage",
+    "name": "Cotton Roller Bandage",
+    "subtitle": "Superior Quality & Pack Of 10Pc\n",
+    "shortDescription": "Superior Quality & Pack Of 10Pc\n",
+    "description": "Superior Quality & Pack Of 10Pc\n",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-027",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUowZaMJbEnrMK2HIGz.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUowkvMG4SwWkdzIvIs.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUowkvm8pY6evz8kvRx.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUowZaMJbEnrMK2HIGz.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 100,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 100,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 90,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 80,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 100,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Superior Quality & Pack Of 10Pc\n"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 4,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-028",
+    "slug": "nipro-syringe-with-needle",
+    "name": "Nipro Syringe With Needle",
+    "subtitle": "Authentic Clinical & Panchkarma Product",
+    "shortDescription": "Original Nipro Syringe With Needle by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "description": "Nipro Syringe With Needle supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-028",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUoxal543bEgP3RgEMt.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUoxal543bEgP3RgEMt.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 6.5,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 6.5,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 6,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 5,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 6.5,
+        "salePrice": 2.2,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 6,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-029",
+    "slug": "porcelain-mortar-pestle",
+    "name": "Porcelain Mortar & Pestle",
+    "subtitle": "\n",
+    "shortDescription": "\n",
+    "description": "\n",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Panchkarma & Clinical Equipment",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-029",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUoxalyw8h2423NHPqv.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NvC3yzOo99VASHgizeT.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NvC3yzfBENB5Z3VrfIk.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUoxalyw8h2423NHPqv.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 150,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 15,
+            "unitPrice": 150,
+            "label": "Standard Tier (5-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": 40,
+            "unitPrice": 135,
+            "label": "Clinic Bulk (16-40 units)"
+          },
+          {
+            "minQty": 41,
+            "maxQty": null,
+            "unitPrice": 120,
+            "label": "Institutional Tier (41+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 150,
+        "salePrice": 70,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Panchkarma Therapy Tools & Sets",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 7995,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-yug-030",
+    "slug": "scalp-vein-butterfly-needle",
+    "name": "Scalp Vein / Butterfly Needle",
+    "subtitle": "All Sizes Available",
+    "shortDescription": "All Sizes Available",
+    "description": "All Sizes Available",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-CLIN-030",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUptRLQz-psVefpHvTb.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUptRLQz-psVefpHvTb.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 10,
+        "unit": "per unit / clinic pack",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 30,
+            "unitPrice": 10,
+            "label": "Standard Tier (10-30 units)"
+          },
+          {
+            "minQty": 31,
+            "maxQty": 80,
+            "unitPrice": 9,
+            "label": "Clinic Bulk (31-80 units)"
+          },
+          {
+            "minQty": 81,
+            "maxQty": null,
+            "unitPrice": 8,
+            "label": "Institutional Tier (81+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 10,
+        "salePrice": null,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "Not applicable"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Supplied by Bhairavi Surgicals & Distributors under clinical quality assurance",
+      "Standardized dimensions and materials suited for classical Ayurvedic hospital protocols",
+      "High-grade durable material resistant to therapy oil degradation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Distributor": "Bhairavi Surgicals & Distributors (Yugan International)",
+      "Product Category": "Clinical Essentials & Disposables",
+      "Quality Standard": "Clinical & Hospital Grade QA",
+      "Packaging Type": "Standard Factory Packing"
+    },
+    "rating": 4.8,
+    "reviewCount": 24,
+    "stock": 250,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
     "websiteAvailability": {
       "b2b": true,
       "b2c": true,

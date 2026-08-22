@@ -15,6 +15,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'placehold.co',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.quicksell.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'd1h96izmtdkx5o.cloudfront.net',
+      },
     ],
   },
 };
