@@ -9,8 +9,8 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
+import BuyOnWhatsAppButton from '@/components/ui/BuyOnWhatsAppButton';
 import B2BProductCard from '@/components/products/B2BProductCard';
-import { useCart } from '@/context/CartContext';
 import { useQuote } from '@/context/QuoteContext';
 import {
   Building2,
@@ -19,7 +19,6 @@ import {
   Layers,
   ShieldCheck,
   CheckCircle2,
-  ShoppingCart,
   Download,
   ChevronRight,
   Check,
@@ -31,7 +30,6 @@ import { getProductBySlug, getRelatedProducts } from '@/lib/products';
 
 export default function B2BProductDetailPage() {
   const { slug } = useParams();
-  const { addItem } = useCart();
   const { addToQuote, openQuote } = useQuote();
 
   const [product, setProduct] = useState(null);
@@ -39,7 +37,6 @@ export default function B2BProductDetailPage() {
   const [loading, setLoading] = useState(true);
   const [quantity, setQuantity] = useState(10);
   const [selectedImgIndex, setSelectedImgIndex] = useState(0);
-  const [addedCart, setAddedCart] = useState(false);
   const [addedQuote, setAddedQuote] = useState(false);
 
   useEffect(() => {
@@ -106,11 +103,6 @@ export default function B2BProductDetailPage() {
   const gstAmount = totalBase * 0.18;
   const totalWithGst = totalBase + gstAmount;
 
-  const handleBulkAdd = () => {
-    addItem(product, quantity, 'B2B');
-    setAddedCart(true);
-    setTimeout(() => setAddedCart(false), 2000);
-  };
 
   const handleQuoteAdd = () => {
     addToQuote(product, quantity, currentUnitPrice);
@@ -304,24 +296,21 @@ export default function B2BProductDetailPage() {
               {/* Dual Action Buttons */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <Button
-                  variant="secondary"
+                  variant="primary"
                   size="lg"
                   onClick={handleQuoteAdd}
                   icon={addedQuote ? Check : FileText}
-                  className="w-full font-bold uppercase tracking-wider border-emerald-800 text-emerald-950 bg-emerald-50 hover:bg-emerald-100"
+                  className="w-full font-bold uppercase tracking-wider"
                 >
                   {addedQuote ? 'ADDED TO RFQ TRAY' : 'REQUEST A QUOTE'}
                 </Button>
 
-                <Button
-                  variant="primary"
-                  size="lg"
-                  onClick={handleBulkAdd}
-                  icon={addedCart ? Check : ShoppingCart}
-                  className="w-full font-bold uppercase tracking-wider"
-                >
-                  {addedCart ? 'ADDED TO CART' : 'BUY IN BULK'}
-                </Button>
+                <BuyOnWhatsAppButton
+                  product={product}
+                  quantity={quantity}
+                  mode="B2B"
+                  className="w-full"
+                />
               </div>
             </div>
 

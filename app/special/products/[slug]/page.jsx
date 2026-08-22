@@ -9,6 +9,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
+import BuyOnWhatsAppButton from '@/components/ui/BuyOnWhatsAppButton';
 import SpecialProductCard from '@/components/products/SpecialProductCard';
 import {
   Crown,
@@ -207,32 +208,41 @@ export default function SpecialProductDetailPage() {
                 </div>
               )}
 
-              {/* CTA Action Buttons — MAKE YOUR ORDER */}
-              <div className="pt-4 border-t border-cream-200 flex flex-col sm:flex-row gap-3">
-                <Link
-                  href={`/special/inquiry?product=${encodeURIComponent(product.name)}&sku=${encodeURIComponent(product.sku)}&variant=${encodeURIComponent(selectedVariant?.name || '')}&action=order`}
-                  className="flex-1"
-                >
-                  <Button
-                    variant="gold"
-                    size="lg"
-                    className="w-full font-bold uppercase tracking-wider shadow-glow text-slate-950"
-                    icon={ShoppingBag}
+              {/* CTA Action Buttons — MAKE YOUR ORDER & BUY ON WHATSAPP */}
+              <div className="pt-4 border-t border-cream-200 space-y-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <Link
+                    href={`/special/inquiry?product=${encodeURIComponent(product.name)}&sku=${encodeURIComponent(product.sku)}&variant=${encodeURIComponent(selectedVariant?.name || '')}&action=order`}
+                    className="w-full"
                   >
-                    Make Your Order
-                  </Button>
-                </Link>
+                    <Button
+                      variant="gold"
+                      size="lg"
+                      className="w-full font-bold uppercase tracking-wider shadow-glow text-slate-950"
+                      icon={ShoppingBag}
+                    >
+                      Make Your Order
+                    </Button>
+                  </Link>
 
-                <Link href="/special/bespoke" className="sm:w-auto">
-                  <Button
-                    variant="secondary"
-                    size="lg"
-                    className="w-full border-gold/30 text-charcoal hover:bg-gold/10"
-                    icon={Compass}
+                  <BuyOnWhatsAppButton
+                    product={product}
+                    selectedVariant={selectedVariant}
+                    quantity={1}
+                    mode="SPECIAL"
+                    className="w-full"
+                  />
+                </div>
+
+                <div className="text-center pt-1">
+                  <Link
+                    href="/special/bespoke"
+                    className="text-xs font-medium text-gold-dark hover:text-gold hover:underline inline-flex items-center justify-center gap-1.5 transition-colors"
                   >
-                    Custom Calibration
-                  </Button>
-                </Link>
+                    <Compass className="w-3.5 h-3.5" />
+                    <span>Need bespoke architectural customization? Request Custom Calibration &rarr;</span>
+                  </Link>
+                </div>
               </div>
             </div>
 

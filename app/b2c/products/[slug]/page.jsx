@@ -22,6 +22,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import AnnouncementBar from '@/components/layout/AnnouncementBar';
 import Button from '@/components/ui/Button';
+import BuyOnWhatsAppButton from '@/components/ui/BuyOnWhatsAppButton';
 import Rating from '@/components/ui/Rating';
 import Badge from '@/components/ui/Badge';
 import B2CProductCard from '@/components/products/B2CProductCard';
@@ -32,7 +33,7 @@ import { getProductBySlug, getRelatedProducts } from '@/lib/products';
 export default function B2CProductDetailPage() {
   const { slug } = useParams();
   const router = useRouter();
-  const { addItem, openCart } = useCart();
+  const { addItem } = useCart();
 
   const [product, setProduct] = useState(null);
   const [related, setRelated] = useState([]);
@@ -108,10 +109,6 @@ export default function B2CProductDetailPage() {
     setTimeout(() => setAdded(false), 2000);
   };
 
-  const handleBuyNow = () => {
-    handleAddToCart();
-    openCart();
-  };
 
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-charcoal flex flex-col font-poppins">
@@ -325,14 +322,13 @@ export default function B2CProductDetailPage() {
                   {added ? 'ADDED TO CART' : 'ADD TO CART'}
                 </Button>
 
-                <Button
-                  variant="secondary"
-                  size="lg"
-                  onClick={handleBuyNow}
-                  className="w-full font-bold uppercase tracking-wider border-forest text-forest hover:bg-forest hover:text-white"
-                >
-                  BUY NOW
-                </Button>
+                <BuyOnWhatsAppButton
+                  product={product}
+                  selectedVariant={selectedVariant}
+                  quantity={quantity}
+                  mode="B2C"
+                  className="w-full"
+                />
               </div>
             </div>
 
