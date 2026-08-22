@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Next.js Build Output
+.next/
+out/
+dist/
+build/
+
+# Environment Variables (Never commit secrets)
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System & OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Configs
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Testing & Coverage
+coverage/
+*.lcov
+
+# TypeScript / Build Info
+*.tsbuildinfo
+
+# Vercel Deployment
+.vercel/
+
+# Prisma SQLite local databases & test artifacts
+prisma/*.db
+prisma/*.db-journal
+scratch/
