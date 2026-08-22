@@ -1,62 +1,33 @@
 import { NextResponse } from 'next/server';
-import prisma from '@/lib/prisma';
+import { getProductsByMode, getProductsByCategory, searchProducts } from '@/lib/products';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET(request) {
   try {
     const { searchParams } = new URL(request.url);
-    const mode = searchParams.get('mode'); // 'b2b', 'b2c', 'special'
-    const categorySlug = searchParams.get('category');
-    const search = searchParams.get('search');
+    const mode = (searchParams.get('mode') || 'b2c').toLowerCase();
+    const category = searchParams.get('category');
+    const search = searchParams.get('search') || searchParams.get('q');
     const filter = searchParams.get('filter'); // 'bestseller', 'new', 'featured', 'bulk'
 
-    const where = {};
+    let products = [];
 
-    // Mode-specific visibility filtering
-    if (mode === 'b2b') {
-      where.isB2B = true;
-    } else if (mode === 'b2c') {
-      where.isB2C = true;
-    } else if (mode === 'special') {
-      where.isSpecial = true;
-    }
-
-    // Category filter
-    if (categorySlug) {
-      where.category = { slug: categorySlug };
-    }
-
-    // Search filter (title, subtitle, description, SKU)
     if (search) {
-      where.OR = [
-        { title: { contains: search } },
-        { subtitle: { contains: search } },
-        { description: { contains: search } },
-        { sku: { contains: search } },
-      ];
+      products = searchProducts({ q: search, mode, category });
+    } else if (category) {
+      products = getProductsByCategory(category, mode);
+    } else {
+      products = getProductsByMode(mode);
     }
 
-    // Tag filters
     if (filter === 'bestseller') {
-      where.isBestSeller = true;
+      products = products.filter((p) => p.isBestSeller);
     } else if (filter === 'new') {
-      where.isNewArrival = true;
+      products = products.filter((p) => p.isNewArrival);
     } else if (filter === 'featured') {
-      where.isFeatured = true;
+      products = products.filter((p) => p.isFeatured);
     }
-
-    const products = await prisma.product.findMany({
-      where,
-      include: {
-        category: true,
-        brand: true,
-        priceTiers: {
-          orderBy: { minQty: 'asc' },
-        },
-      },
-      orderBy: { createdAt: 'desc' },
-    });
 
     return NextResponse.json({ success: true, products });
   } catch (error) {

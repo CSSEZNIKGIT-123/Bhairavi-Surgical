@@ -51,12 +51,17 @@ function B2CShopContent() {
 
   // Filtered & sorted products
   const filteredProducts = products.filter((p) => {
-    const matchesCat = !selectedCategory || p.category?.slug === selectedCategory;
+    const pCat = p.categorySlug || p.category?.slug || '';
+    const pTitle = p.name || p.title || '';
+    const pDesc = p.shortDescription || p.description || '';
+    const pSku = p.sku || '';
+
+    const matchesCat = !selectedCategory || pCat.toLowerCase() === selectedCategory.toLowerCase();
     const matchesSearch =
       !search ||
-      p.title.toLowerCase().includes(search.toLowerCase()) ||
-      p.sku.toLowerCase().includes(search.toLowerCase()) ||
-      (p.description && p.description.toLowerCase().includes(search.toLowerCase()));
+      pTitle.toLowerCase().includes(search.toLowerCase()) ||
+      pSku.toLowerCase().includes(search.toLowerCase()) ||
+      pDesc.toLowerCase().includes(search.toLowerCase());
     return matchesCat && matchesSearch;
   });
 

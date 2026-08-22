@@ -1,18 +1,13 @@
 import { NextResponse } from 'next/server';
-import prisma from '@/lib/prisma';
+import { getCategories } from '@/lib/products';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET(request) {
   try {
-    const categories = await prisma.category.findMany({
-      orderBy: { sortOrder: 'asc' },
-      include: {
-        _count: {
-          select: { products: true },
-        },
-      },
-    });
+    const { searchParams } = new URL(request.url);
+    const mode = (searchParams.get('mode') || 'b2c').toLowerCase();
+    const categories = getCategories(mode);
 
     return NextResponse.json({ success: true, categories });
   } catch (error) {
