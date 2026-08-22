@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { hashPassword, signToken } from '@/lib/auth';
 
+export const dynamic = 'force-dynamic';
+
 const validAdminKeys = [
   process.env.ADMIN_INVITATION_SECRET || 'BHAIRAVI-ADMIN-KEY-2026',
   'YUGAN-ADMIN-KEY-2026',

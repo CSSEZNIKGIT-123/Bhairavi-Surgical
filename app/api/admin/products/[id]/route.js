@@ -2,9 +2,37 @@ import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { verifyToken, getUserFromRequest } from '@/lib/auth';
 
+export const dynamic = 'force-dynamic';
+
+export async function GET(request, { params }) {
+  try {
+    const { id } = params || {};
+    if (!id) {
+      return NextResponse.json({ error: 'Product ID is required' }, { status: 400 });
+    }
+
+    const product = await prisma.product.findUnique({
+      where: { id },
+      include: { category: true, priceTiers: true },
+    });
+
+    if (!product) {
+      return NextResponse.json({ error: 'Product not found' }, { status: 404 });
+    }
+
+    return NextResponse.json({ success: true, product });
+  } catch (error) {
+    return NextResponse.json({ error: 'Failed to fetch product' }, { status: 500 });
+  }
+}
+
 export async function PUT(request, { params }) {
   try {
-    const { id } = params;
+    const { id } = params || {};
+    if (!id) {
+      return NextResponse.json({ error: 'Product ID is required' }, { status: 400 });
+    }
+
     const body = await request.json();
 
     const product = await prisma.product.update({
@@ -34,7 +62,11 @@ export async function PUT(request, { params }) {
 
 export async function DELETE(request, { params }) {
   try {
-    const { id } = params;
+    const { id } = params || {};
+    if (!id) {
+      return NextResponse.json({ error: 'Product ID is required' }, { status: 400 });
+    }
+
     await prisma.product.delete({ where: { id } });
     return NextResponse.json({ success: true, message: 'Product deleted' });
   } catch (error) {

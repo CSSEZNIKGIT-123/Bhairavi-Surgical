@@ -1,9 +1,14 @@
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(request, { params }) {
   try {
-    const { slug } = params;
+    const { slug } = params || {};
+    if (!slug) {
+      return NextResponse.json({ error: 'Product slug is required' }, { status: 400 });
+    }
 
     const product = await prisma.product.findUnique({
       where: { slug },
