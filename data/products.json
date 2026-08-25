@@ -1,609 +1,5 @@
 [
   {
-    "id": "prod-001",
-    "slug": "mahanarayan-classical-massage-oil",
-    "name": "Mahanarayan Classical Medicated Massage Oil",
-    "subtitle": "Classical Formula with 30+ Wildcrafted Herbs (Bhaishajya Ratnavali)",
-    "shortDescription": "Authentic 72-hour slow-simmered brass cauldron Taila with Bilva, Ashwagandha, and Shatavari in organic black sesame oil for joint mobility, muscle soothing, and Vata balancing.",
-    "description": "Mahanarayan Taila is a revered classical Ayurvedic medicated oil crafted according to the ancient Bhaishajya Ratnavali text. Prepared through authentic 72-hour continuous simmering in heavy brass cauldrons, this formulation blends 30+ potent wildcrafted herbs including Bilva, Ashwagandha, Bala, Shatavari, and Dashamula into pure cold-pressed black sesame oil. Ideal for traditional Abhyanga, sports rejuvenation, and clinical Panchkarma therapies.",
-    "category": "Ayurvedic Classical Oils",
-    "categorySlug": "herbal-oils",
-    "subcategory": "Medicated Massage Oils",
-    "brand": "Yugan Classical Ayurveda",
-    "sku": "YUG-OIL-MN01",
-    "images": [
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512290900672-1f486431e784?auto=format&fit=crop&w=800&q=80"
-    ],
-    "thumbnail": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
-    "pricing": {
-      "b2b": {
-        "enabled": true,
-        "price": 520,
-        "unit": "per 500ml container (Bulk packs available)",
-        "minimumOrderQuantity": 5,
-        "tiers": [
-          {
-            "minQty": 5,
-            "maxQty": 19,
-            "unitPrice": 520,
-            "label": "Clinic Tier (5-19 units)"
-          },
-          {
-            "minQty": 20,
-            "maxQty": 49,
-            "unitPrice": 460,
-            "label": "Panchkarma Center (20-49 units)"
-          },
-          {
-            "minQty": 50,
-            "maxQty": 99,
-            "unitPrice": 410,
-            "label": "Wholesale Tier (50-99 units)"
-          },
-          {
-            "minQty": 100,
-            "maxQty": null,
-            "unitPrice": 360,
-            "label": "Hospital Drum Tier (100+ units)"
-          }
-        ]
-      },
-      "b2c": {
-        "enabled": true,
-        "price": 850,
-        "salePrice": 749,
-        "currency": "INR",
-        "unit": "per 500ml bottle"
-      },
-      "special": {
-        "enabled": true,
-        "price": 1200,
-        "unit": "Heirloom Glass Decanter"
-      }
-    },
-    "variants": [
-      {
-        "id": "var-mn-200",
-        "name": "200 ml Amber Glass",
-        "sku": "YUG-OIL-MN-200",
-        "price": 420,
-        "available": true
-      },
-      {
-        "id": "var-mn-500",
-        "name": "500 ml Classical Flacon",
-        "sku": "YUG-OIL-MN-500",
-        "price": 749,
-        "available": true
-      },
-      {
-        "id": "var-mn-5000",
-        "name": "5 Litre Clinic Jar",
-        "sku": "YUG-OIL-MN-5L",
-        "price": 4600,
-        "available": true
-      },
-      {
-        "id": "var-mn-25000",
-        "name": "25 Litre Factory Drum",
-        "sku": "YUG-OIL-MN-25L",
-        "price": 19500,
-        "available": true
-      }
-    ],
-    "benefits": [
-      "Classical Abhyanga formula for soothing joint tightness and deep tissue stiffness",
-      "Calms aggravated Vata dosha and nourishes peripheral neuromuscular pathways",
-      "72-hour slow brass cauldron extraction ensures complete lipid-soluble herb infusion",
-      "100% natural cold-pressed virgin black sesame oil carrier base"
-    ],
-    "ingredients": [
-      "Bilva (Aegle marmelos)",
-      "Ashwagandha (Withania somnifera)",
-      "Bala (Sida cordifolia)",
-      "Shatavari (Asparagus racemosus)",
-      "Dashamula (Sacred 10 roots)",
-      "Rasna (Pluchea lanceolata)",
-      "Tila Taila (Cold-pressed black sesame oil)",
-      "Cow Milk (A2 Gir Cow Kshira)"
-    ],
-    "specifications": {
-      "Classical Text Reference": "Bhaishajya Ratnavali - Vatavyadhi Chikitsa",
-      "Dosha Specificity": "Pacifies Vata and balanced Pitta-Kapha",
-      "Carrier Lipid Base": "100% Cold-Pressed Black Sesame Oil (Tila Taila)",
-      "Simmering Process": "72-Hour Continuous Paka in Traditional Brass Cauldrons",
-      "Safety Standards": "Heavy Metal Tested (< 0.1 ppm), Free from synthetic mineral oils and fragrances",
-      "Regulatory Certification": "AYUSH GMP Certified Manufacturing Facility"
-    },
-    "rating": 4.9,
-    "reviewCount": 128,
-    "stock": 450,
-    "moq": 5,
-    "isFeatured": true,
-    "isBestSeller": true,
-    "isNewArrival": false,
-    "websiteAvailability": {
-      "b2b": true,
-      "b2c": true,
-      "special": true
-    },
-    "salesMode": {
-      "b2b": "quote",
-      "b2c": "cart",
-      "special": "order"
-    }
-  },
-  {
-    "id": "prod-002",
-    "slug": "ksheerabala-101-medicated-taila",
-    "name": "Ksheerabala 101 Classical Medicated Taila",
-    "subtitle": "101-Times Potentiated with Bala Decoction & Organic Cow Milk (Sahasrayogam)",
-    "shortDescription": "Ultra-potent 101x repeated Avarti formulation prepared with Bala root decoction, pure A2 milk, and sesame oil for neuromuscular rejuvenation, Shirodhara, and Nasya.",
-    "description": "Ksheerabala 101 Taila represents the pinnacle of classical Ayurvedic pharmaceutical potentiation (Avarti). Prepared according to the sacred Sahasrayogam text, the Bala root decoction and organic cow milk are reduced and infused into sesame oil 101 consecutive times. This intensive 6-month process concentrates bio-active phytosterols for profound nervous system nourishment, Shirodhara therapy, and restorative Panchkarma protocols.",
-    "category": "Ayurvedic Classical Oils",
-    "categorySlug": "herbal-oils",
-    "subcategory": "Potentiated Neurological Elixirs",
-    "brand": "Yugan Classical Ayurveda",
-    "sku": "YUG-OIL-KB101",
-    "images": [
-      "https://images.unsplash.com/photo-1512290900672-1f486431e784?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
-    ],
-    "thumbnail": "https://images.unsplash.com/photo-1512290900672-1f486431e784?auto=format&fit=crop&w=800&q=80",
-    "pricing": {
-      "b2b": {
-        "enabled": true,
-        "price": 1100,
-        "unit": "per 100ml dropper / Clinic bulk",
-        "minimumOrderQuantity": 3,
-        "tiers": [
-          {
-            "minQty": 3,
-            "maxQty": 9,
-            "unitPrice": 1100,
-            "label": "Practitioner Tier (3-9 units)"
-          },
-          {
-            "minQty": 10,
-            "maxQty": 29,
-            "unitPrice": 980,
-            "label": "Clinic Tier (10-29 units)"
-          },
-          {
-            "minQty": 30,
-            "maxQty": null,
-            "unitPrice": 850,
-            "label": "Hospital Bulk Tier (30+ units)"
-          }
-        ]
-      },
-      "b2c": {
-        "enabled": true,
-        "price": 1650,
-        "salePrice": 1499,
-        "currency": "INR",
-        "unit": "per 100ml dropper bottle"
-      },
-      "special": {
-        "enabled": true,
-        "price": 2200,
-        "unit": "Master Vaidya Presentation Flacon"
-      }
-    },
-    "variants": [
-      {
-        "id": "var-kb-50",
-        "name": "50 ml Dropper",
-        "sku": "YUG-OIL-KB-50",
-        "price": 850,
-        "available": true
-      },
-      {
-        "id": "var-kb-100",
-        "name": "100 ml Pipette Bottle",
-        "sku": "YUG-OIL-KB-100",
-        "price": 1499,
-        "available": true
-      },
-      {
-        "id": "var-kb-1000",
-        "name": "1 Litre Clinical Flacon",
-        "sku": "YUG-OIL-KB-1L",
-        "price": 9800,
-        "available": true
-      }
-    ],
-    "benefits": [
-      "101-fold Avarti concentration delivers exceptional neuromuscular bio-availability",
-      "Essential choice for clinical Shirodhara, Nasya karma, and Matra Basti",
-      "Deeply calms sensory overstimulation, mental restlessness, and sleep disturbances",
-      "Processed strictly with A2 cow milk and wild-harvested Bala roots"
-    ],
-    "ingredients": [
-      "Bala Root (Sida cordifolia)",
-      "Kshira (Organic A2 Cow Milk)",
-      "Tila Taila (Cold-pressed virgin sesame oil)",
-      "Bala Kwatha (101-times potentiated concentrated decoction)"
-    ],
-    "specifications": {
-      "Classical Reference": "Sahasrayogam - Taila Prakarana",
-      "Potentiation Cycle": "Avarti 101 (Processed through 101 continuous reduction cycles)",
-      "Administration Modality": "Shirodhara, Nasya, Matra Basti, Localized Pichu",
-      "Storage Instruction": "Store in cool amber glassware away from direct sunlight",
-      "Quality Standard": "NABL Heavy-Metal & Microbial Free Certified"
-    },
-    "rating": 5,
-    "reviewCount": 94,
-    "stock": 180,
-    "moq": 3,
-    "isFeatured": true,
-    "isBestSeller": false,
-    "isNewArrival": true,
-    "websiteAvailability": {
-      "b2b": true,
-      "b2c": true,
-      "special": true
-    },
-    "salesMode": {
-      "b2b": "quote",
-      "b2c": "cart",
-      "special": "order"
-    }
-  },
-  {
-    "id": "prod-003",
-    "slug": "kumkumadi-saffron-radiance-tailam",
-    "name": "Kumkumadi Saffron Classical Radiance Tailam",
-    "subtitle": "Kashmiri Mongra Saffron, Lotus Pollen & Red Sandalwood Elixir (Ashtanga Hridaya)",
-    "shortDescription": "Prestigious 26-herb Ayurvedic facial elixir crafted with pure Grade-A Kashmiri saffron strands, sandalwood, and goat milk for luminous skin texture, complexion tone, and cellular nourishment.",
-    "description": "Kumkumadi Tailam is Ayurveda's most revered beauty nectar, meticulously prepared according to Ashtanga Hridaya. Infused with pristine Kashmiri Mongra saffron stigma, Chandana, Manjistha, and Yashtimadhu in a nourishing sesame and goat milk lipid matrix. Each drop enhances facial luminosity, restores natural skin barrier hydration, and diminishes the appearance of uneven pigmentation.",
-    "category": "Daily Wellness & Herbal Care",
-    "categorySlug": "wellness-essentials",
-    "subcategory": "Facial & Radiance Oils",
-    "brand": "Yugan Classical Ayurveda",
-    "sku": "YUG-OIL-KK01",
-    "images": [
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512290900672-1f486431e784?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80"
-    ],
-    "thumbnail": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
-    "pricing": {
-      "b2b": {
-        "enabled": true,
-        "price": 850,
-        "unit": "per 30ml flacon / Wholesale case",
-        "minimumOrderQuantity": 10,
-        "tiers": [
-          {
-            "minQty": 10,
-            "maxQty": 29,
-            "unitPrice": 850,
-            "label": "Spa Retailer (10-29 units)"
-          },
-          {
-            "minQty": 30,
-            "maxQty": 99,
-            "unitPrice": 720,
-            "label": "Wellness Chain (30-99 units)"
-          },
-          {
-            "minQty": 100,
-            "maxQty": null,
-            "unitPrice": 590,
-            "label": "Bulk Distributor (100+ units)"
-          }
-        ]
-      },
-      "b2c": {
-        "enabled": true,
-        "price": 1450,
-        "salePrice": 1299,
-        "currency": "INR",
-        "unit": "per 30ml glass dropper"
-      },
-      "special": {
-        "enabled": true,
-        "price": 1850,
-        "unit": "Bespoke Silk-Lined Gold Box"
-      }
-    },
-    "variants": [
-      {
-        "id": "var-kk-15",
-        "name": "15 ml Travel Dropper",
-        "sku": "YUG-OIL-KK-15",
-        "price": 799,
-        "available": true
-      },
-      {
-        "id": "var-kk-30",
-        "name": "30 ml Standard Pipette",
-        "sku": "YUG-OIL-KK-30",
-        "price": 1299,
-        "available": true
-      },
-      {
-        "id": "var-kk-100",
-        "name": "100 ml Luxury Salon Size",
-        "sku": "YUG-OIL-KK-100",
-        "price": 3600,
-        "available": true
-      }
-    ],
-    "benefits": [
-      "Pure Kashmiri Mongra Saffron promotes natural, radiant facial luminosity",
-      "Reduces hyperpigmentation, dark circles, and signs of environmental fatigue",
-      "Enriched with 26 authentic classical botanicals simmered in organic goat milk",
-      "100% free of artificial fragrances, chemical preservatives, and synthetic dyes"
-    ],
-    "ingredients": [
-      "Kumkuma (Pure Kashmiri Saffron)",
-      "Rakta Chandana (Red Sandalwood)",
-      "Manjistha (Rubia cordifolia)",
-      "Yashtimadhu (Licorice root)",
-      "Kamala Keshara (Lotus Stamen)",
-      "Aja Kshira (Fresh goat milk)",
-      "Tila Taila (Sesame oil)"
-    ],
-    "specifications": {
-      "Classical Reference": "Ashtanga Hridaya - Kshudra Roga Chikitsa",
-      "Saffron Grade": "Grade-A 100% Pure Kashmiri Mongra (Crocus sativus)",
-      "Skin Type Suitability": "All skin types (Tridoshic balance)",
-      "Application Ritual": "3-4 drops nightly onto cleansed damp skin with gentle circular motions"
-    },
-    "rating": 4.9,
-    "reviewCount": 210,
-    "stock": 320,
-    "moq": 10,
-    "isFeatured": true,
-    "isBestSeller": true,
-    "isNewArrival": false,
-    "websiteAvailability": {
-      "b2b": true,
-      "b2c": true,
-      "special": true
-    },
-    "salesMode": {
-      "b2b": "quote",
-      "b2c": "cart",
-      "special": "order"
-    }
-  },
-  {
-    "id": "prod-004",
-    "slug": "organic-triphala-classical-churna",
-    "name": "Organic Triphala Classical Micro-Milled Churna",
-    "subtitle": "Equal Ratio Haritaki, Bibhitaki & Amalaki (Charaka Samhita Sutrasthana)",
-    "shortDescription": "Traditional equal-part blend of wildcrafted Haritaki, Bibhitaki, and Amalaki micro-milled to 120-mesh fineness for optimal digestive harmony, internal cleansing, and antioxidant vitality.",
-    "description": "Triphala Churna is Ayurveda's cornerstone Rasayana formulation described in Charaka Samhita. Sourced from pristine wild deciduous forests, our Haritaki, Bibhitaki, and organic Amalaki are sun-dried and micro-milled under strict temperature control to preserve heat-sensitive bio-tannins and natural Vitamin C. It gently cleanses the gastrointestinal tract, supports healthy peristalsis, and tones ocular vitality.",
-    "category": "Herbal Powders & Churnas",
-    "categorySlug": "herbal-powders",
-    "subcategory": "Classical Digestive Formulations",
-    "brand": "Yugan Classical Ayurveda",
-    "sku": "YUG-CHR-TP01",
-    "images": [
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80"
-    ],
-    "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
-    "pricing": {
-      "b2b": {
-        "enabled": true,
-        "price": 180,
-        "unit": "per 250g air-sealed pack",
-        "minimumOrderQuantity": 20,
-        "tiers": [
-          {
-            "minQty": 20,
-            "maxQty": 49,
-            "unitPrice": 180,
-            "label": "Retailer Tier (20-49 units)"
-          },
-          {
-            "minQty": 50,
-            "maxQty": 99,
-            "unitPrice": 150,
-            "label": "Clinic Bulk (50-99 units)"
-          },
-          {
-            "minQty": 100,
-            "maxQty": null,
-            "unitPrice": 125,
-            "label": "Wholesale Sack Tier (100+ units)"
-          }
-        ]
-      },
-      "b2c": {
-        "enabled": true,
-        "price": 320,
-        "salePrice": 280,
-        "currency": "INR",
-        "unit": "per 250g resealable jar"
-      },
-      "special": {
-        "enabled": false,
-        "price": null,
-        "unit": "Not Available for Special Atelier"
-      }
-    },
-    "variants": [
-      {
-        "id": "var-tp-250",
-        "name": "250g Resealable Jar",
-        "sku": "YUG-CHR-TP-250",
-        "price": 280,
-        "available": true
-      },
-      {
-        "id": "var-tp-500",
-        "name": "500g Value Pack",
-        "sku": "YUG-CHR-TP-500",
-        "price": 499,
-        "available": true
-      },
-      {
-        "id": "var-tp-5000",
-        "name": "5 kg Institutional Drum",
-        "sku": "YUG-CHR-TP-5KG",
-        "price": 3200,
-        "available": true
-      }
-    ],
-    "benefits": [
-      "Gentle daily detoxification without creating dependency or electrolyte imbalance",
-      "Rich in natural stable Vitamin C, bio-flavonoids, and polyphenolic tannins",
-      "Micro-milled to 120-mesh fineness for rapid dissolution in warm water",
-      "100% Certified Organic wild-foraged forest harvest"
-    ],
-    "ingredients": [
-      "Amalaki (Emblica officinalis) - 33.33%",
-      "Haritaki (Terminalia chebula) - 33.33%",
-      "Bibhitaki (Terminalia bellirica) - 33.33%"
-    ],
-    "specifications": {
-      "Classical Text Reference": "Charaka Samhita - Chikitsasthana Rasayana Adhyaya",
-      "Mesh Particle Size": "120 Mesh Ultra-Fine Cold Ground",
-      "Purity Guarantee": "Zero fillers, excipients, maltodextrin, or anti-caking agents",
-      "Recommended Dosage": "1 teaspoon (3-5g) with warm water at bedtime"
-    },
-    "rating": 4.8,
-    "reviewCount": 165,
-    "stock": 600,
-    "moq": 20,
-    "isFeatured": false,
-    "isBestSeller": true,
-    "isNewArrival": false,
-    "websiteAvailability": {
-      "b2b": true,
-      "b2c": true,
-      "special": false
-    },
-    "salesMode": {
-      "b2b": "quote",
-      "b2c": "cart",
-      "special": "order"
-    }
-  },
-  {
-    "id": "prod-005",
-    "slug": "bronze-kansa-vataki-foot-massage-set",
-    "name": "Bronze Kansa Vataki 79:21 Classical Foot Massage Set",
-    "subtitle": "Traditional Healing Metal (79% Copper + 21% Tin) with Hand-Turned Teak Handle",
-    "shortDescription": "Authentic bell-metal bronze Kansa bowl set crafted in sacred 79:21 copper-tin ratio for Padabhyanga foot therapy, heat-pacification, and deep nervous system grounding.",
-    "description": "The Kansa Vataki is Ayurveda's legendary therapy tool, cast in the sacred ratio of 79% pure copper and 21% virgin tin. When massaged on the soles of the feet with warm Ghee or Mahanarayan Taila, the unique bio-electrical resonance of the bell metal assists in drawing excess Pitta heat, relieving ocular strain, calming insomnia, and stimulating vital Marma pressure points.",
-    "category": "Panchkarma Therapy Tools & Sets",
-    "categorySlug": "panchkarma-essentials",
-    "subcategory": "Kansa Metal Therapy Tools",
-    "brand": "Yugan Sovereign Atelier",
-    "sku": "YUG-KAN-01",
-    "images": [
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80"
-    ],
-    "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
-    "pricing": {
-      "b2b": {
-        "enabled": true,
-        "price": 950,
-        "unit": "per set / Clinic packaging",
-        "minimumOrderQuantity": 5,
-        "tiers": [
-          {
-            "minQty": 5,
-            "maxQty": 14,
-            "unitPrice": 950,
-            "label": "Center Set (5-14 units)"
-          },
-          {
-            "minQty": 15,
-            "maxQty": 39,
-            "unitPrice": 820,
-            "label": "Hospital Tier (15-39 units)"
-          },
-          {
-            "minQty": 40,
-            "maxQty": null,
-            "unitPrice": 690,
-            "label": "Wholesale Bulk (40+ units)"
-          }
-        ]
-      },
-      "b2c": {
-        "enabled": true,
-        "price": 1850,
-        "salePrice": 1599,
-        "currency": "INR",
-        "unit": "per handcrafted set with organic sesame oil vial"
-      },
-      "special": {
-        "enabled": true,
-        "price": 2400,
-        "unit": "Bespoke Engraved Rosewood Box Edition"
-      }
-    },
-    "variants": [
-      {
-        "id": "var-kv-std",
-        "name": "Standard Padabhyanga Bowl (3.5 inch)",
-        "sku": "YUG-KAN-STD",
-        "price": 1599,
-        "available": true
-      },
-      {
-        "id": "var-kv-wand",
-        "name": "Ergonomic Teak Wand Edition",
-        "sku": "YUG-KAN-WAND",
-        "price": 1899,
-        "available": true
-      },
-      {
-        "id": "var-kv-trio",
-        "name": "Master 3-Piece Suite (Foot, Face, Body)",
-        "sku": "YUG-KAN-TRIO",
-        "price": 4200,
-        "available": true
-      }
-    ],
-    "benefits": [
-      "Sacred 79:21 bell metal alloy grounds electromagnetic tension and pacifies Pitta heat",
-      "Stimulates reflexology marma points on the soles to promote restorative REM sleep",
-      "Hand-lathed seasoned teak wood ergonomic handle for fatigue-free practitioner use",
-      "Lifetime durability with non-tarnish high bronze finish"
-    ],
-    "ingredients": [
-      "Pure Refined Copper (79%)",
-      "Pure Virgin Tin (21%)",
-      "Seasoned Teak Wood (Tectona grandis) Handle"
-    ],
-    "specifications": {
-      "Metallurgical Ratio": "79% Cu / 21% Sn (Classical Kansya Alloy)",
-      "Bowl Diameter": "3.5 Inches (8.9 cm) precision curve",
-      "Therapy Focus": "Padabhyanga (Ayurvedic Foot Reflexology) & Mukhabhyanga",
-      "Maintenance": "Clean with tamarind paste or lemon juice and dry cloth"
-    },
-    "rating": 4.9,
-    "reviewCount": 77,
-    "stock": 140,
-    "moq": 5,
-    "isFeatured": true,
-    "isBestSeller": false,
-    "isNewArrival": false,
-    "websiteAvailability": {
-      "b2b": true,
-      "b2c": true,
-      "special": true
-    },
-    "salesMode": {
-      "b2b": "quote",
-      "b2c": "cart",
-      "special": "order"
-    }
-  },
-  {
     "id": "prod-006",
     "slug": "authentic-brass-shirodhara-vessel-set",
     "name": "Hand-Hammered Solid Brass Shirodhara Vessel with Flow Tap",
@@ -821,127 +217,6 @@
       "b2b": true,
       "b2c": false,
       "special": true
-    },
-    "salesMode": {
-      "b2b": "quote",
-      "b2c": "cart",
-      "special": "order"
-    }
-  },
-  {
-    "id": "prod-008",
-    "slug": "dashamula-fine-churna",
-    "name": "Dashamula Classical Kwatha Churna (Ten Roots)",
-    "subtitle": "Sacred Ten Roots Formula for Decoctions, Basti & Swedana (Sahasrayogam)",
-    "shortDescription": "Traditional equal combination of five Brihat Panchamula tree roots and five Laghu Panchamula shrub roots, coarse-ground for concentrated decoction preparation in Vata disorders.",
-    "description": "Dashamula is Ayurveda's most acclaimed formula for balancing aggravated Vata and restoring vital somatic energy. Combining the roots of Bilva, Agnimantha, Shyonaka, Patala, Gambhari, Brihati, Kantakari, Gokshura, Shalaparni, and Prishniparni. Coarse-ground to 40-mesh to ensure optimal extraction of bioactive saponins and essential bitter principles during Kashaya boiling.",
-    "category": "Herbal Powders & Churnas",
-    "categorySlug": "herbal-powders",
-    "subcategory": "Decoction & Kwatha Churnas",
-    "brand": "Yugan Classical Ayurveda",
-    "sku": "YUG-CHR-DM01",
-    "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
-    ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
-    "pricing": {
-      "b2b": {
-        "enabled": true,
-        "price": 240,
-        "unit": "per 500g clinical bag",
-        "minimumOrderQuantity": 10,
-        "tiers": [
-          {
-            "minQty": 10,
-            "maxQty": 24,
-            "unitPrice": 240,
-            "label": "Panchkarma Clinic (10-24 units)"
-          },
-          {
-            "minQty": 25,
-            "maxQty": 49,
-            "unitPrice": 210,
-            "label": "Hospital Pharmacy (25-49 units)"
-          },
-          {
-            "minQty": 50,
-            "maxQty": null,
-            "unitPrice": 175,
-            "label": "Bulk Sack Tier (50+ units)"
-          }
-        ]
-      },
-      "b2c": {
-        "enabled": true,
-        "price": 420,
-        "salePrice": 380,
-        "currency": "INR",
-        "unit": "per 500g pouch"
-      },
-      "special": {
-        "enabled": false,
-        "price": null,
-        "unit": "Not Available for Special"
-      }
-    },
-    "variants": [
-      {
-        "id": "var-dm-500",
-        "name": "500g Kwatha Pouch",
-        "sku": "YUG-CHR-DM-500",
-        "price": 380,
-        "available": true
-      },
-      {
-        "id": "var-dm-1000",
-        "name": "1 kg Clinic Pack",
-        "sku": "YUG-CHR-DM-1KG",
-        "price": 690,
-        "available": true
-      },
-      {
-        "id": "var-dm-10000",
-        "name": "10 kg Hospital Sack",
-        "sku": "YUG-CHR-DM-10KG",
-        "price": 5400,
-        "available": true
-      }
-    ],
-    "benefits": [
-      "Premier Ayurvedic remedy for deep musculoskeletal stiffness and respiratory vitality",
-      "Essential base for clinical Kashaya Basti, Nadi Swedana, and Parisheka",
-      "Correct botanical ratio of 5 Brihat and 5 Laghu roots strictly maintained",
-      "100% naturally shade-dried and clean-sorted"
-    ],
-    "ingredients": [
-      "Bilva (Aegle marmelos)",
-      "Agnimantha (Premna integrifolia)",
-      "Shyonaka (Oroxylum indicum)",
-      "Patala (Stereospermum suaveolens)",
-      "Gambhari (Gmelina arborea)",
-      "Brihati (Solanum indicum)",
-      "Kantakari (Solanum xanthocarpum)",
-      "Gokshura (Tribulus terrestris)",
-      "Shalaparni (Desmodium gangeticum)",
-      "Prishniparni (Uraria picta)"
-    ],
-    "specifications": {
-      "Classical Reference": "Sahasrayogam - Kashaya Prakarana",
-      "Grind Specification": "Coarse Kwatha Yavakuta Grind (40 Mesh)",
-      "Preparation Ratio": "Boil 1 part Dashamula with 16 parts water, reduce to 4 parts"
-    },
-    "rating": 4.8,
-    "reviewCount": 58,
-    "stock": 350,
-    "moq": 10,
-    "isFeatured": false,
-    "isBestSeller": false,
-    "isNewArrival": false,
-    "websiteAvailability": {
-      "b2b": true,
-      "b2c": true,
-      "special": false
     },
     "salesMode": {
       "b2b": "quote",
@@ -3560,6 +2835,3110 @@
     "reviewCount": 24,
     "stock": 250,
     "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-039",
+    "slug": "eye-wash-cup",
+    "name": "Eye Wash Cup",
+    "subtitle": "Smooth Contoured Ophthalmic Rinse Cup for Ocular Hygiene",
+    "shortDescription": "Medical-grade transparent eye wash cup with smooth anatomical contour for daily eye cleansing and Netra Prakshalana therapy.",
+    "description": "The Eye Wash Cup is an ergonomically contoured ocular hygiene tool manufactured from medical-grade transparent polymer. Designed with smooth rounded rims that fit snugly over the eye orbit, it facilitates safe, leak-proof rinsing with sterile saline or Ayurvedic Triphala Netra decoctions for soothing eye strain and environmental dust relief.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Eye Care & Hygiene",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-EWC01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL-zGwn2GeEi_Llg.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL-zGwn2GeEi_Llg.jpg"
+    ],
+    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 18,
+        "unit": "per piece (Bulk pack)",
+        "minimumOrderQuantity": 20,
+        "tiers": [
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 18,
+            "label": "Clinic Tier (20-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 99,
+            "unitPrice": 15,
+            "label": "Wholesale Tier (50-99 units)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 12,
+            "label": "Bulk Tier (100+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 50,
+        "salePrice": 10,
+        "currency": "INR",
+        "unit": "per piece"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-ewc-std",
+        "name": "Standard Eye Wash Cup (Single)",
+        "sku": "YUG-CLIN-EWC01",
+        "price": 29,
+        "available": true
+      },
+      {
+        "id": "var-ewc-pk2",
+        "name": "Twin Pack (Set of 2)",
+        "sku": "YUG-CLIN-EWC02",
+        "price": 50,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Ergonomically contoured oval cup matches facial orbital curvature for leak-free seal",
+      "Constructed from high-clarity medical-grade polymer for easy fluid inspection",
+      "Smooth rounded rim prevents irritation during eye washing or Netra Prakshalana",
+      "Compatible with sterile saline, purified water, and classical herbal decoctions"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Medical-Grade Transparent Polymer",
+      "Capacity": "15 ml",
+      "Rim Design": "Smooth Orbital Contour",
+      "Cleaning": "Washable & Reusable",
+      "Applications": "Ophthalmic irrigation, Netra Prakshalana, eye soothing"
+    },
+    "rating": 4.8,
+    "reviewCount": 42,
+    "stock": 500,
+    "moq": 20,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-040",
+    "slug": "newnik-ceramic-neti-pot",
+    "name": "Newnik Ceramic Neti Pot",
+    "subtitle": "Lead-Free Glazed Ceramic Sinus Irrigation Vessel with Ergonomic Spout",
+    "shortDescription": "Premium glazed ceramic Neti pot designed for authentic Jala Neti nasal cleansing, sinus clearing, and respiratory wellness.",
+    "description": "The Newnik Ceramic Neti Pot is an essential tool for classical Ayurvedic Jala Neti (nasal irrigation). Mastercrafted from durable lead-free ceramic with a non-porous vitreous glaze, it features an anatomically engineered conical nozzle that creates a comfortable, gentle seal against the nostril for optimal laminar saline flow.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Nasal Irrigation & Neti",
+    "brand": "Newnik",
+    "sku": "YUG-NETI-CER-NW",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL0sP5MHgbfsFKDL.jpg",
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL0sP5MHgbfsFKDL.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 160,
+        "unit": "per piece / Clinic pack",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 14,
+            "unitPrice": 160,
+            "label": "Clinic Tier (5-14 units)"
+          },
+          {
+            "minQty": 15,
+            "maxQty": 39,
+            "unitPrice": 140,
+            "label": "Center Tier (15-39 units)"
+          },
+          {
+            "minQty": 40,
+            "maxQty": null,
+            "unitPrice": 120,
+            "label": "Wholesale Tier (40+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 299,
+        "salePrice": 249,
+        "currency": "INR",
+        "unit": "per ceramic pot"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-neti-cer-white",
+        "name": "Classic Ivory White (250ml)",
+        "sku": "YUG-NETI-CER-NW-WHT",
+        "price": 249,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Smooth conical nozzle fits nostril contours comfortably without abrasion",
+      "100% Lead-free and cadmium-free hygienic glazed ceramic construction",
+      "Microwave and dishwasher safe for thorough sterilization",
+      "Facilitates traditional Jala Neti practice for sinus relief and daily respiratory hygiene"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Brand": "Newnik",
+      "Material": "Lead-Free Glazed Ceramic",
+      "Capacity": "250 ml",
+      "Nozzle Shape": "Conical Smooth Tapered Spout",
+      "Maintenance": "Dishwasher & Hot Water Washable"
+    },
+    "rating": 4.9,
+    "reviewCount": 68,
+    "stock": 180,
+    "moq": 5,
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-041",
+    "slug": "newnik-copper-neti-pot",
+    "name": "Newnik Copper Neti Pot",
+    "subtitle": "100% Pure Solid Copper (Tamra) Antimicrobial Nasal Cleansing Pot",
+    "shortDescription": "Handcrafted pure copper Neti pot providing natural oligodynamic water purification for classical Ayurvedic Jala Neti sinus care.",
+    "description": "Crafted from 100% pure heavy-gauge virgin copper (Tamra), the Newnik Copper Neti Pot combines traditional Ayurvedic metallurgical science with precision ergonomics. Storing saline solution in pure copper imparts trace oligodynamic benefits that soothe mucous membranes and clear congested nasal passages effectively.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Nasal Irrigation & Neti",
+    "brand": "Newnik",
+    "sku": "YUG-NETI-COP-NW",
+    "images": [
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 380,
+        "unit": "per piece / Center box",
+        "minimumOrderQuantity": 3,
+        "tiers": [
+          {
+            "minQty": 3,
+            "maxQty": 9,
+            "unitPrice": 380,
+            "label": "Practitioner Tier (3-9 units)"
+          },
+          {
+            "minQty": 10,
+            "maxQty": 24,
+            "unitPrice": 340,
+            "label": "Clinic Tier (10-24 units)"
+          },
+          {
+            "minQty": 25,
+            "maxQty": null,
+            "unitPrice": 295,
+            "label": "Wholesale Tier (25+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 650,
+        "salePrice": 549,
+        "currency": "INR",
+        "unit": "per copper pot"
+      },
+      "special": {
+        "enabled": true,
+        "price": 750,
+        "unit": "Atelier Velvet Pouch Edition"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-neti-cop-350",
+        "name": "Pure Copper 350ml Vessel",
+        "sku": "YUG-NETI-COP-350",
+        "price": 549,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "100% Solid Copper (Tamra) construction with natural antimicrobial properties",
+      "Seamless pressed body with jointless spout prevents residual buildup",
+      "Ergonomic handle ensures balanced angle during saline flow",
+      "Authentic Ayurvedic design referenced in Hatha Yoga Pradipika"
+    ],
+    "ingredients": [
+      "100% Pure Virgin Copper (Tamra Patra)"
+    ],
+    "specifications": {
+      "Brand": "Newnik",
+      "Metal Purity": "99.9% Pure Copper",
+      "Capacity": "350 ml",
+      "Finish": "Hand-buffed traditional mirror gloss",
+      "Maintenance": "Clean with lemon juice/tamarind and dry thoroughly"
+    },
+    "rating": 5.0,
+    "reviewCount": 54,
+    "stock": 120,
+    "moq": 3,
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": true
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-042",
+    "slug": "kidney-tray-pvc",
+    "name": "Kidney Tray PVC",
+    "subtitle": "Autoclavable Medical-Grade Polypropylene Kidney Dish (8 Inch)",
+    "shortDescription": "Lightweight, chemical-resistant medical PVC/polypropylene kidney dish for holding soiled dressings, liquids, and surgical tools.",
+    "description": "The Kidney Tray PVC is an indispensable hospital and clinic utility dish moulded from durable medical-grade polypropylene. Featuring smooth curved contours and a wide rim, it allows secure placement against the patient's body for receiving fluids, discarded dressings, and surgical swabs during procedures.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Surgical Trays & Basins",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-TRAY-PVC01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL4wuVxr8LSMxwn0.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL4wuVxr8LSMxwn0.jpg"
+    ],
+    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 22,
+        "unit": "per piece / Box of 10",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 49,
+            "unitPrice": 22,
+            "label": "Clinic Tier (10-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 99,
+            "unitPrice": 18,
+            "label": "Hospital Tier (50-99 units)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 15,
+            "label": "Bulk Wholesale (100+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 85,
+        "salePrice": 35,
+        "currency": "INR",
+        "unit": "per dish"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-kt-pvc-8",
+        "name": "8 Inch Polypropylene Dish",
+        "sku": "YUG-TRAY-PVC-8",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "var-kt-pvc-10",
+        "name": "10 Inch Large Polypropylene Dish",
+        "sku": "YUG-TRAY-PVC-10",
+        "price": 48,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Lightweight, shatter-proof medical polymer construction",
+      "Anatomical curve rests comfortably against body contours",
+      "Autoclavable up to 121°C and resistant to clinical disinfectants",
+      "Smooth non-stick surface facilitates rapid cleaning and sanitization"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Medical-Grade Virgin Polypropylene (Polymer PVC Class)",
+      "Size": "8 Inch (200 mm) / 10 Inch (250 mm)",
+      "Autoclave Rating": "121°C Autoclavable",
+      "Color": "Clinical Blue / Translucent White",
+      "Application": "Surgical prep, fluid collection, swab containment"
+    },
+    "rating": 4.7,
+    "reviewCount": 38,
+    "stock": 650,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-043",
+    "slug": "kidney-tray-steel",
+    "name": "Kidney Tray Steel",
+    "subtitle": "Heavy-Gauge AISI 304 Stainless Steel Seamless Kidney Dish",
+    "shortDescription": "Surgical-grade stainless steel kidney tray engineered for repeated autoclave sterilization and clinical instrument handling.",
+    "description": "The Kidney Tray Steel is manufactured from premium AISI 304 stainless steel with a seamless, die-pressed construction and smooth curled edges. Built to withstand continuous high-temperature autoclaving and hospital chemical sterilization without corrosion or staining.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Surgical Trays & Basins",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-TRAY-SS01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL5Mkfeb1luoNpi9.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL5Mkfeb1luoNpi9.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL5Mkfeb1luoNpi9.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 95,
+        "unit": "per piece / Box of 5",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 95,
+            "label": "Clinic Tier (5-19 units)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 82,
+            "label": "Hospital Tier (20-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 70,
+            "label": "Institutional Wholesale (50+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 180,
+        "salePrice": 80,
+        "currency": "INR",
+        "unit": "per steel dish"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-kt-ss-8",
+        "name": "8 Inch SS 304 Dish (200mm)",
+        "sku": "YUG-TRAY-SS-8",
+        "price": 145,
+        "available": true
+      },
+      {
+        "id": "var-kt-ss-10",
+        "name": "10 Inch SS 304 Dish (250mm)",
+        "sku": "YUG-TRAY-SS-10",
+        "price": 195,
+        "available": true
+      },
+      {
+        "id": "var-kt-ss-12",
+        "name": "12 Inch SS 304 Dish (300mm)",
+        "sku": "YUG-TRAY-SS-12",
+        "price": 240,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Grade 304 non-magnetic surgical stainless steel construction",
+      "Seamless deep-drawn design prevents bacterial accumulation in crevices",
+      "Curled safety rim provides secure grip and prevents fluid spillage",
+      "100% Autoclave proof with high corrosion and stain resistance"
+    ],
+    "ingredients": [
+      "AISI 304 Grade Stainless Steel (18/8 Chrome-Nickel Alloy)"
+    ],
+    "specifications": {
+      "Material Grade": "AISI 304 Surgical Stainless Steel",
+      "Sizes Available": "8 Inch (200mm), 10 Inch (250mm), 12 Inch (300mm)",
+      "Finish": "Satin / Mirror Polished",
+      "Sterilization": "Steam Autoclave (134°C), ETO, Dry Heat",
+      "Standard": "ISO 13485 Compliance"
+    },
+    "rating": 4.9,
+    "reviewCount": 82,
+    "stock": 340,
+    "moq": 5,
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-044",
+    "slug": "steel-instrument-tray",
+    "name": "Steel Instrument Tray",
+    "subtitle": "Surgical Grade Stainless Steel Instrument & Procedure Tray (10x8 Inch)",
+    "shortDescription": "Heavy-duty SS 304 instrument organizing tray with seamless rounded corners for autoclave sterilization and procedure setups.",
+    "description": "The Steel Instrument Tray is engineered for surgical suites, dental operatories, and Panchkarma therapy rooms. Precision-fabricated from heavy-gauge surgical stainless steel with seamless radiused corners, it ensures effortless cleaning and organized placement of sterilized instruments.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Surgical Trays & Basins",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-TRAY-INST01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL3CRS2uhfoOrFhW.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUopSXoj3akgxeBek-7.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL3CRS2uhfoOrFhW.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 195,
+        "unit": "per tray / Unit packing",
+        "minimumOrderQuantity": 3,
+        "tiers": [
+          {
+            "minQty": 3,
+            "maxQty": 9,
+            "unitPrice": 195,
+            "label": "Clinic Tier (3-9 units)"
+          },
+          {
+            "minQty": 10,
+            "maxQty": 24,
+            "unitPrice": 170,
+            "label": "Hospital Tier (10-24 units)"
+          },
+          {
+            "minQty": 25,
+            "maxQty": null,
+            "unitPrice": 145,
+            "label": "Bulk Wholesale (25+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 450,
+        "salePrice": 350,
+        "currency": "INR",
+        "unit": "per steel tray"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-inst-tray-10x8",
+        "name": "10 x 8 Inch Standard Tray",
+        "sku": "YUG-TRAY-INST-108",
+        "price": 280,
+        "available": true
+      },
+      {
+        "id": "var-inst-tray-12x10",
+        "name": "12 x 10 Inch Large Tray",
+        "sku": "YUG-TRAY-INST-1210",
+        "price": 380,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Rigid heavy-gauge stainless steel prevents deformation under heavy loads",
+      "Seamless flat bottom provides stable resting for instruments and glass vials",
+      "Radiused internal corners ensure zero debris trap during washing",
+      "Fully compatible with steam autoclave and chemical immersion"
+    ],
+    "ingredients": [
+      "Grade 304 Stainless Steel (SS 304)"
+    ],
+    "specifications": {
+      "Material": "AISI 304 Stainless Steel",
+      "Dimensions": "10\" x 8\" x 1.5\" (25cm x 20cm x 4cm)",
+      "Edges": "Smooth Rolled Safety Lip",
+      "Autoclave Capability": "Yes (Up to 134°C)",
+      "Usage": "Sterilization, instrument staging, therapy tool holding"
+    },
+    "rating": 4.9,
+    "reviewCount": 49,
+    "stock": 210,
+    "moq": 3,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-045",
+    "slug": "spoon-spatula",
+    "name": "Spoon Spatula",
+    "subtitle": "Double-Ended Stainless Steel Laboratory & Herbal Dispensing Spatula (8 Inch)",
+    "shortDescription": "Dual-ended stainless steel tool with concave measuring spoon and flat mixing spatula for powder sampling and paste preparation.",
+    "description": "The Spoon Spatula is a versatile clinical and laboratory instrument crafted from corrosion-resistant polished stainless steel. Featuring a deep concave spoon on one end for measuring churnas and dry granules, and a flat flexible spatula on the other for blending herbal lehyas and ointments.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Clinical Tools & Spatulas",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-INST-SPN01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL9dYK1CTzQquYdC.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL9dYK1CTzQquYdC.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL9dYK1CTzQquYdC.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 28,
+        "unit": "per piece / Pack of 10",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 49,
+            "unitPrice": 28,
+            "label": "Practitioner Tier (10-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 99,
+            "unitPrice": 24,
+            "label": "Pharmacy Tier (50-99 units)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 20,
+            "label": "Wholesale Bulk (100+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 65,
+        "salePrice": 50,
+        "currency": "INR",
+        "unit": "per spatula"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-spn-8in",
+        "name": "8 Inch Dual-End Spatula",
+        "sku": "YUG-INST-SPN-8",
+        "price": 45,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Dual-ended functionality: measuring spoon + flat scraper spatula",
+      "Mirror polished stainless steel ensures non-reactive contact with herbal botanicals",
+      "High chemical resistance against herbal decoctions, oils, and alcohol rubs",
+      "Easily sterilizable via autoclave or dry heat"
+    ],
+    "ingredients": [
+      "Medical Grade Stainless Steel"
+    ],
+    "specifications": {
+      "Length": "8 Inch (200 mm)",
+      "Material": "Stainless Steel (SS)",
+      "End 1": "Concave Measure Spoon (Approx. 2.5ml capacity)",
+      "End 2": "Flat Flexible Blade Spatula",
+      "Application": "Powder dispensing, churna sampling, paste mixing"
+    },
+    "rating": 4.8,
+    "reviewCount": 31,
+    "stock": 420,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-046",
+    "slug": "donain-enema-syringe-100ml",
+    "name": "Donain Enema Syringe 100ml",
+    "subtitle": "Calibrated Precision Piston Syringe for Matra & Anuvasana Basti (100ml)",
+    "shortDescription": "Specialized 100ml enema syringe with smooth calibrated barrel and leak-proof piston seal for controlled oil administration.",
+    "description": "The Donain Enema Syringe 100ml is engineered specifically for Ayurvedic clinical Panchkarma procedures, notably Matra Basti and Anuvasana Basti. Its calibrated 100ml cylinder allows precise dosage administration, while the smooth-action plunger and standard nozzle connector ensure secure coupling with rubber catheters.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Enema Apparatus & Syringes",
+    "brand": "Donain",
+    "sku": "YUG-ENM-DON100",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL6WKccctpgUS5Jb.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKza8SU35xcZ_aVV.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL6WKccctpgUS5Jb.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 65,
+        "unit": "per piece / Box of 10",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 65,
+            "label": "Clinic Tier (5-19 units)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 55,
+            "label": "Hospital Tier (20-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 48,
+            "label": "Wholesale Tier (50+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 120,
+        "salePrice": 95,
+        "currency": "INR",
+        "unit": "per syringe"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-enm-don-100",
+        "name": "Donain 100ml Syringe",
+        "sku": "YUG-ENM-DON100-STD",
+        "price": 95,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Clear volumetric graduation up to 100ml ensures accurate taila dosage",
+      "Smooth glide plunger minimizes hand fatigue during viscous oil administration",
+      "Firm catheter lock nozzle prevents leakage under delivery pressure",
+      "Resistant to high-viscosity medicated Ayurvedic oils and decoctions"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Brand": "Donain",
+      "Capacity": "100 ml",
+      "Barrel Material": "Pharma-Grade Polymer",
+      "Plunger Type": "Smooth Action Piston Seal",
+      "Compatibility": "Red Rubber Catheters (Size 8-12), Basti Nozzles"
+    },
+    "rating": 4.8,
+    "reviewCount": 44,
+    "stock": 280,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-047",
+    "slug": "naulakha-enema-syringe-100ml",
+    "name": "Naulakha Enema Syringe 100ml",
+    "subtitle": "Traditional Brass Piston Enema Syringe for Classical Basti Therapy (100ml)",
+    "shortDescription": "Heavy-duty nickel-plated brass 100ml enema syringe trusted by classical Ayurvedic practitioners for Matra and Kashaya Basti.",
+    "description": "The Naulakha Enema Syringe 100ml is a benchmark instrument in traditional Panchkarma clinical practice. Constructed with a heavy-duty chrome/nickel-plated brass piston barrel and precision ground seal, it provides dependable pressure displacement for administering herbal tailas, kashayas, and decoctions.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Enema Apparatus & Syringes",
+    "brand": "Naulakha",
+    "sku": "YUG-ENM-NAU100",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL6WKccctpgUS5Jb.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL-5mAyV-9-b_CrY.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL6WKccctpgUS5Jb.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 75,
+        "unit": "per piece / Boxed",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 75,
+            "label": "Clinic Tier (5-19 units)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 66,
+            "label": "Hospital Tier (20-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 58,
+            "label": "Wholesale Tier (50+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 140,
+        "salePrice": 110,
+        "currency": "INR",
+        "unit": "per syringe"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-enm-nau-100",
+        "name": "Naulakha 100ml Heavy-Duty Syringe",
+        "sku": "YUG-ENM-NAU100-STD",
+        "price": 110,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Heritage Naulakha brand reliability renowned across Ayurvedic hospitals",
+      "Heavy-duty nickel-plated brass cylinder ensures robust long-term durability",
+      "Positive displacement plunger accommodates thick herbal oil formulations",
+      "Easy disassembly for complete hot water and antiseptic cleansing"
+    ],
+    "ingredients": [
+      "Nickel-Plated Heavy Brass Cylinder & Piston Rod"
+    ],
+    "specifications": {
+      "Brand": "Naulakha",
+      "Capacity": "100 ml",
+      "Material": "Chrome / Nickel Plated Brass Piston",
+      "Discharge Nozzle": "Standard Tapered Basti Connection",
+      "Therapy Focus": "Matra Basti, Anuvasana Basti, Niruha Basti"
+    },
+    "rating": 4.9,
+    "reviewCount": 62,
+    "stock": 190,
+    "moq": 5,
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-048",
+    "slug": "steel-enema-syringe-100ml",
+    "name": "Steel Enema Syringe 100ml",
+    "subtitle": "100% Stainless Steel Autoclavable Clinical Enema Syringe (100ml)",
+    "shortDescription": "Full stainless steel 100ml enema syringe built for rigorous hospital autoclave sterilization and heavy clinical usage.",
+    "description": "The Steel Enema Syringe 100ml is engineered for high-volume Panchkarma hospitals and surgical clinics requiring frequent autoclave sterilization. Constructed entirely from medical-grade stainless steel with a smooth metal plunger and heat-resistant seal, it offers lifetime durability without deterioration from medicated tailas.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Enema Apparatus & Syringes",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-ENM-SS100",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKsUQXmuGycO75yf.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKsUQXmuGycO75yf.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKsUQXmuGycO75yf.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 125,
+        "unit": "per piece / Boxed",
+        "minimumOrderQuantity": 3,
+        "tiers": [
+          {
+            "minQty": 3,
+            "maxQty": 9,
+            "unitPrice": 125,
+            "label": "Clinic Tier (3-9 units)"
+          },
+          {
+            "minQty": 10,
+            "maxQty": 24,
+            "unitPrice": 110,
+            "label": "Hospital Tier (10-24 units)"
+          },
+          {
+            "minQty": 25,
+            "maxQty": null,
+            "unitPrice": 95,
+            "label": "Wholesale Tier (25+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 720,
+        "salePrice": 600,
+        "currency": "INR",
+        "unit": "per steel syringe"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-enm-ss-100",
+        "name": "100ml Stainless Steel Syringe",
+        "sku": "YUG-ENM-SS100-STD",
+        "price": 180,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "100% Medical-grade stainless steel body resists all herbal acid/alkali decoctions",
+      "Withstands repeated autoclave sterilization cycles at 134°C",
+      "Reinforced plunger grip provides firm control during high-viscosity oil injection",
+      "Smooth internal honing prevents piston sticking and oil residue buildup"
+    ],
+    "ingredients": [
+      "Medical Grade Stainless Steel (SS 304)"
+    ],
+    "specifications": {
+      "Capacity": "100 ml",
+      "Material": "100% Stainless Steel (SS)",
+      "Sterilization Method": "Autoclavable, Steam, Chemical",
+      "Seal Mechanism": "Medical Grade Silicone O-Ring Piston",
+      "Application": "Panchkarma Basti Therapy, Rectal Oil Flushing"
+    },
+    "rating": 4.9,
+    "reviewCount": 39,
+    "stock": 160,
+    "moq": 3,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-049",
+    "slug": "basti-nozzle-netra",
+    "name": "Basti Nozzle / Netra",
+    "subtitle": "Classical Anatomically Tapered Basti Netra for Taila & Kashaya Administration",
+    "shortDescription": "Traditional smooth conical Basti Netra crafted according to classical Ayurvedic dimensions for comfortable and controlled therapy.",
+    "description": "The Basti Nozzle / Netra is fabricated in accordance with classical Ayurvedic design specifications. Featuring an atraumatic rounded tip, smooth tapering cone, and secure ridged connector for tubing, it ensures comfortable insertion and uninterrupted delivery of warm medicated tailas and herbal kashayas.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Enema Apparatus & Syringes",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-APP-BN01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKy4Ao8MjYfPQ7tx.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL3f4v01nOH3BS-p.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKy4Ao8MjYfPQ7tx.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 20,
+        "unit": "per piece / Pack of 10",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 49,
+            "unitPrice": 20,
+            "label": "Clinic Tier (10-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 99,
+            "unitPrice": 16,
+            "label": "Hospital Tier (50-99 units)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 12,
+            "label": "Bulk Wholesale (100+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 50,
+        "salePrice": 35,
+        "currency": "INR",
+        "unit": "per nozzle"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-bn-adult",
+        "name": "Adult Basti Netra (Standard)",
+        "sku": "YUG-APP-BN-AD",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "var-bn-child",
+        "name": "Pediatric / Small Netra",
+        "sku": "YUG-APP-BN-PED",
+        "price": 35,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Classical Karnika (ridge) design facilitates secure depth control during administration",
+      "Smooth atraumatic tip ensures maximum patient comfort",
+      "Compatible with standard enema tubes, catheters, and syringes",
+      "Reusable, easily washed, and sterilizable"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Medical Grade Polymer / Polished Brass",
+      "Design": "Classical Ayurvedic Basti Netra Architecture",
+      "Tip Geometry": "Smooth Rounded Conical Nozzle",
+      "Connection": "Universal Catheter & Enema Tube Fitting",
+      "Therapy Uses": "Sneha Basti, Kashaya Basti, Matra Basti"
+    },
+    "rating": 4.9,
+    "reviewCount": 58,
+    "stock": 480,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-050",
+    "slug": "yoga-block",
+    "name": "Yoga Block",
+    "subtitle": "High-Density EVA Foam Yoga Brick with Beveled Edges (9x6x3 Inch)",
+    "shortDescription": "High-density non-slip EVA foam yoga block providing essential posture support, alignment, and stability for yoga and rehabilitation.",
+    "description": "The Yoga Block is designed to support practitioners of all levels in achieving optimal posture alignment, safe flexibility progression, and joint stability. Molded from high-density, eco-friendly EVA foam with beveled edges and a textured non-slip surface, it provides a stable foundation for standing poses, seated twists, and restorative therapy.",
+    "category": "Daily Wellness & Herbal Care",
+    "categorySlug": "wellness-essentials",
+    "subcategory": "Yoga & Wellness Accessories",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-YOG-BLK01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL7fKEPp-0LpB1Gm.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUotRfyBVNhDSWQcfIf.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL7fKEPp-0LpB1Gm.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 175,
+        "unit": "per block / Pack of 5",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 175,
+            "label": "Studio Tier (5-19 units)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 150,
+            "label": "Academy Tier (20-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 130,
+            "label": "Wholesale Tier (50+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 600,
+        "salePrice": 220,
+        "currency": "INR",
+        "unit": "per block"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-yb-purple",
+        "name": "Royal Purple (9x6x3 Inch)",
+        "sku": "YUG-YOG-BLK-PUR",
+        "price": 280,
+        "available": true
+      },
+      {
+        "id": "var-yb-blue",
+        "name": "Ocean Blue (9x6x3 Inch)",
+        "sku": "YUG-YOG-BLK-BLU",
+        "price": 280,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "High-density closed-cell EVA foam resists compression under full body weight",
+      "3D Beveled comfort edges ensure ergonomic grip and wrist support",
+      "Moisture-proof and non-slip surface maintains traction during intense sessions",
+      "Lightweight and portable for yoga studios, clinics, and home practice"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "High-Density Closed-Cell EVA Foam",
+      "Dimensions": "9\" x 6\" x 3\" (23 cm x 15 cm x 7.5 cm)",
+      "Weight": "Approx. 180 grams",
+      "Edges": "Beveled Perimeter Edges",
+      "Care": "Wipe clean with mild soap and damp cloth"
+    },
+    "rating": 4.8,
+    "reviewCount": 73,
+    "stock": 250,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-051",
+    "slug": "tissue-paper-roll",
+    "name": "Tissue Paper Roll",
+    "subtitle": "2-Ply High-Absorbency Virgin Pulp Clinic & Spa Paper Roll",
+    "shortDescription": "Ultra-absorbent 2-ply virgin paper roll designed for hygienic clinical wipe-downs, post-massage oil removal, and clinic maintenance.",
+    "description": "The Tissue Paper Roll is manufactured from 100% virgin wood pulp with a premium 2-ply quilted embossing. Offering high tensile strength when wet and rapid oil/fluid absorbency, it is tailored for Panchkarma massage table cleanup, clinical wiping, and maintaining spotless hygiene across therapy rooms.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hygiene & Paper Products",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-TPR01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL4WLZz1psX-IWvL.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL4WLZz1psX-IWvL.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL4WLZz1psX-IWvL.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 22,
+        "unit": "per roll / Pack of 12",
+        "minimumOrderQuantity": 12,
+        "tiers": [
+          {
+            "minQty": 12,
+            "maxQty": 47,
+            "unitPrice": 22,
+            "label": "Clinic Tier (12-47 rolls)"
+          },
+          {
+            "minQty": 48,
+            "maxQty": 119,
+            "unitPrice": 18,
+            "label": "Hospital Carton (48-119 rolls)"
+          },
+          {
+            "minQty": 120,
+            "maxQty": null,
+            "unitPrice": 15,
+            "label": "Bulk Wholesale (120+ rolls)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 45,
+        "salePrice": 25,
+        "currency": "INR",
+        "unit": "per roll"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-tpr-std",
+        "name": "Standard 2-Ply Clinic Roll",
+        "sku": "YUG-CLIN-TPR-STD",
+        "price": 35,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Quilted 2-ply embossing rapidly absorbs Ayurvedic massage oils and liquids",
+      "High wet-strength prevents tearing or lint residue on skin and surfaces",
+      "100% Virgin wood pulp, free of chlorine bleach and synthetic fragrances",
+      "Easy-tear perforations for economical sheet dispensing"
+    ],
+    "ingredients": [
+      "100% Virgin Wood Pulp Fiber"
+    ],
+    "specifications": {
+      "Ply": "2-Ply Extra Soft & Absorbent",
+      "Material": "Virgin Wood Pulp",
+      "Roll Height": "Standard 10 cm / 20 cm options",
+      "Perforation": "Precision perforated sheets",
+      "Usage": "Post-Abhyanga wiping, clinic table sanitizing, hand drying"
+    },
+    "rating": 4.7,
+    "reviewCount": 51,
+    "stock": 800,
+    "moq": 12,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-052",
+    "slug": "certified-3-layer-face-mask",
+    "name": "Certified 3 Layer Face Mask",
+    "subtitle": "Certified 3-Ply Surgical Protective Mask with Meltblown BFE ≥ 99% Filter",
+    "shortDescription": "Certified 3-layer surgical mask with middle meltblown filtration layer, adjustable nose wire, and soft elastic earloops (Pack of 50).",
+    "description": "The Certified 3 Layer Face Mask delivers high-efficiency particulate and bacterial filtration (BFE ≥ 99%). Engineered with an outer fluid-repellent non-woven layer, an electrostatically charged micro-fiber meltblown middle filter, and a soft hypoallergenic inner skin layer for day-long clinical protection.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Personal Protective Equipment",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-MSK-3L01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL1oD-2noxbnS1bm.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUonYaLXD08gdWyT0Bb.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL1oD-2noxbnS1bm.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 60,
+        "unit": "per box of 50 pcs",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 49,
+            "unitPrice": 60,
+            "label": "Clinic Tier (10-49 boxes)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 99,
+            "unitPrice": 50,
+            "label": "Hospital Carton (50-99 boxes)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 42,
+            "label": "Bulk Wholesale (100+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 2,
+        "salePrice": 1.50,
+        "currency": "INR",
+        "unit": "per box of 50"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-msk-3l-bx50",
+        "name": "Box of 50 Pcs (Certified 3-Layer)",
+        "sku": "YUG-MSK-3L-50",
+        "price": 99,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Certified 3-layer sandwich construction with high-grade meltblown filtration",
+      "Bacterial Filtration Efficiency (BFE) ≥ 99% against microscopic airborne particles",
+      "Ultrasonically welded flat elastic earloops prevent ear strain during extended wear",
+      "Pliable concealed nose bridge clip prevents eyewear fogging"
+    ],
+    "ingredients": [
+      "Outer Layer: Hydrophobic Spunbond Non-Woven",
+      "Middle Layer: Electret Meltblown Filter Media",
+      "Inner Layer: Hydrophilic Ultra-Soft Non-Woven"
+    ],
+    "specifications": {
+      "Filtration Rating": "BFE ≥ 99%, PFE ≥ 98%",
+      "Layer Count": "3 Layers (Spunbond + Meltblown + Spunbond)",
+      "Standard Compliance": "CE & ISO Certified Production",
+      "Pack Size": "Box of 50 Pieces",
+      "Color": "Medical Sky Blue"
+    },
+    "rating": 4.9,
+    "reviewCount": 110,
+    "stock": 1200,
+    "moq": 10,
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-053",
+    "slug": "premium-quality-n95-mask",
+    "name": "Premium Quality N95 Mask",
+    "subtitle": "5-Layer Electrostatically Charged Particulate Respirator (N95 Certified)",
+    "shortDescription": "High-filtration 5-layer N95 particulate respirator mask with 3D folding design and cushioned nose seal.",
+    "description": "The Premium Quality N95 Mask delivers superior respiratory defense against PM 2.5 particulates, airborne bacteria, viruses, and clinical aerosols. Designed with a 5-layer filtration system containing dual meltblown layers, it features a 3D ergonomic cup fold that maintains breathing space without collapsing.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Personal Protective Equipment",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-MSK-N95P",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKwKAAGNI2tsZQis.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKwKAAGNI2tsZQis.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKwKAAGNI2tsZQis.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 15,
+        "unit": "per piece / Box of 20",
+        "minimumOrderQuantity": 20,
+        "tiers": [
+          {
+            "minQty": 20,
+            "maxQty": 99,
+            "unitPrice": 15,
+            "label": "Clinic Tier (20-99 pcs)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": 299,
+            "unitPrice": 12,
+            "label": "Hospital Tier (100-299 pcs)"
+          },
+          {
+            "minQty": 300,
+            "maxQty": null,
+            "unitPrice": 9.5,
+            "label": "Wholesale Bulk (300+ pcs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 10,
+        "salePrice": 7,
+        "currency": "INR",
+        "unit": "per piece (Pack of 10: ₹220)"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-n95-single",
+        "name": "Single N95 Mask (Individually Sealed)",
+        "sku": "YUG-MSK-N95-SGL",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "var-n95-pk10",
+        "name": "Pack of 10 Masks",
+        "sku": "YUG-MSK-N95-10",
+        "price": 220,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "5-Layer high-density filtration blocks ≥95% of airborne non-oil particulates",
+      "Dual electrostatically charged meltblown filter layers for maximum capture",
+      "Soft cushioned aluminum nose clip ensures airtight facial contouring",
+      "Individually hygienically sealed packaging for sterile storage"
+    ],
+    "ingredients": [
+      "5-Ply Non-Woven / Hot Air Cotton / Dual Meltblown Polymer"
+    ],
+    "specifications": {
+      "Filtration Efficiency": "≥ 95% Filtration (0.3 Micron Tested)",
+      "Layer Count": "5 Layers",
+      "Design": "3D Foldable Cup Shape with Soft Nose Sponge",
+      "Certification": "N95 / FFP2 Standard",
+      "Packaging": "Individually Sealed Blister Polybags"
+    },
+    "rating": 4.9,
+    "reviewCount": 145,
+    "stock": 950,
+    "moq": 20,
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-054",
+    "slug": "disposable-towel",
+    "name": "Disposable Towel",
+    "subtitle": "50 GSM Spunlace Non-Woven Ultra-Absorbent Clinic Towel (40x80 cm)",
+    "shortDescription": "Soft, lint-free non-woven disposable towel with rapid oil and water absorption for Panchkarma therapy, spas, and hospital hygiene.",
+    "description": "The Disposable Towel is crafted from 50 GSM non-woven spunlace fabric featuring exceptional absorbent capillarity. Ideal for drying skin after Ayurvedic Abhyanga massage, Swedana steam therapy, salon treatments, and hospital patient care without lint shedding.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Disposables & Linen",
+    "brand": "Yugan",
+    "sku": "YUG-CLIN-DTWL01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL5q0amg_bmVkbYs.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUoqkcJvmo5PQGdCRvQ.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL5q0amg_bmVkbYs.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 9,
+        "unit": "per towel / Pack of 50",
+        "minimumOrderQuantity": 50,
+        "tiers": [
+          {
+            "minQty": 50,
+            "maxQty": 199,
+            "unitPrice": 9,
+            "label": "Clinic Tier (50-199 units)"
+          },
+          {
+            "minQty": 200,
+            "maxQty": 499,
+            "unitPrice": 7.5,
+            "label": "Spa Bulk Tier (200-499 units)"
+          },
+          {
+            "minQty": 500,
+            "maxQty": null,
+            "unitPrice": 6.2,
+            "label": "Wholesale Tier (500+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 20,
+        "salePrice": 18,
+        "currency": "INR",
+        "unit": "per piece (Pack of 10: ₹140)"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-dtwl-pk10",
+        "name": "Pack of 10 Disposable Towels (40x80cm)",
+        "sku": "YUG-CLIN-DTWL-10",
+        "price": 140,
+        "available": true
+      },
+      {
+        "id": "var-dtwl-pk50",
+        "name": "Pack of 50 Disposable Towels",
+        "sku": "YUG-CLIN-DTWL-50",
+        "price": 425,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Ultra-absorbent spunlace fabric absorbs up to 7x its weight in liquid and oils",
+      "100% Lint-free texture leaves no fibers on oiled skin or therapy tables",
+      "Hygienic single-use format eliminates laundry costs and cross-contamination risks",
+      "Soft and gentle on sensitive or freshly treated skin"
+    ],
+    "ingredients": [
+      "50 GSM Spunlace Viscose / Polyester Non-Woven Blend"
+    ],
+    "specifications": {
+      "Material": "50 GSM Spunlace Non-Woven",
+      "Dimensions": "40 cm x 80 cm (16\" x 32\")",
+      "Absorbency": "Rapid Oil & Water Wicking",
+      "Disposal": "Single-Use Eco-Friendly Disposable"
+    },
+    "rating": 4.8,
+    "reviewCount": 67,
+    "stock": 1500,
+    "moq": 50,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-055",
+    "slug": "disposable-panty",
+    "name": "Disposable Panty",
+    "subtitle": "Breathable Non-Woven Examination & Spa Panties (Pack of 10)",
+    "shortDescription": "Opaque, comfortable single-use non-woven disposable panties with elastic waistband for Abhyanga, spas, and clinical examinations.",
+    "description": "The Disposable Panty provides client modesty and clinical hygiene during Ayurvedic Abhyanga massage, body scrubs, Panchkarma treatments, and gynecological exams. Manufactured from breathable, opaque spunbond non-woven fabric with a stretchable elastic waistband that accommodates various body profiles comfortably.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Disposables & Linen",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-DPNT01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL2ipROWAO-tD94n.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL2ipROWAO-tD94n.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL2ipROWAO-tD94n.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 7,
+        "unit": "per piece / Pack of 50",
+        "minimumOrderQuantity": 50,
+        "tiers": [
+          {
+            "minQty": 50,
+            "maxQty": 199,
+            "unitPrice": 7,
+            "label": "Clinic Tier (50-199 units)"
+          },
+          {
+            "minQty": 200,
+            "maxQty": 499,
+            "unitPrice": 5.8,
+            "label": "Center Tier (200-499 units)"
+          },
+          {
+            "minQty": 500,
+            "maxQty": null,
+            "unitPrice": 4.8,
+            "label": "Wholesale Bulk (500+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 15,
+        "salePrice": 12,
+        "currency": "INR",
+        "unit": "per piece (Pack of 10: ₹110)"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-dpnt-pk10",
+        "name": "Pack of 10 Disposable Panties (Free Size)",
+        "sku": "YUG-CLIN-DPNT-10",
+        "price": 110,
+        "available": true
+      },
+      {
+        "id": "var-dpnt-pk50",
+        "name": "Pack of 50 Disposable Panties (Bulk Box)",
+        "sku": "YUG-CLIN-DPNT-50",
+        "price": 320,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Opaque dark non-woven fabric ensures complete client dignity and privacy",
+      "Soft elastic waistband stretches comfortably without digging into skin",
+      "Breathable, lightweight material allows therapeutic oils to be applied without restriction",
+      "Hygienically packed for single-client safety"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "35 GSM Spunbond Non-Woven Polypropylene",
+      "Size": "Free Size Universal Stretch Fit",
+      "Color": "Dark Blue / Charcoal Black",
+      "Packaging": "Pack of 10 / Box of 50",
+      "Application": "Panchkarma, Abhyanga, Spa, Clinical Exams"
+    },
+    "rating": 4.8,
+    "reviewCount": 59,
+    "stock": 1800,
+    "moq": 50,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-056",
+    "slug": "disposable-slipper",
+    "name": "Disposable Slipper",
+    "subtitle": "Anti-Skid EVA Sole Non-Woven Spa & Clinic Slippers",
+    "shortDescription": "Single-use hygienic slippers with anti-slip EVA base to protect clinic floors and maintain patient safety in therapy suites.",
+    "description": "The Disposable Slipper is designed for Ayurvedic treatment centers, spas, wellness retreats, and diagnostic clinics. Featuring an anti-skid 3mm textured EVA sole and a soft breathable non-woven upper, it prevents accidental slipping on oily or damp clinic floors while preventing outside dirt from entering clean treatment zones.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Disposables & Linen",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-DSLP01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL8U4FyIjhvob6Rm.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUouSXdrizQq8EEFxTw.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL8U4FyIjhvob6Rm.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 14,
+        "unit": "per pair / Pack of 25 pairs",
+        "minimumOrderQuantity": 25,
+        "tiers": [
+          {
+            "minQty": 25,
+            "maxQty": 99,
+            "unitPrice": 14,
+            "label": "Clinic Tier (25-99 pairs)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": 249,
+            "unitPrice": 12,
+            "label": "Center Tier (100-249 pairs)"
+          },
+          {
+            "minQty": 250,
+            "maxQty": null,
+            "unitPrice": 9.8,
+            "label": "Wholesale Bulk (250+ pairs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 25,
+        "salePrice": 18,
+        "currency": "INR",
+        "unit": "per pair (Pack of 5: ₹95)"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-dslp-pk5",
+        "name": "Pack of 5 Pairs",
+        "sku": "YUG-CLIN-DSLP-5",
+        "price": 95,
+        "available": true
+      },
+      {
+        "id": "var-dslp-pk25",
+        "name": "Pack of 25 Pairs (Clinic Box)",
+        "sku": "YUG-CLIN-DSLP-25",
+        "price": 325,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Textured 3mm EVA anti-slip base provides stable footing on smooth, oiled tiles",
+      "Soft breathable non-woven upper fits comfortably over bare feet",
+      "Universal size accommodates adult shoe sizes 5 to 11",
+      "Prevents tracking of massage oils and environmental soil across treatment rooms"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Sole Material": "3mm Anti-Skid Embossed EVA Sheet",
+      "Upper Material": "Breathable Non-Woven Fabric",
+      "Length": "28 cm (Free Size Universal)",
+      "Style": "Closed Toe / Open Toe Slip-on",
+      "Application": "Panchkarma suites, wet steam areas, hospital guest footwear"
+    },
+    "rating": 4.7,
+    "reviewCount": 46,
+    "stock": 600,
+    "moq": 25,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-057",
+    "slug": "disposable-shoe-cover",
+    "name": "Disposable Shoe Cover",
+    "subtitle": "Waterproof Embossed CPE & Non-Woven Elastic Shoe Covers (Pack of 100)",
+    "shortDescription": "Heavy-duty waterproof slip-on shoe covers with elasticated opening for operating rooms, cleanrooms, and therapy suites.",
+    "description": "The Disposable Shoe Cover is an essential barrier product for maintaining infection control standards in operating rooms, sterile labs, and clinic suites. Made from durable embossed CPE/polypropylene material with strong elastic stitching, it slips effortlessly over standard shoes to prevent dirt, fluids, and dust contamination.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Personal Protective Equipment",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-DSC01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKtsPh0hSVAwXbWd.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUoi0ewo4qXlLyViRl8.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKtsPh0hSVAwXbWd.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 65,
+        "unit": "per pack of 100 pcs (50 pairs)",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 49,
+            "unitPrice": 65,
+            "label": "Clinic Tier (10-49 packs)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 99,
+            "unitPrice": 55,
+            "label": "Hospital Tier (50-99 packs)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 45,
+            "label": "Wholesale Bulk (100+ packs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 10,
+        "salePrice": 2,
+        "currency": "INR",
+        "unit": "per pack of 100 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-dsc-100",
+        "name": "Pack of 100 Pcs (50 Pairs)",
+        "sku": "YUG-CLIN-DSC-100",
+        "price": 95,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Embossed anti-skid texture provides grip on smooth linoleum and tiled floors",
+      "Waterproof and fluid-resistant construction keeps footwear dry and clean",
+      "Heavy-duty elastic band around opening ensures snug, slip-free retention",
+      "Universal fit accommodates shoes and boots up to size 12"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Embossed Polypropylene / Waterproof CPE",
+      "Pack Quantity": "100 Pieces (50 Pairs)",
+      "Opening": "Double-Stitched Elastic Band",
+      "Color": "Medical Blue",
+      "Application": "OT cleanroom entry, laboratory, clinic infection control"
+    },
+    "rating": 4.8,
+    "reviewCount": 89,
+    "stock": 1400,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-058",
+    "slug": "disposable-surgeon-cap",
+    "name": "Disposable Surgeon Cap",
+    "subtitle": "Lightweight Spunbond Non-Woven Bouffant Surgeon Caps (Pack of 100)",
+    "shortDescription": "Breathable, lightweight non-woven bouffant surgeon cap with double elastic band for complete hair containment in clinical environments.",
+    "description": "The Disposable Surgeon Cap provides essential hair containment and hygienic protection across surgical suites, therapy centers, and clinical laboratories. Manufactured from breathable 14 GSM non-woven polypropylene with a soft double-stitched elastic perimeter, it ensures secure, irritation-free wear throughout lengthy procedures.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Personal Protective Equipment",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-DSCP01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKuJhBb7POnBuk79.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKuJhBb7POnBuk79.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKuJhBb7POnBuk79.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 60,
+        "unit": "per pack of 100 pcs",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 100,
+            "maxQty": 49,
+            "unitPrice": 60,
+            "label": "Clinic Tier (10-49 packs)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": 99,
+            "unitPrice": 50,
+            "label": "Hospital Tier (50-99 packs)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 40,
+            "label": "Wholesale Bulk (100+ packs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 2,
+        "salePrice": 1.80,
+        "currency": "INR",
+        "unit": "per pack of 100 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-dscp-100",
+        "name": "Pack of 100 Bouffant Caps (Blue)",
+        "sku": "YUG-CLIN-DSCP-BLU",
+        "price": 85,
+        "available": true
+      },
+      {
+        "id": "var-dscp-100-grn",
+        "name": "Pack of 100 Bouffant Caps (Green)",
+        "sku": "YUG-CLIN-DSCP-GRN",
+        "price": 85,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "14 GSM lightweight non-woven fabric allows heat dissipation for head comfort",
+      "Full 18\" / 21\" expandable circumference contains long or voluminous hair",
+      "Double-stitched elastic headband fits securely without pinching",
+      "Hypoallergenic, lint-free, and dust-repellent"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "14 GSM Spunbond Non-Woven Polypropylene",
+      "Circumference": "18 Inch / 21 Inch Expandable",
+      "Pack Count": "100 Pieces per Bag",
+      "Band": "Double-Stitched Elastic",
+      "Color": "Medical Blue / Surgical Green"
+    },
+    "rating": 4.8,
+    "reviewCount": 78,
+    "stock": 1600,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-059",
+    "slug": "disposable-white-coat",
+    "name": "Disposable White Coat",
+    "subtitle": "40 GSM Non-Woven Lab & Clinic Visitor Coat with Front Snap Buttons",
+    "shortDescription": "Breathable 40 GSM non-woven white protective lab coat featuring front snap closures and collar for clinical barrier safety.",
+    "description": "The Disposable White Coat is tailored for doctors, lab technicians, clinic visitors, and wellness practitioners. Engineered from 40 GSM breathable spunbond non-woven fabric, it features front snap button fasteners, a classic lapel collar, and long sleeves with soft elastic wrists to prevent fluid splatter and contamination.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Disposables & Linen",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-DWC01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL8t8XAVoDbePYHl.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL8t8XAVoDbePYHl.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL8t8XAVoDbePYHl.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 32,
+        "unit": "per coat / Pack of 15",
+        "minimumOrderQuantity": 15,
+        "tiers": [
+          {
+            "minQty": 15,
+            "maxQty": 49,
+            "unitPrice": 32,
+            "label": "Clinic Tier (15-49 coats)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 149,
+            "unitPrice": 27,
+            "label": "Hospital Tier (50-149 coats)"
+          },
+          {
+            "minQty": 150,
+            "maxQty": null,
+            "unitPrice": 22,
+            "label": "Wholesale Bulk (150+ coats)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 65,
+        "salePrice": 40,
+        "currency": "INR",
+        "unit": "per white coat"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-dwc-xl",
+        "name": "Free Size XL (White)",
+        "sku": "YUG-CLIN-DWC-XL",
+        "price": 48,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Durable 40 GSM spunbond fabric offers superior tear resistance and fluid barrier",
+      "Quick snap button closures allow fast donning and removal",
+      "Elastic wrist cuffs prevent sleeve interference during clinical work",
+      "Professional crisp white appearance for practitioner and visitor use"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "40 GSM Spunbond Non-Woven Fabric",
+      "Color": "Medical White",
+      "Closure": "Front Snap Stud Fasteners",
+      "Length": "Knee-Length Protective Cut",
+      "Size": "Universal Free Size (XL Fit)"
+    },
+    "rating": 4.8,
+    "reviewCount": 35,
+    "stock": 450,
+    "moq": 15,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-060",
+    "slug": "disposable-bra",
+    "name": "Disposable Bra",
+    "subtitle": "Opaque Non-Woven Spa & Abhyanga Disposable Brassiere (Pack of 10)",
+    "shortDescription": "Soft, single-use non-woven disposable bra with adjustable tie straps for privacy and hygiene during full-body Ayurvedic therapies.",
+    "description": "The Disposable Bra is designed for female patient modesty and clinical hygiene during whole-body Ayurvedic Abhyanga, Udwarthana body scrubs, and wellness spa therapies. Fabricated from dark, non-transparent spunbond polypropylene with elastic tie straps for an adaptable and secure fit.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Disposables & Linen",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-DBRA01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL9FgJfQuVRaFwHX.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL9FgJfQuVRaFwHX.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL9FgJfQuVRaFwHX.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 9,
+        "unit": "per piece / Pack of 50",
+        "minimumOrderQuantity": 50,
+        "tiers": [
+          {
+            "minQty": 50,
+            "maxQty": 199,
+            "unitPrice": 9,
+            "label": "Clinic Tier (50-199 units)"
+          },
+          {
+            "minQty": 200,
+            "maxQty": 499,
+            "unitPrice": 7.5,
+            "label": "Center Tier (200-499 units)"
+          },
+          {
+            "minQty": 500,
+            "maxQty": null,
+            "unitPrice": 6.2,
+            "label": "Wholesale Bulk (500+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 18,
+        "salePrice": 9,
+        "currency": "INR",
+        "unit": "per piece (Pack of 10: ₹140)"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-dbra-pk10",
+        "name": "Pack of 10 Disposable Bras (Free Size)",
+        "sku": "YUG-CLIN-DBRA-10",
+        "price": 140,
+        "available": true
+      },
+      {
+        "id": "var-dbra-pk50",
+        "name": "Pack of 50 Disposable Bras (Bulk Box)",
+        "sku": "YUG-CLIN-DBRA-50",
+        "price": 420,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Opaque dark non-woven fabric ensures complete privacy during therapy sessions",
+      "Adjustable tie-back straps fit all body contours with zero pressure marks",
+      "Hygienic single-use design prevents oil transfer and simplifies center sanitation",
+      "Soft skin contact with zero rough seams"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Non-Woven Polypropylene",
+      "Color": "Dark Blue / Charcoal Black",
+      "Fit": "Adjustable Tie-Back Straps (Free Size)",
+      "Pack Options": "Pack of 10 / Box of 50",
+      "Usage": "Panchkarma, Abhyanga, Body Scrub, Spa & Salon"
+    },
+    "rating": 4.8,
+    "reviewCount": 41,
+    "stock": 1100,
+    "moq": 50,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-061",
+    "slug": "royal-hot-water-bag",
+    "name": "Royal Hot Water Bag",
+    "subtitle": "Natural Vulcanized Rubber Hot Water Bottle with Brass Stopper (2.0L)",
+    "shortDescription": "Heavy-duty 2.0 Litre natural rubber hot water bottle with ribbed anti-scald surface and leak-proof brass threaded safety stopper.",
+    "description": "The Royal Hot Water Bag is a trusted therapeutic aid for localized heat therapy (Swedana), muscular relaxation, joint stiffness relief, and soothing menstrual cramps. Crafted from high-density natural vulcanized rubber with cross-ribbed outer walls that ensure gradual, comfortable heat diffusion and prevent skin scalding.",
+    "category": "Daily Wellness & Herbal Care",
+    "categorySlug": "wellness-essentials",
+    "subcategory": "Thermal Therapy & Pain Care",
+    "brand": "Royal",
+    "sku": "YUG-APP-RHW01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUoxalNKThAvwV2JNh3.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUoxalNKThAvwV2JNh3.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUoxalNKThAvwV2JNh3.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 145,
+        "unit": "per piece / Boxed",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 145,
+            "label": "Clinic Tier (5-19 units)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 128,
+            "label": "Hospital Tier (20-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 110,
+            "label": "Wholesale Tier (50+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 250,
+        "salePrice": 150,
+        "currency": "INR",
+        "unit": "per bottle"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-rhw-2l",
+        "name": "Royal 2.0 Litre Rubber Bag",
+        "sku": "YUG-APP-RHW-2L",
+        "price": 220,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Heavy-duty natural vulcanized rubber retains therapeutic warmth for up to 6 hours",
+      "Ribbed exterior prevents direct heat burns and provides gentle tactile grip",
+      "Machined brass threaded stopper guarantees a 100% leak-proof hermetic seal",
+      "Essential for post-Abhyanga Swedana, joint ache relief, and lower back soothing"
+    ],
+    "ingredients": [
+      "100% High-Grade Natural Vulcanized Rubber with Brass Bushing"
+    ],
+    "specifications": {
+      "Brand": "Royal",
+      "Capacity": "2.0 Litres",
+      "Material": "Natural Rubber with Brass Insert",
+      "Stopper": "Threaded Leak-Proof Safety Stopper",
+      "Surface Texture": "Dual-Sided Ribbed Anti-Scald Grid"
+    },
+    "rating": 4.9,
+    "reviewCount": 92,
+    "stock": 310,
+    "moq": 5,
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-062",
+    "slug": "measuring-jug",
+    "name": "Measuring Jug",
+    "subtitle": "Pharma-Grade Translucent Polypropylene Measuring Pitcher with Embossed Graduations (1000ml)",
+    "shortDescription": "Heavy-duty 1000ml calibrated polypropylene measuring jug with V-shaped pour spout for precise dispensing of tailas and decoctions.",
+    "description": "The Measuring Jug is a sturdy clinical dispensing pitcher moulded from high-clarity pharmaceutical polypropylene. Marked with permanent embossed milliliter graduations up to 1000ml (1 Litre), it features a non-drip pouring spout and an ergonomic handle, making it indispensable for measuring warm medicated oils, decoctions, and herbal formulations.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Clinical Tools & Spatulas",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-APP-MJ1000",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUp3njI4I2CGzpWNKp8.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUp3njI4I2CGzpWNKp8.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUp3njI4I2CGzpWNKp8.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 45,
+        "unit": "per jug / Pack of 5",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 45,
+            "label": "Clinic Tier (5-19 units)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 38,
+            "label": "Hospital Tier (20-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 32,
+            "label": "Wholesale Tier (50+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 50,
+        "salePrice": 25,
+        "currency": "INR",
+        "unit": "per jug"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-mj-1000",
+        "name": "1000ml (1 Litre) Measuring Jug",
+        "sku": "YUG-APP-MJ-1L",
+        "price": 75,
+        "available": true
+      },
+      {
+        "id": "var-mj-2000",
+        "name": "2000ml (2 Litre) Large Measuring Jug",
+        "sku": "YUG-APP-MJ-2L",
+        "price": 120,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Permanent embossed graduation marks in 50ml increments never fade or wash off",
+      "Precision V-notch pour spout ensures drip-free decanting into bottles or Shirodhara vessels",
+      "Sturdy reinforced handle provides stable one-handed pouring of warm liquids",
+      "Autoclavable and highly resistant to hot oils, alcohols, and herbal tannins"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Capacity": "1000 ml (1.0 Litre) / 2000 ml (2.0 Litre)",
+      "Material": "Pharma Grade Translucent Polypropylene (PP)",
+      "Graduation": "50 ml Embossed Calibrations",
+      "Chemical Resistance": "High resistance to oils, alcohol, and acids",
+      "Autoclavable": "Yes (Up to 121°C)"
+    },
+    "rating": 4.8,
+    "reviewCount": 53,
+    "stock": 380,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-063",
+    "slug": "sterile-acupuncture-needle",
+    "name": "Sterile Acupuncture Needle",
+    "subtitle": "Surgical Stainless Steel Single-Use Sterile Needles with Guide Tube (Box of 100)",
+    "shortDescription": "High-tensile surgical stainless steel acupuncture needles with guide tubes for painless insertion in acupuncture and Marma therapy.",
+    "description": "The Sterile Acupuncture Needle is manufactured under strict cleanroom conditions from Japanese-grade high-tensile surgical stainless steel. Featuring a micro-honed pine needle point and ultra-smooth silicone coating, each needle is individually blister packed with a plastic guide tube for seamless, virtually painless insertion during acupuncture, dry needling, and Siravedha marma therapies.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Acupuncture & Clinical Needles",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-ACU-NDL100",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKtSVDzCyMZZ0n1_.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKtSVDzCyMZZ0n1_.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKtSVDzCyMZZ0n1_.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 120,
+        "unit": "per box of 100 pcs",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 120,
+            "label": "Practitioner Tier (5-19 boxes)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 105,
+            "label": "Clinic Tier (20-49 boxes)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 88,
+            "label": "Wholesale Bulk (50+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 250,
+        "salePrice": 200,
+        "currency": "INR",
+        "unit": "per box of 100 needles"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-acu-025x25",
+        "name": "0.25mm x 25mm (1 Inch) Box 100",
+        "sku": "YUG-ACU-025-25",
+        "price": 190,
+        "available": true
+      },
+      {
+        "id": "var-acu-025x40",
+        "name": "0.25mm x 40mm (1.5 Inch) Box 100",
+        "sku": "YUG-ACU-025-40",
+        "price": 190,
+        "available": true
+      },
+      {
+        "id": "var-acu-030x50",
+        "name": "0.30mm x 50mm (2 Inch) Box 100",
+        "sku": "YUG-ACU-030-50",
+        "price": 210,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Micro-honed needle tip geometry ensures effortless, virtually painless penetration",
+      "Flexible surgical stainless steel shaft provides optimal tactile needle feedback",
+      "Individual blister pack with color-coded guide tube for sterile aseptic insertion",
+      "EO (Ethylene Oxide) gas sterilized with batch verification indicator"
+    ],
+    "ingredients": [
+      "Surgical Grade Stainless Steel (SS 304) Wire"
+    ],
+    "specifications": {
+      "Sterilization": "EO Gas Sterilized (Single-Use Only)",
+      "Packaging": "100 Needles per Box (Individually Blistered with Guide Tube)",
+      "Handle Type": "Traditional Silver/Copper Wound Spring Handle",
+      "Tip Finish": "Micro-Honed Needle Point",
+      "Applications": "Acupuncture, Dry Needling, Marma Stimulation"
+    },
+    "rating": 4.9,
+    "reviewCount": 85,
+    "stock": 420,
+    "moq": 5,
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-064",
+    "slug": "3-ply-face-mask",
+    "name": "3 Ply Face Mask",
+    "subtitle": "Daily Protective 3-Ply Non-Woven Mask with Soft Elastic Earloops (Box of 50)",
+    "shortDescription": "Economical 3-ply pleated face mask with ultrasonic earloop bonding and flexible nose wire for daily clinic and hospital hygiene.",
+    "description": "The 3 Ply Face Mask provides dependable everyday barrier protection against airborne particulates, environmental dust, droplets, and clinic aerosols. Featuring a 3-layer pleated design with ultrasonic-bonded earloops and a pliable plastic nose strip, it provides breathable, lightweight comfort during routine clinical consultations and hospital visits.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Personal Protective Equipment",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-MSK-3PLY",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL1oD-2noxbnS1bm.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUonYaLXD08gdWyT0Bb.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL1oD-2noxbnS1bm.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 45,
+        "unit": "per box of 50 pcs",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 49,
+            "unitPrice": 45,
+            "label": "Clinic Tier (10-49 boxes)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 99,
+            "unitPrice": 38,
+            "label": "Hospital Carton (50-99 boxes)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 30,
+            "label": "Bulk Wholesale (100+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 2,
+        "salePrice": 1.50,
+        "currency": "INR",
+        "unit": "per box of 50"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-3ply-bx50",
+        "name": "Box of 50 Pcs (Standard 3-Ply)",
+        "sku": "YUG-MSK-3PLY-50",
+        "price": 80,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Triple-layer spunbond non-woven pleated design for breathable protection",
+      "Ultrasonically sealed elastic earloops avoid pressure points on ears",
+      "Contoured flexible nose bridge strip ensures custom face seal",
+      "Economical bulk clinical solution for staff and outpatient visits"
+    ],
+    "ingredients": [
+      "Spunbond Non-Woven Polypropylene Fabric (3 Layers)"
+    ],
+    "specifications": {
+      "Construction": "3-Ply Pleated Non-Woven",
+      "Pack Size": "50 Pieces per Box",
+      "Earloop": "Soft Round Elastic",
+      "Color": "Standard Sky Blue",
+      "Usage": "Daily healthcare, general outpatient protection, dust barrier"
+    },
+    "rating": 4.7,
+    "reviewCount": 94,
+    "stock": 2200,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-065",
+    "slug": "baby-dry-sheet",
+    "name": "Baby Dry Sheet",
+    "subtitle": "Ultra-Soft Breathable Waterproof Microfleece Mat (Medium 70x100 cm)",
+    "shortDescription": "Skin-friendly waterproof and fast-drying microfleece protector mat for pediatric, geriatric, and clinic examination bedding.",
+    "description": "The Baby Dry Sheet is a premium dual-layer waterproof mattress and surface protector. Featuring a velvety soft, skin-friendly microfleece upper layer that rapidly absorbs fluids while remaining dry to the touch, and an underlying breathable Polyurethane (PU) waterproof membrane that protects mattresses from moisture and staining.",
+    "category": "Daily Wellness & Herbal Care",
+    "categorySlug": "wellness-essentials",
+    "subcategory": "Maternity & Pediatric Care",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-WEL-BDS01",
+    "images": [
+      "https://images.unsplash.com/photo-1512290900672-1f486431e784?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "thumbnail": "https://images.unsplash.com/photo-1512290900672-1f486431e784?auto=format&fit=crop&w=800&q=80",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 165,
+        "unit": "per piece / Pack of 5",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 165,
+            "label": "Retailer Tier (5-19 units)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 140,
+            "label": "Hospital Tier (20-49 units)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 118,
+            "label": "Wholesale Bulk (50+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 299,
+        "salePrice": 249,
+        "currency": "INR",
+        "unit": "per sheet"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-bds-m",
+        "name": "Medium Size (70 x 100 cm)",
+        "sku": "YUG-WEL-BDS-MED",
+        "price": 249,
+        "available": true
+      },
+      {
+        "id": "var-bds-l",
+        "name": "Large Size (100 x 140 cm)",
+        "sku": "YUG-WEL-BDS-LRG",
+        "price": 380,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Ultra-soft microfleece stays cozy and dry against sensitive baby or patient skin",
+      "100% Waterproof breathable PU membrane prevents mattress soaking",
+      "Dries up to 8x faster than traditional cotton towels and sheets",
+      "Re-washable over 70+ times without losing elasticity or waterproof seal"
+    ],
+    "ingredients": [
+      "Top: 100% Breathable Microfleece",
+      "Base: Waterproof Polyurethane (PU) Membrane"
+    ],
+    "specifications": {
+      "Sizes": "Medium (70cm x 100cm) / Large (100cm x 140cm)",
+      "Properties": "Waterproof, Stain-Proof, Hypoallergenic",
+      "Wash Care": "Machine / Hand Washable, Quick Air-Dry",
+      "Applications": "Pediatric cot liner, geriatric bedding, clinic examination couch"
+    },
+    "rating": 4.9,
+    "reviewCount": 76,
+    "stock": 320,
+    "moq": 5,
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-066",
+    "slug": "ppe-kit",
+    "name": "PPE Kit",
+    "subtitle": "SITRA Certified 70+ GSM Laminated Biological Barrier Protection Kit",
+    "shortDescription": "Complete medical PPE kit with 70+ GSM laminated coverall, attached hood & shoe covers, N95 mask, nitrile gloves, and face shield.",
+    "description": "The PPE Kit is an all-inclusive personal protective gear kit engineered for doctors, nurses, and decontamination staff facing biological fluid and infectious aerosol exposure. Fabricated from SITRA-certified 70+ GSM laminated non-woven fabric with heat-sealed taped seams, it offers complete head-to-toe impermeability.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Personal Protective Equipment",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-PPE01",
+    "images": [
+      "https://5.imimg.com/data5/SELLER/Default/2021/10/LB/YP/GN/26720789/5-34-500x500.JPG",
+      "https://5.imimg.com/data5/SELLER/Default/2021/10/LB/YP/GN/26720789/5-34-500x500.JPG"
+    ],
+    "thumbnail": "https://5.imimg.com/data5/SELLER/Default/2021/10/LB/YP/GN/26720789/5-34-500x500.JPG",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 150,
+        "unit": "per complete kit / Pack of 10",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 49,
+            "unitPrice": 150,
+            "label": "Clinic Tier (10-49 kits)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 199,
+            "unitPrice": 130,
+            "label": "Hospital Tier (50-199 kits)"
+          },
+          {
+            "minQty": 200,
+            "maxQty": null,
+            "unitPrice": 110,
+            "label": "Wholesale Bulk (200+ kits)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 150,
+        "salePrice": 60,
+        "currency": "INR",
+        "unit": "per complete kit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-ppe-std",
+        "name": "Standard SITRA Certified 70 GSM Kit",
+        "sku": "YUG-CLIN-PPE-70",
+        "price": 240,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Complete 70+ GSM laminated coverall suit with hood and integral shoe covers",
+      "Heat-sealed seam tape prevents fluid penetration through stitch holes",
+      "Includes N95 mask, pair of nitrile gloves, clear face shield, and biohazard disposal bag",
+      "SITRA tested for synthetic blood penetration resistance"
+    ],
+    "ingredients": [
+      "70+ GSM Non-Woven Polypropylene Laminated with Breathable Barrier Film"
+    ],
+    "specifications": {
+      "Fabric Weight": "70+ GSM Laminated Non-Woven",
+      "Inclusions": "1x Hooded Coverall Suit, 1x Pair Shoe Covers, 1x N95 Mask, 1x Pair Nitrile Gloves, 1x Face Shield, 1x Biohazard Bag",
+      "Certification": "SITRA / ISO Certified",
+      "Seam Type": "Heat-Sealed Taped Seams",
+      "Size": "Free Size Universal (XL)"
+    },
+    "rating": 4.9,
+    "reviewCount": 118,
+    "stock": 550,
+    "moq": 10,
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-067",
+    "slug": "gown",
+    "name": "Gown",
+    "subtitle": "Universal Non-Woven Clinical Isolation & Patient Procedure Gown",
+    "shortDescription": "Single-use 30 GSM fluid-resistant non-woven isolation gown with full back overlap and secure dual tie closures.",
+    "description": "The Gown is a universal single-use medical examination and isolation gown. Built from 30 GSM fluid-resistant spunbond polypropylene fabric, it offers full frontal coverage with overlap back ties and elasticated cuffs, safeguarding healthcare personnel and therapy patients from light fluid splatter and biological contact.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Disposables & Linen",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-GWN01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKqdo2E8ReH_mKHZ.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKqdo2E8ReH_mKHZ.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKqdo2E8ReH_mKHZ.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 42,
+        "unit": "per gown / Pack of 20",
+        "minimumOrderQuantity": 20,
+        "tiers": [
+          {
+            "minQty": 20,
+            "maxQty": 79,
+            "unitPrice": 42,
+            "label": "Clinic Tier (20-79 units)"
+          },
+          {
+            "minQty": 80,
+            "maxQty": 199,
+            "unitPrice": 35,
+            "label": "Hospital Tier (80-199 units)"
+          },
+          {
+            "minQty": 200,
+            "maxQty": null,
+            "unitPrice": 28,
+            "label": "Wholesale Bulk (200+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 85,
+        "salePrice": 50,
+        "currency": "INR",
+        "unit": "per gown"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-gwn-blue",
+        "name": "Standard Medical Blue (Free Size)",
+        "sku": "YUG-CLIN-GWN-BLU",
+        "price": 65,
+        "available": true
+      },
+      {
+        "id": "var-gwn-grn",
+        "name": "Surgical Green (Free Size)",
+        "sku": "YUG-CLIN-GWN-GRN",
+        "price": 65,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Breathable 30 GSM spunbond fabric protects clothing without causing heat buildup",
+      "Dual neck and waist tie cords provide personalized, secure closure",
+      "Soft elasticated cuffs keep sleeves locked under surgical examination gloves",
+      "Hygienic single-use gown eliminates cross-contamination risks"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "30 GSM Spunbond Non-Woven Polypropylene",
+      "Color": "Medical Blue / Surgical Green",
+      "Sleeve Style": "Long Sleeve with Elasticated Wrist",
+      "Ties": "Dual Neck & Waist Ties",
+      "Size": "Free Size Universal (Length: 115 cm)"
+    },
+    "rating": 4.8,
+    "reviewCount": 63,
+    "stock": 700,
+    "moq": 20,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-068",
+    "slug": "bedsheet",
+    "name": "Bedsheet",
+    "subtitle": "Medical-Grade Non-Woven Examination Couch Bedsheet (36x72 Inch)",
+    "shortDescription": "Hygienic single-use non-woven protective bedsheet for hospital beds, clinic examination tables, and Panchkarma droni benches.",
+    "description": "The Bedsheet is a standard single-use protective linen cover designed for clinic examination tables, Panchkarma therapy tables (Droni), and hospital beds. Sized at 36\" x 72\" (90cm x 180cm), its soft, non-linting non-woven material protects couches from oil saturation, bodily fluids, and environmental contamination.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Disposables & Linen",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-CLIN-BSH01",
+    "images": [
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvp40nDFLarvzNp.jpg",
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvp40nDFLarvzNp.jpg"
+    ],
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvp40nDFLarvzNp.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 20,
+        "unit": "per bedsheet / Pack of 25",
+        "minimumOrderQuantity": 25,
+        "tiers": [
+          {
+            "minQty": 25,
+            "maxQty": 99,
+            "unitPrice": 20,
+            "label": "Clinic Tier (25-99 sheets)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": 299,
+            "unitPrice": 16,
+            "label": "Hospital Tier (100-299 sheets)"
+          },
+          {
+            "minQty": 300,
+            "maxQty": null,
+            "unitPrice": 13,
+            "label": "Wholesale Bulk (300+ sheets)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 30,
+        "salePrice": 12,
+        "currency": "INR",
+        "unit": "per sheet (Pack of 10: ₹290)"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-bsh-white",
+        "name": "Standard White (36x72 Inch)",
+        "sku": "YUG-CLIN-BSH-WHT",
+        "price": 32,
+        "available": true
+      },
+      {
+        "id": "var-bsh-blue",
+        "name": "Medical Blue (36x72 Inch)",
+        "sku": "YUG-CLIN-BSH-BLU",
+        "price": 32,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Generous 36\" x 72\" dimensions cover standard examination and therapy tables completely",
+      "Soft skin feel prevents crinkling noises and patient discomfort",
+      "High tensile non-woven fabric resists tearing when patient moves or rolls",
+      "Single-use convenience eliminates laundry labor and guarantees clean linen per patient"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "25 GSM Spunbond Non-Woven Polypropylene",
+      "Dimensions": "36\" x 72\" (90 cm x 180 cm)",
+      "Color": "Clinical White / Sky Blue",
+      "Fold": "Individually folded for rapid bed changeovers",
+      "Application": "Examination couch cover, Panchkarma Droni liner, stretcher cover"
+    },
+    "rating": 4.8,
+    "reviewCount": 95,
+    "stock": 1500,
+    "moq": 25,
     "isFeatured": false,
     "isBestSeller": false,
     "isNewArrival": true,

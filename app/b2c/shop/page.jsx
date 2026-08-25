@@ -77,7 +77,7 @@ function B2CShopContent() {
       {/* Page Header */}
       <div className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold text-charcoal font-poppins">
-          Classical Ayurvedic Formulations & Panchkarma Catalog
+          Yugan Ayurved & Panchkarma Products
         </h1>
         <p className="text-xs sm:text-sm text-charcoal-muted mt-1 font-light">
           Browse authentic classical medicated oils, wildcrafted churnas, and traditional therapy apparatus.

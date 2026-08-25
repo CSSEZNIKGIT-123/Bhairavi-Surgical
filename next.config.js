@@ -23,6 +23,22 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'd1h96izmtdkx5o.cloudfront.net',
       },
+      {
+        protocol: 'https',
+        hostname: '5.imimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.imimg.com',
+      },
+      {
+        protocol: 'http',
+        hostname: '**.imimg.com',
+      },
+      {
+        protocol: 'http',
+        hostname: '5.imimg.com',
+      },
     ],
   },
 };
