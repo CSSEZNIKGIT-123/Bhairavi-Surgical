@@ -307,7 +307,7 @@ export default function Navbar({ mode = 'B2C' }) {
 
   return (
     <header
-      className={cn('sticky top-0 z-40 w-full transition-all duration-300 relative select-none', currentTheme.navBg)}
+      className={cn('sticky top-0 z-50 w-full transition-all duration-300 relative select-none', currentTheme.navBg)}
       onMouseLeave={handleNavLeave}
     >
       <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
@@ -360,7 +360,7 @@ export default function Navbar({ mode = 'B2C' }) {
           </Link>
 
           {/* ZONE 2 (CENTER): DESKTOP NAVIGATION LINKS (Flexible, Centered, Single Row) */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-2 shrink-0 flex-nowrap whitespace-nowrap">
+          <nav className="hidden lg:flex items-center gap-1.5 xl:gap-2.5 shrink-0 flex-nowrap whitespace-nowrap">
             {currentNav.map((link, idx) => {
               const hasDropdown = !!link.hasDropdown;
               const isOpen = activeDropdown === idx;
@@ -374,7 +374,7 @@ export default function Navbar({ mode = 'B2C' }) {
                   <Link
                     href={link.href}
                     className={cn(
-                      'px-2.5 py-2 text-xs xl:text-sm font-medium transition-all flex items-center gap-1 rounded-xl select-none whitespace-nowrap',
+                      'px-3 py-2 text-xs xl:text-sm font-medium transition-all flex items-center gap-1.5 rounded-xl select-none whitespace-nowrap',
                       pathname === link.href || isOpen
                         ? 'text-forest font-semibold bg-forest/5'
                         : 'text-charcoal hover:text-forest hover:bg-cream-100/70',
@@ -553,38 +553,42 @@ export default function Navbar({ mode = 'B2C' }) {
             onMouseLeave={handleNavLeave}
             className="absolute top-full left-0 right-0 w-full bg-white border-b border-cream-200 shadow-elevated z-50 overflow-hidden text-charcoal"
           >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-9">
               <div className="grid grid-cols-12 gap-8 items-start">
                 
                 {/* 3 Structured Link Columns (Span 8 cols) */}
-                <div className="col-span-8 grid grid-cols-3 gap-6">
+                <div className="col-span-8 grid grid-cols-3 gap-6 xl:gap-8">
                   {currentNav[activeDropdown].dropdown.columns.map((col, cIdx) => (
                     <div key={cIdx} className="space-y-3">
                       <span className={cn(
-                        'text-[10px] font-bold tracking-wider uppercase block pb-1 border-b',
-                        isSpecial ? 'text-gold-dark border-gold/20' : 'text-forest border-cream-200'
+                        'text-xs font-bold tracking-wider uppercase block pb-2 border-b',
+                        isSpecial ? 'text-gold-dark border-gold/30' : 'text-forest border-cream-200'
                       )}>
                         {col.title}
                       </span>
-                      <ul className="space-y-1">
+                      <ul className="space-y-1.5">
                         {col.items.map((item, iIdx) => (
                           <li key={iIdx}>
                             <Link
                               href={item.href}
                               onClick={() => setActiveDropdown(null)}
                               className={cn(
-                                'block p-2 rounded-xl transition-all group',
-                                isSpecial ? 'hover:bg-gold/10' : 'hover:bg-cream-50'
+                                'block p-3 rounded-xl transition-all group duration-150',
+                                isSpecial
+                                  ? 'hover:bg-gold/10'
+                                  : 'hover:bg-cream-100/80 hover:shadow-xs'
                               )}
                             >
                               <div className={cn(
-                                'text-xs font-bold font-poppins transition-colors leading-snug',
-                                isSpecial ? 'text-charcoal group-hover:text-gold-dark' : 'text-charcoal group-hover:text-forest'
+                                'text-sm font-semibold font-poppins transition-colors leading-snug',
+                                isSpecial
+                                  ? 'text-charcoal group-hover:text-gold-dark'
+                                  : 'text-charcoal group-hover:text-forest'
                               )}>
                                 {item.name}
                               </div>
                               {item.desc && (
-                                <p className="text-[11px] text-charcoal-muted leading-tight mt-0.5 line-clamp-1 font-light">
+                                <p className="text-xs text-charcoal-muted leading-relaxed mt-0.5 line-clamp-1 font-light">
                                   {item.desc}
                                 </p>
                               )}
@@ -599,7 +603,7 @@ export default function Navbar({ mode = 'B2C' }) {
                 {/* 1 Featured Rich Card (Span 4 cols) */}
                 {currentNav[activeDropdown].dropdown.featured && (
                   <div className="col-span-4 pl-6 border-l border-cream-200">
-                    <div className="rounded-2xl p-4 border border-cream-200 bg-[#FAF8F5] transition-all space-y-3 shadow-soft">
+                    <div className="rounded-2xl p-4 sm:p-5 border border-cream-200 bg-[#FAF8F5] transition-all space-y-3.5 shadow-soft">
                       <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden bg-cream-200">
                         <Image
                           src={currentNav[activeDropdown].dropdown.featured.image}
@@ -609,7 +613,7 @@ export default function Navbar({ mode = 'B2C' }) {
                         />
                         <div className="absolute top-2.5 left-2.5">
                           <span className={cn(
-                            'text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider shadow-sm',
+                            'text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm',
                             isSpecial ? 'bg-gold text-slate-950 font-bold' : 'bg-forest text-white'
                           )}>
                             {currentNav[activeDropdown].dropdown.featured.badge}
@@ -618,10 +622,10 @@ export default function Navbar({ mode = 'B2C' }) {
                       </div>
 
                       <div>
-                        <h4 className="text-xs font-bold font-poppins text-charcoal">
+                        <h4 className="text-sm sm:text-base font-bold font-poppins text-charcoal">
                           {currentNav[activeDropdown].dropdown.featured.title}
                         </h4>
-                        <p className="text-[11px] text-charcoal-muted line-clamp-2 mt-0.5 leading-relaxed font-light">
+                        <p className="text-xs text-charcoal-muted line-clamp-2 mt-1 leading-relaxed font-light">
                           {currentNav[activeDropdown].dropdown.featured.desc}
                         </p>
                       </div>
@@ -630,12 +634,12 @@ export default function Navbar({ mode = 'B2C' }) {
                         href={currentNav[activeDropdown].dropdown.featured.href}
                         onClick={() => setActiveDropdown(null)}
                         className={cn(
-                          'text-xs font-bold inline-flex items-center gap-1.5 group pt-1',
+                          'text-xs sm:text-sm font-bold inline-flex items-center gap-1.5 group pt-1',
                           isSpecial ? 'text-gold-dark hover:text-forest' : 'text-forest hover:text-forest-dark'
                         )}
                       >
                         <span>{currentNav[activeDropdown].dropdown.featured.cta}</span>
-                        <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </div>
                   </div>
@@ -668,14 +672,14 @@ export default function Navbar({ mode = 'B2C' }) {
                   setMobileMenuOpen(false);
                   setSearchOpen(true);
                 }}
-                className="w-full flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-cream-100 border border-cream-200 text-charcoal-muted text-xs font-medium"
+                className="w-full flex items-center gap-2.5 px-3.5 py-3 rounded-xl bg-cream-100 border border-cream-200 text-charcoal-muted text-xs font-medium"
               >
                 <Search className="w-4 h-4 text-forest shrink-0" />
                 <span className="truncate text-left">Search classical oils, churnas, tools...</span>
               </button>
 
               {/* Mobile Accordion Nav Links */}
-              <div className="space-y-1 divide-y divide-cream-200/50">
+              <div className="space-y-1 divide-y divide-cream-200/60">
                 {currentNav.map((link, idx) => {
                   const hasDropdown = !!link.hasDropdown;
                   const isExpanded = mobileAccordion === idx;
@@ -687,17 +691,17 @@ export default function Navbar({ mode = 'B2C' }) {
                           <button
                             type="button"
                             onClick={() => setMobileAccordion(isExpanded ? null : idx)}
-                            className="w-full flex items-center justify-between py-2 text-sm font-bold text-left text-charcoal"
+                            className="w-full flex items-center justify-between py-2.5 px-2 text-sm sm:text-base font-bold text-left text-charcoal rounded-xl hover:bg-cream-100/60 transition-colors min-h-[44px]"
                           >
                             <span>{link.label}</span>
-                            <ChevronDown className={cn('w-4 h-4 transition-transform text-charcoal', isExpanded && 'rotate-180')} />
+                            <ChevronDown className={cn('w-4 h-4 transition-transform text-charcoal', isExpanded && 'rotate-180 text-forest')} />
                           </button>
 
                           {isExpanded && (
-                            <div className="pl-3 py-2 space-y-3 text-xs border-l-2 border-forest/30 ml-2">
+                            <div className="pl-3 py-2 space-y-4 text-xs border-l-2 border-forest/30 ml-2">
                               {link.dropdown.columns.map((col, cIdx) => (
-                                <div key={cIdx} className="space-y-1">
-                                  <div className="text-[10px] font-bold text-forest uppercase tracking-wider">
+                                <div key={cIdx} className="space-y-1.5">
+                                  <div className="text-xs font-bold text-forest uppercase tracking-wider pt-1">
                                     {col.title}
                                   </div>
                                   {col.items.map((item, iIdx) => (
@@ -705,9 +709,14 @@ export default function Navbar({ mode = 'B2C' }) {
                                       key={iIdx}
                                       href={item.href}
                                       onClick={() => setMobileMenuOpen(false)}
-                                      className="block py-1 font-medium text-charcoal hover:text-forest"
+                                      className="block py-2 px-2.5 rounded-lg text-sm font-medium text-charcoal hover:text-forest hover:bg-cream-100/70 transition-colors min-h-[40px] flex flex-col justify-center"
                                     >
-                                      {item.name}
+                                      <span>{item.name}</span>
+                                      {item.desc && (
+                                        <span className="text-[11px] text-charcoal-muted font-light line-clamp-1">
+                                          {item.desc}
+                                        </span>
+                                      )}
                                     </Link>
                                   ))}
                                 </div>
@@ -719,7 +728,7 @@ export default function Navbar({ mode = 'B2C' }) {
                         <Link
                           href={link.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-2 text-sm font-bold text-charcoal hover:text-forest"
+                          className="block py-2.5 px-2 text-sm sm:text-base font-bold text-charcoal hover:text-forest rounded-xl hover:bg-cream-100/60 transition-colors min-h-[44px] flex items-center"
                         >
                           {link.label}
                         </Link>

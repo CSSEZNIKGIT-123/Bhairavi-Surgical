@@ -42,6 +42,23 @@ export default function SpecialCollectionsPage() {
           </p>
         </div>
 
+        {/* Dynamic Product Count Indicator */}
+        <div className="flex items-center justify-between px-1 border-b border-gold/20 pb-4">
+          <span className="text-sm font-semibold text-charcoal">
+            {loading ? (
+              'Loading masterworks...'
+            ) : (
+              <>
+                Showing <span className="text-gold-dark font-bold">{products.length}</span>{' '}
+                {products.length === 1 ? 'Sovereign Masterwork' : 'Sovereign Masterworks'}
+              </>
+            )}
+          </span>
+          <span className="text-xs text-charcoal-muted font-light hidden sm:inline">
+            Direct Atelier Commission & Custom Dimensions Available
+          </span>
+        </div>
+
         {loading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[...Array(2)].map((_, i) => (

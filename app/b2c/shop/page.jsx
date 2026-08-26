@@ -34,7 +34,7 @@ function B2CShopContent() {
       try {
         const [prodRes, catRes] = await Promise.all([
           fetch('/api/products?mode=b2c'),
-          fetch('/api/categories'),
+          fetch('/api/categories?mode=b2c'),
         ]);
         const prodData = await prodRes.json();
         const catData = await catRes.json();
@@ -66,11 +66,37 @@ function B2CShopContent() {
   });
 
   const sortedProducts = [...filteredProducts].sort((a, b) => {
-    if (sortBy === 'price-low') return (a.salePrice || a.retailPrice) - (b.salePrice || b.retailPrice);
-    if (sortBy === 'price-high') return (b.salePrice || b.retailPrice) - (a.salePrice || a.retailPrice);
-    if (sortBy === 'rating') return (b.rating || 5) - (a.rating || 5);
-    return 0;
+    if (sortBy === 'price-low') {
+      const priceA = a.salePrice || a.retailPrice || 0;
+      const priceB = b.salePrice || b.retailPrice || 0;
+      return priceA - priceB;
+    }
+    if (sortBy === 'price-high') {
+      const priceA = a.salePrice || a.retailPrice || 0;
+      const priceB = b.salePrice || b.retailPrice || 0;
+      return priceB - priceA;
+    }
+    if (sortBy === 'rating') {
+      return (b.rating || 5) - (a.rating || 5);
+    }
+    if (sortBy === 'name-asc') {
+      const nameA = a.name || a.title || '';
+      const nameB = b.name || b.title || '';
+      return nameA.localeCompare(nameB);
+    }
+    if (sortBy === 'name-desc') {
+      const nameA = a.name || a.title || '';
+      const nameB = b.name || b.title || '';
+      return nameB.localeCompare(nameA);
+    }
+    if (sortBy === 'bestseller') {
+      return (b.isBestSeller ? 1 : 0) - (a.isBestSeller ? 1 : 0);
+    }
+    // Default 'featured'
+    return (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0);
   });
+
+  const activeCategoryObj = categories.find((c) => c.slug === selectedCategory);
 
   return (
     <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
@@ -85,7 +111,7 @@ function B2CShopContent() {
       </div>
 
       {/* Filter & Search Bar */}
-      <div className="bg-white p-4 rounded-2xl border border-cream-300 shadow-soft mb-8 grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
+      <div className="bg-white p-4 rounded-2xl border border-cream-300 shadow-soft mb-6 grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
         <div className="sm:col-span-5">
           <Input
             placeholder="Search classical oils, churnas, Kansa tools, SKU..."
@@ -110,12 +136,70 @@ function B2CShopContent() {
             onChange={(e) => setSortBy(e.target.value)}
             options={[
               { value: 'featured', label: 'Sort by: Featured' },
+              { value: 'bestseller', label: 'Best Selling' },
               { value: 'price-low', label: 'Price: Low to High' },
               { value: 'price-high', label: 'Price: High to Low' },
               { value: 'rating', label: 'Highest Rated' },
+              { value: 'name-asc', label: 'Alphabetical: A to Z' },
+              { value: 'name-desc', label: 'Alphabetical: Z to A' },
             ]}
           />
         </div>
+      </div>
+
+      {/* Dynamic Product Count & Active Filters Bar */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 px-1">
+        <div className="flex items-center gap-2.5 flex-wrap">
+          <span className="text-sm font-semibold text-charcoal">
+            {loading ? (
+              'Loading formulations...'
+            ) : (
+              <>
+                Showing <span className="text-forest font-bold">{sortedProducts.length}</span>{' '}
+                {sortedProducts.length === 1 ? 'Product' : 'Products'}
+              </>
+            )}
+          </span>
+          {selectedCategory && (
+            <span className="inline-flex items-center gap-1.5 text-xs bg-forest/10 text-forest px-3 py-1 rounded-full font-medium border border-forest/20">
+              <span>Category: {activeCategoryObj?.name || selectedCategory}</span>
+              <button
+                type="button"
+                onClick={() => setSelectedCategory('')}
+                className="hover:text-terracotta ml-0.5 font-bold text-sm leading-none"
+                aria-label="Remove category filter"
+              >
+                ×
+              </button>
+            </span>
+          )}
+          {search && (
+            <span className="inline-flex items-center gap-1.5 text-xs bg-cream-200 text-charcoal px-3 py-1 rounded-full font-medium border border-cream-300">
+              <span>Search: "{search}"</span>
+              <button
+                type="button"
+                onClick={() => setSearch('')}
+                className="hover:text-terracotta ml-0.5 font-bold text-sm leading-none"
+                aria-label="Remove search filter"
+              >
+                ×
+              </button>
+            </span>
+          )}
+        </div>
+
+        {(selectedCategory || search) && (
+          <button
+            type="button"
+            onClick={() => {
+              setSearch('');
+              setSelectedCategory('');
+            }}
+            className="text-xs font-bold text-forest hover:text-terracotta hover:underline self-start sm:self-auto transition-colors"
+          >
+            Reset All Filters
+          </button>
+        )}
       </div>
 
       {/* Product Grid */}
@@ -126,7 +210,7 @@ function B2CShopContent() {
           ))}
         </div>
       ) : sortedProducts.length === 0 ? (
-        <div className="py-20 text-center space-y-3 bg-white rounded-3xl border border-cream-200">
+        <div className="py-20 text-center space-y-3 bg-white rounded-3xl border border-cream-200 shadow-soft">
           <h3 className="text-lg font-bold text-charcoal">No formulations match your filter</h3>
           <p className="text-xs text-charcoal-muted max-w-sm mx-auto font-light">
             Try resetting your search query or selecting a different category.
@@ -136,7 +220,7 @@ function B2CShopContent() {
               setSearch('');
               setSelectedCategory('');
             }}
-            className="text-xs font-bold text-forest underline"
+            className="text-xs font-bold text-forest hover:text-forest-dark underline pt-1"
           >
             Reset All Filters
           </button>

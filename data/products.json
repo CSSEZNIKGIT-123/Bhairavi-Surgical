@@ -2909,7 +2909,7 @@
       "Finish": "Hand-buffed traditional mirror gloss",
       "Maintenance": "Clean with lemon juice/tamarind and dry thoroughly"
     },
-    "rating": 5.0,
+    "rating": 5,
     "reviewCount": 54,
     "stock": 120,
     "moq": 3,
@@ -4008,7 +4008,7 @@
       "b2c": {
         "enabled": true,
         "price": 2,
-        "salePrice": 1.50,
+        "salePrice": 1.5,
         "currency": "INR",
         "unit": "per box of 50"
       },
@@ -4631,7 +4631,7 @@
       "b2c": {
         "enabled": true,
         "price": 2,
-        "salePrice": 1.80,
+        "salePrice": 1.8,
         "currency": "INR",
         "unit": "per pack of 100 pcs"
       },
@@ -5258,7 +5258,7 @@
       "b2c": {
         "enabled": true,
         "price": 2,
-        "salePrice": 1.50,
+        "salePrice": 1.5,
         "currency": "INR",
         "unit": "per box of 50"
       },
@@ -5714,6 +5714,649 @@
     "reviewCount": 95,
     "stock": 1500,
     "moq": 25,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-070",
+    "slug": "orange-nitrile-hand-gloves",
+    "name": "Orange Nitrile Hand Gloves",
+    "subtitle": "Heavy-Duty Diamond Grip Nitrile Gloves",
+    "shortDescription": "Heavy-duty orange nitrile examination and industrial gloves featuring raised diamond texture grip for enhanced tactile sensitivity and chemical resistance.",
+    "description": "Orange Nitrile Hand Gloves supplied by Bhairavi Surgicals & Distributors. Manufactured from premium synthetic nitrile compound with raised diamond texture for wet and oily grip applications. 100% powder-free and latex-free to prevent allergic reactions.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-GLV-NIT-ORG",
+    "images": [
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+    ],
+    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 220,
+        "unit": "per box (100 pcs)",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 220,
+            "label": "Clinic Tier (5-19 boxes)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 200,
+            "label": "Hospital Tier (20-49 boxes)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 180,
+            "label": "Wholesale Bulk (50+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 1500,
+        "salePrice": "220 + GST",
+        "currency": "INR",
+        "unit": "per box of 100 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-org-nit-m",
+        "name": "Medium",
+        "sku": "YUG-GLV-NIT-ORG-M",
+        "price": 380,
+        "available": true
+      },
+      {
+        "id": "var-org-nit-l",
+        "name": "Large",
+        "sku": "YUG-GLV-NIT-ORG-L",
+        "price": 380,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Raised diamond texture ensures superior grip in wet, oily, and clinical environments",
+      "Thicker heavy-duty construction resists punctures, snags, and chemical breakdown",
+      "Latex-free and powder-free formulation eliminates Type-I latex allergies",
+      "High visibility orange color enhances safety monitoring in clinical and laboratory settings"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "100% Synthetic Nitrile Polymer",
+      "Texture": "Full Hand Diamond Raised Texture Grip",
+      "Color": "High-Visibility Orange",
+      "Available Sizes": "Medium, Large",
+      "Packaging": "Box of 100 Gloves (50 Pairs)",
+      "Compliance": "Medical & Clinical QA Standards, Powder-Free"
+    },
+    "rating": 4.9,
+    "reviewCount": 38,
+    "stock": 500,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-071",
+    "slug": "vinyl-hand-gloves",
+    "name": "Vinyl Hand Gloves",
+    "subtitle": "Clear Powder-Free Vinyl Examination Gloves",
+    "shortDescription": "Clear disposable PVC vinyl examination hand gloves offering cost-effective barrier protection for clinical diagnostics, patient care, and laboratory procedures.",
+    "description": "Clear Vinyl Hand Gloves supplied by Bhairavi Surgicals & Distributors. Formulated from premium polyvinyl chloride (PVC) resin, these gloves provide a soft, comfortable fit with zero natural rubber latex proteins. Ideal for short-duration clinical tasks, non-invasive examinations, and food service applications.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-GLV-VIN-CLR",
+    "images": [
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+    ],
+    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 150,
+        "unit": "per box (100 pcs)",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 29,
+            "unitPrice": 150,
+            "label": "Standard Tier (10-29 boxes)"
+          },
+          {
+            "minQty": 30,
+            "maxQty": 99,
+            "unitPrice": 135,
+            "label": "Clinic Bulk (30-99 boxes)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 120,
+            "label": "Wholesale Bulk (100+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 800,
+        "salePrice": "150 + GST",
+        "currency": "INR",
+        "unit": "per box of 100 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-vin-clr-s",
+        "name": "Small",
+        "sku": "YUG-GLV-VIN-CLR-S",
+        "price": 240,
+        "available": true
+      },
+      {
+        "id": "var-vin-clr-m",
+        "name": "Medium",
+        "sku": "YUG-GLV-VIN-CLR-M",
+        "price": 240,
+        "available": true
+      },
+      {
+        "id": "var-vin-clr-xl",
+        "name": "XL",
+        "sku": "YUG-GLV-VIN-CLR-XL",
+        "price": 240,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "100% latex-free vinyl prevents natural rubber protein allergies",
+      "Smooth finish facilitates rapid donning and doffing during high-turnover clinical procedures",
+      "Cost-effective alternative for general hospital examination and non-sterile nursing tasks",
+      "Beaded cuff design enhances strength and prevents liquid roll-down"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Polyvinyl Chloride (PVC) Plastisol",
+      "Color": "Transparent / Clear",
+      "Available Sizes": "Small, Medium, XL",
+      "Packaging": "Box of 100 Gloves (50 Pairs)",
+      "Finish": "Smooth Powder-Free Surface",
+      "Compliance": "Hospital Grade Quality Standard"
+    },
+    "rating": 4.7,
+    "reviewCount": 22,
+    "stock": 800,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-072",
+    "slug": "vinyl-hand-gloves-blue",
+    "name": "Vinyl Hand Gloves (Blue)",
+    "subtitle": "Blue Tinted Examination Vinyl Gloves",
+    "shortDescription": "Blue-tinted disposable vinyl examination gloves engineered for high visibility, hygienic food handling, and healthcare diagnostic procedures.",
+    "description": "Blue Vinyl Hand Gloves supplied by Bhairavi Surgicals & Distributors. Crafted from medical-grade PVC material with a distinctive sky-blue tint for instant contrast and visual breach identification in hospital and cleanroom environments. Completely latex-free and powder-free.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-GLV-VIN-BLU",
+    "images": [
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+    ],
+    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 150,
+        "unit": "per box (100 pcs)",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 29,
+            "unitPrice": 150,
+            "label": "Standard Tier (10-29 boxes)"
+          },
+          {
+            "minQty": 30,
+            "maxQty": 99,
+            "unitPrice": 135,
+            "label": "Clinic Bulk (30-99 boxes)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 120,
+            "label": "Wholesale Bulk (100+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 800,
+        "salePrice": "150 + GST",
+        "currency": "INR",
+        "unit": "per box of 100 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-vin-blu-s",
+        "name": "Small",
+        "sku": "YUG-GLV-VIN-BLU-S",
+        "price": 240,
+        "available": true
+      },
+      {
+        "id": "var-vin-blu-l",
+        "name": "Large",
+        "sku": "YUG-GLV-VIN-BLU-L",
+        "price": 240,
+        "available": true
+      },
+      {
+        "id": "var-vin-blu-xl",
+        "name": "XL",
+        "sku": "YUG-GLV-VIN-BLU-XL",
+        "price": 240,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "High-contrast medical blue color assists in visual contamination detection",
+      "Latex-protein free composition eliminates Type-I allergic sensitivity",
+      "Durable beaded cuff provides tear resistance during clinical application",
+      "Ambidextrous design fits either hand for convenient workflow"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Synthetic PVC Vinyl Compound",
+      "Color": "Medical Blue Tinted",
+      "Available Sizes": "Small, Large, XL",
+      "Packaging": "Box of 100 Gloves (50 Pairs)",
+      "Quality Standard": "ISO & Hospital Hygiene Compliance"
+    },
+    "rating": 4.7,
+    "reviewCount": 19,
+    "stock": 750,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-073",
+    "slug": "honeywell-latex-gloves",
+    "name": "Honeywell Latex Gloves",
+    "subtitle": "Honeywell DexPure Premium Latex Examination Gloves",
+    "shortDescription": "Honeywell DexPure premium quality medical latex examination gloves providing exceptional tactile elasticity, comfort, and barrier protection.",
+    "description": "Honeywell Latex Gloves supplied by Bhairavi Surgicals & Distributors. Manufactured under stringent international Honeywell DexPure healthcare standards, these natural rubber latex gloves deliver superior tensile strength, ergonomic fit, and reliable barrier defense for surgical and diagnostic clinics.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Honeywell",
+    "sku": "HON-GLV-LTX-DP",
+    "images": [
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+    ],
+    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 250,
+        "unit": "per box (100 pcs)",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 250,
+            "label": "Clinic Tier (5-19 boxes)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 230,
+            "label": "Hospital Tier (20-49 boxes)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 210,
+            "label": "Institutional Tier (50+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 1500,
+        "salePrice": "220 + GST",
+        "currency": "INR",
+        "unit": "per box of 100 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-hon-ltx-m",
+        "name": "Medium",
+        "sku": "HON-GLV-LTX-DP-M",
+        "price": 399,
+        "available": true
+      },
+      {
+        "id": "var-hon-ltx-l",
+        "name": "Large",
+        "sku": "HON-GLV-LTX-DP-L",
+        "price": 399,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Official Honeywell DexPure brand quality assurance and medical compliance",
+      "Superior natural elasticity reduces hand fatigue during extended surgical procedures",
+      "Micro-textured fingertips ensure secure instrument grip and precision control",
+      "Low protein content minimizes allergic potential while preserving tensile strength"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Brand": "Honeywell (DexPure Series)",
+      "Material": "High-Grade Natural Rubber Latex",
+      "Color": "Natural Off-White / Cream",
+      "Available Sizes": "Medium, Large",
+      "Packaging": "Box of 100 Gloves (50 Pairs)",
+      "Quality Standard": "EN 455 / ASTM D3578 Medical Grade"
+    },
+    "rating": 4.9,
+    "reviewCount": 46,
+    "stock": 600,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-074",
+    "slug": "honeywell-nitrile-gloves",
+    "name": "Honeywell Nitrile Gloves",
+    "subtitle": "Honeywell DexPure Powder-Free Nitrile Gloves",
+    "shortDescription": "Honeywell DexPure medical nitrile examination gloves offering premium chemical resistance, puncture protection, and hypoallergenic comfort.",
+    "description": "Honeywell Nitrile Gloves supplied by Bhairavi Surgicals & Distributors. Manufactured to Honeywell DexPure global industrial and medical specifications, these blue nitrile gloves offer maximum barrier defense against pathogens and therapeutic chemicals with zero latex content.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Honeywell",
+    "sku": "HON-GLV-NIT-DP",
+    "images": [
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+    ],
+    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 250,
+        "unit": "per box (100 pcs)",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 250,
+            "label": "Clinic Tier (5-19 boxes)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 230,
+            "label": "Hospital Tier (20-49 boxes)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 210,
+            "label": "Institutional Tier (50+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 1500,
+        "salePrice": "220 + GST",
+        "currency": "INR",
+        "unit": "per box of 100 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-hon-nit-m",
+        "name": "Medium",
+        "sku": "HON-GLV-NIT-DP-M",
+        "price": 399,
+        "available": true
+      },
+      {
+        "id": "var-hon-nit-l",
+        "name": "Large",
+        "sku": "HON-GLV-NIT-DP-L",
+        "price": 399,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Honeywell DexPure international standard durability and chemical resistance",
+      "100% powder-free synthetic nitrile prevents dermatitis and respiratory irritation",
+      "Textured fingers ensure slip-free handling of surgical instruments and vials",
+      "High puncture and abrasion resistance compared to standard vinyl or latex"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Manufacturer / Brand": "Honeywell (DexPure Series)",
+      "Material": "Acrylonitrile Butadiene (Nitrile)",
+      "Color": "Medical Blue",
+      "Available Sizes": "Medium, Large",
+      "Packaging": "Box of 100 Gloves (50 Pairs)",
+      "Quality Standard": "EN 374 / EN 455 / ASTM D6319"
+    },
+    "rating": 4.9,
+    "reviewCount": 52,
+    "stock": 650,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-075",
+    "slug": "dual-colour-nitrile-gloves",
+    "name": "Dual Colour Nitrile Gloves",
+    "subtitle": "Two-Tone Double-Layer Breach Detection Nitrile Gloves",
+    "shortDescription": "Two-tone dual colour (white exterior / blue interior) nitrile gloves designed for rapid visual breach and puncture detection in sterile clinical and laboratory protocols.",
+    "description": "Dual Colour Nitrile Gloves supplied by Bhairavi Surgicals & Distributors. Constructed with an advanced double-dipping manufacturing process featuring a white outer layer and blue interior lining. Any micro-puncture or chemical breach immediately exposes the contrasting underlayer for instantaneous safety identification.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-GLV-NIT-DC",
+    "images": [
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+    ],
+    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 250,
+        "unit": "per box (100 pcs)",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 250,
+            "label": "Clinic Tier (5-19 boxes)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 225,
+            "label": "Hospital Tier (20-49 boxes)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 205,
+            "label": "Institutional Tier (50+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 1200,
+        "salePrice": 220,
+        "currency": "INR",
+        "unit": "per box of 100 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-dc-nit-m",
+        "name": "Medium",
+        "sku": "YUG-GLV-NIT-DC-M",
+        "price": 360,
+        "available": true
+      },
+      {
+        "id": "var-dc-nit-l",
+        "name": "Large",
+        "sku": "YUG-GLV-NIT-DC-L",
+        "price": 360,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Two-tone dual layer design provides immediate visual indicator upon glove tear or breach",
+      "Enhanced barrier thickness protects against hazardous chemicals and pathogens",
+      "Soft stretch synthetic nitrile conforms ergonomically to hands for maximum dexterity",
+      "Powder-free and 100% latex-free construction"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Dual-Layer Synthetic Nitrile Compound",
+      "Color": "White Outer / Blue Inner (Dual Tone)",
+      "Available Sizes": "Medium, Large",
+      "Packaging": "Box of 100 Gloves (50 Pairs)",
+      "Technology": "Visual Breach Detection Double-Dip Coating",
+      "Compliance": "Hospital & Cleanroom Safety Standards"
+    },
+    "rating": 4.9,
+    "reviewCount": 27,
+    "stock": 500,
+    "moq": 5,
     "isFeatured": false,
     "isBestSeller": false,
     "isNewArrival": true,
