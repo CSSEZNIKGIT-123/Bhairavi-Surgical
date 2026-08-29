@@ -12,10 +12,9 @@
     "brand": "Yugan Panchkarma Essentials",
     "sku": "YUG-CLIN-001",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NaeoEmw6_3MgMN7bXiT.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NaeoEnX39rBGDrmAqba.jpg"
+      "/images/HanesCottonGown.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NaeoEmw6_3MgMN7bXiT.jpg",
+    "thumbnail": "/images/HanesCottonGown.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -269,7 +268,7 @@
   {
     "id": "prod-yug-004",
     "slug": "plastic-hand-gloves",
-    "name": "Plastic Hand Gloves",
+    "name": "Plastic Hand Gloves (Pack of 100pc)",
     "subtitle": "Pack of 100pc",
     "shortDescription": "Pack of 100pc",
     "description": "Pack of 100pc",
@@ -279,10 +278,9 @@
     "brand": "Yugan Panchkarma Essentials",
     "sku": "YUG-CLIN-004",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvIM3FeuDjZm4t5.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUohWNvkmD8oOpIuh6.jpg"
+      "/images/PlasticHandGloves.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvIM3FeuDjZm4t5.jpg",
+    "thumbnail": "/images/PlasticHandGloves.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -443,10 +441,10 @@
   },
   {
     "id": "prod-yug-006",
-    "slug": "cottan-roll-500gm",
-    "name": "Cottan Roll 500Gm",
-    "subtitle": "Authentic Clinical & Panchkarma Product",
-    "shortDescription": "Original Cottan Roll 500Gm by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
+    "slug": "cotton-roll-500gm-pure-absorbent",
+    "name": "Cotton Roll 500Gm (100% Pure Absorbent)",
+    "subtitle": "Hospital Grade 100% Pure Bleached Absorbent Cotton Roll (500 Gm)",
+    "shortDescription": "Medical-grade 100% pure absorbent bleached cotton roll 500 gm for clinical wound dressing, cleansing, and Ayurvedic therapy applications.",
     "description": "Cottan Roll 500Gm supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
     "category": "Clinical Essentials & Disposables",
     "categorySlug": "clinic-essentials",
@@ -454,47 +452,47 @@
     "brand": "Yugan Panchkarma Essentials",
     "sku": "YUG-CLIN-006",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKwkSe65SFjBe0hP.jpg"
+      "/images/CottonRoll500g.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKwkSe65SFjBe0hP.jpg",
+    "thumbnail": "/images/CottonRoll500g.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
-        "price": 150,
-        "unit": "per unit / clinic pack",
+        "price": 140,
+        "unit": "per roll (500 gm)",
         "minimumOrderQuantity": 5,
         "tiers": [
           {
             "minQty": 5,
-            "maxQty": 15,
-            "unitPrice": 150,
-            "label": "Standard Tier (5-15 units)"
+            "maxQty": 19,
+            "unitPrice": 140,
+            "label": "Clinic Pack (5-19 rolls)"
           },
           {
-            "minQty": 16,
-            "maxQty": 40,
-            "unitPrice": 135,
-            "label": "Clinic Bulk (16-40 units)"
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 130,
+            "label": "Hospital Tier (20-49 rolls)"
           },
           {
-            "minQty": 41,
+            "minQty": 50,
             "maxQty": null,
             "unitPrice": 120,
-            "label": "Institutional Tier (41+ units)"
+            "label": "Wholesale Bulk (50+ rolls)"
           }
         ]
       },
       "b2c": {
         "enabled": true,
-        "price": 150,
-        "salePrice": null,
+        "price": 220,
+        "salePrice": 140,
         "currency": "INR",
-        "unit": "per unit"
+        "unit": "per roll (500 gm)"
       },
       "special": {
         "enabled": false,
         "price": null,
-        "unit": "Not applicable"
+        "unit": "N/A"
       }
     },
     "variants": [],
@@ -618,9 +616,9 @@
   {
     "id": "prod-yug-008",
     "slug": "plastic-apron-disposable",
-    "name": "Plastic Apron Disposable",
-    "subtitle": "100pc Packet",
-    "shortDescription": "100pc Packet",
+    "name": "Plastic Apron (20 GSM CPE Disposable)",
+    "subtitle": "20 GSM CPE Waterproof Disposable Plastic Apron (Pack of 25 / Case of 400)",
+    "shortDescription": "20 GSM CPE waterproof plastic disposable apron with neck loop and waist tie for clinical, hospital, and Panchkarma therapy protection.",
     "description": "100pc Packet",
     "category": "Clinical Essentials & Disposables",
     "categorySlug": "clinic-essentials",
@@ -628,48 +626,47 @@
     "brand": "Yugan Panchkarma Essentials",
     "sku": "YUG-CLIN-008",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKp-zfzyRB-Qdjlj.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NvC7VUgAnzHMHiGOWCX.jpg"
+      "/images/Plastic-Apron-Disposable.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKp-zfzyRB-Qdjlj.jpg",
+    "thumbnail": "/images/Plastic-Apron-Disposable.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
-        "price": 15,
-        "unit": "per unit / clinic pack",
-        "minimumOrderQuantity": 10,
+        "price": 7,
+        "unit": "per piece",
+        "minimumOrderQuantity": 25,
         "tiers": [
           {
-            "minQty": 10,
-            "maxQty": 30,
-            "unitPrice": 15,
-            "label": "Standard Tier (10-30 units)"
+            "minQty": 25,
+            "maxQty": 99,
+            "unitPrice": 7,
+            "label": "Packet Tier (25-99 pcs)"
           },
           {
-            "minQty": 31,
-            "maxQty": 80,
-            "unitPrice": 14,
-            "label": "Clinic Bulk (31-80 units)"
+            "minQty": 100,
+            "maxQty": 399,
+            "unitPrice": 6,
+            "label": "Clinic Tier (100-399 pcs)"
           },
           {
-            "minQty": 81,
+            "minQty": 400,
             "maxQty": null,
-            "unitPrice": 12,
-            "label": "Institutional Tier (81+ units)"
+            "unitPrice": 5,
+            "label": "Case Bulk (400+ pcs)"
           }
         ]
       },
       "b2c": {
         "enabled": true,
         "price": 15,
-        "salePrice": 5,
+        "salePrice": 7,
         "currency": "INR",
-        "unit": "per unit"
+        "unit": "per piece"
       },
       "special": {
         "enabled": false,
         "price": null,
-        "unit": "Not applicable"
+        "unit": "N/A"
       }
     },
     "variants": [],
@@ -966,9 +963,9 @@
   },
   {
     "id": "prod-yug-012",
-    "slug": "nitril-hand-gloves",
-    "name": "Nitril Hand gloves",
-    "subtitle": "Box of 100pc\n",
+    "slug": "nitrile-hand-gloves-blue-box-of-100pc",
+    "name": "Nitrile Hand Gloves (Blue Powder-Free Box of 100pc)",
+    "subtitle": "Medical Grade Powder-Free Blue Examination Nitrile Gloves (Box of 100pc)",
     "shortDescription": "Box of 100pc\n",
     "description": "Box of 100pc\n",
     "category": "Clinical Essentials & Disposables",
@@ -977,47 +974,47 @@
     "brand": "Yugan Panchkarma Essentials",
     "sku": "YUG-CLIN-012",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKz0XIit5s83dDlJ.jpg"
+      "/images/NitrileHandGloves.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKz0XIit5s83dDlJ.jpg",
+    "thumbnail": "/images/NitrileHandGloves.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
-        "price": 1500,
-        "unit": "per unit / clinic pack",
-        "minimumOrderQuantity": 2,
+        "price": 220,
+        "unit": "per box of 100 pcs",
+        "minimumOrderQuantity": 5,
         "tiers": [
           {
-            "minQty": 2,
-            "maxQty": 6,
-            "unitPrice": 1500,
-            "label": "Standard Tier (2-6 units)"
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 220,
+            "label": "Clinic Tier (5-19 boxes)"
           },
           {
-            "minQty": 7,
-            "maxQty": 16,
-            "unitPrice": 1350,
-            "label": "Clinic Bulk (7-16 units)"
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 200,
+            "label": "Hospital Tier (20-49 boxes)"
           },
           {
-            "minQty": 17,
+            "minQty": 50,
             "maxQty": null,
-            "unitPrice": 1200,
-            "label": "Institutional Tier (17+ units)"
+            "unitPrice": 180,
+            "label": "Wholesale Bulk (50+ boxes)"
           }
         ]
       },
       "b2c": {
         "enabled": true,
-        "price": 1500,
-        "salePrice": 200,
+        "price": 1200,
+        "salePrice": 220,
         "currency": "INR",
-        "unit": "per unit"
+        "unit": "per box of 100 pcs"
       },
       "special": {
         "enabled": false,
         "price": null,
-        "unit": "Not applicable"
+        "unit": "N/A"
       }
     },
     "variants": [],
@@ -1141,7 +1138,7 @@
   {
     "id": "prod-yug-014",
     "slug": "yugan-enema-pot-750ml",
-    "name": "Yugan Enema Pot 750ml",
+    "name": "Yugan Enema Kit 750ml",
     "subtitle": "Simple & Elegant Design ",
     "shortDescription": "Simple & Elegant Design ",
     "description": "Simple & Elegant Design ",
@@ -1151,9 +1148,9 @@
     "brand": "Yugan Panchkarma Essentials",
     "sku": "YUG-CLIN-014",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL-5mAyV-9-b_CrY.jpg"
+      "/images/YuganEnemaKit750ml.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL-5mAyV-9-b_CrY.jpg",
+    "thumbnail": "/images/YuganEnemaKit750ml.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -1488,10 +1485,10 @@
   },
   {
     "id": "prod-yug-018",
-    "slug": "yugan-plastic-neti-pot",
-    "name": "Yugan Plastic Neti Pot",
-    "subtitle": "Available in 3 Colours ",
-    "shortDescription": "Available in 3 Colours ",
+    "slug": "plastic-jal-neti-pot",
+    "name": "Plastic Jal Neti Pot",
+    "subtitle": "Ergonomic Unbreakable Plastic Neti Pot for Jala Neti Nasal Irrigation",
+    "shortDescription": "Smooth contoured unbreakable plastic Jal Neti pot with smooth conical spout designed for daily nasal cleansing and sinus therapy.",
     "description": "Available in 3 Colours ",
     "category": "Panchkarma Therapy Tools & Sets",
     "categorySlug": "panchkarma-essentials",
@@ -1499,48 +1496,47 @@
     "brand": "Yugan Panchkarma Essentials",
     "sku": "YUG-CLIN-018",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL1MSOTtoZbLmwPj.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUon51cpLVX74iaXK37.jpg"
+      "/images/PlasticJalNetiPot.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL1MSOTtoZbLmwPj.jpg",
+    "thumbnail": "/images/PlasticJalNetiPot.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
-        "price": 80,
-        "unit": "per unit / clinic pack",
+        "price": 18,
+        "unit": "per pot",
         "minimumOrderQuantity": 10,
         "tiers": [
           {
             "minQty": 10,
-            "maxQty": 30,
-            "unitPrice": 80,
-            "label": "Standard Tier (10-30 units)"
+            "maxQty": 29,
+            "unitPrice": 18,
+            "label": "Clinic Tier (10-29 pots)"
           },
           {
-            "minQty": 31,
-            "maxQty": 80,
-            "unitPrice": 72,
-            "label": "Clinic Bulk (31-80 units)"
+            "minQty": 30,
+            "maxQty": 99,
+            "unitPrice": 16,
+            "label": "Hospital Tier (30-99 pots)"
           },
           {
-            "minQty": 81,
+            "minQty": 100,
             "maxQty": null,
-            "unitPrice": 64,
-            "label": "Institutional Tier (81+ units)"
+            "unitPrice": 14,
+            "label": "Wholesale Bulk (100+ pots)"
           }
         ]
       },
       "b2c": {
         "enabled": true,
-        "price": 80,
-        "salePrice": 25,
+        "price": 50,
+        "salePrice": 18,
         "currency": "INR",
-        "unit": "per unit"
+        "unit": "per pot"
       },
       "special": {
         "enabled": false,
         "price": null,
-        "unit": "Not applicable"
+        "unit": "N/A"
       }
     },
     "variants": [],
@@ -1577,7 +1573,7 @@
   {
     "id": "prod-yug-019",
     "slug": "red-rubber-catheter",
-    "name": "Red Rubber Catheter",
+    "name": "Export Quality Red Rubber Catheter (Size 7-12)",
     "subtitle": "Superior quality and fully flexible\nSize 3 To 12 available",
     "shortDescription": "Superior quality and fully flexible\nSize 3 To 12 available",
     "description": "Superior quality and fully flexible\nSize 3 To 12 available",
@@ -1587,10 +1583,9 @@
     "brand": "Yugan Panchkarma Essentials",
     "sku": "YUG-CLIN-019",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL2IEtZOGJAntJuD.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUonq1wBE28bERpO0JO.jpg"
+      "/images/ExportQualityCatheter.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL2IEtZOGJAntJuD.jpg",
+    "thumbnail": "/images/ExportQualityCatheter.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -1926,7 +1921,7 @@
   {
     "id": "prod-yug-023",
     "slug": "iui-cannula-uttarabasti",
-    "name": "IUI Cannula (Uttarabasti)",
+    "name": "IUI Cannula with Syringe (Uttarabasti)",
     "subtitle": "Authentic Clinical & Panchkarma Product",
     "shortDescription": "Original IUI Cannula (Uttarabasti) by Bhairavi Surgicals & Distributors. Designed for professional Ayurvedic centers, hospitals, and therapy clinics.",
     "description": "IUI Cannula (Uttarabasti) supplied by Yugan International (Bhairavi Surgicals & Distributors). Manufactured and packaged under standard clinical quality compliance for Ayurvedic Panchkarma centers, hospitals, and wellness institutions.",
@@ -1936,9 +1931,9 @@
     "brand": "Yugan Panchkarma Essentials",
     "sku": "YUG-CLIN-023",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKy4Ao8MjYfPQ7tx.jpg"
+      "/images/IUICannulaSyringe.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKy4Ao8MjYfPQ7tx.jpg",
+    "thumbnail": "/images/IUICannulaSyringe.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -2742,8 +2737,7 @@
     "brand": "Newnik",
     "sku": "YUG-NETI-CER-NW",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL0sP5MHgbfsFKDL.jpg",
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL0sP5MHgbfsFKDL.jpg"
     ],
     "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL0sP5MHgbfsFKDL.jpg",
     "pricing": {
@@ -2840,10 +2834,9 @@
     "brand": "Newnik",
     "sku": "YUG-NETI-COP-NW",
     "images": [
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80"
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-MmiGzWqT-mcf2hvrV_V.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-MmiGzWqT-mcf2hvrV_V.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -2930,7 +2923,7 @@
   {
     "id": "prod-042",
     "slug": "kidney-tray-pvc",
-    "name": "Kidney Tray PVC",
+    "name": "Plastic Kidney Tray (8\", 10\", 12\")",
     "subtitle": "Autoclavable Medical-Grade Polypropylene Kidney Dish (8 Inch)",
     "shortDescription": "Lightweight, chemical-resistant medical PVC/polypropylene kidney dish for holding soiled dressings, liquids, and surgical tools.",
     "description": "The Kidney Tray PVC is an indispensable hospital and clinic utility dish moulded from durable medical-grade polypropylene. Featuring smooth curved contours and a wide rim, it allows secure placement against the patient's body for receiving fluids, discarded dressings, and surgical swabs during procedures.",
@@ -2940,10 +2933,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-TRAY-PVC01",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL4wuVxr8LSMxwn0.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL4wuVxr8LSMxwn0.jpg"
+      "/images/PlasticKidneyTray.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "/images/PlasticKidneyTray.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -3035,7 +3027,7 @@
   {
     "id": "prod-043",
     "slug": "kidney-tray-steel",
-    "name": "Kidney Tray Steel",
+    "name": "Kidney Tray Steel (8\", 10\", 12\")",
     "subtitle": "Heavy-Gauge AISI 304 Stainless Steel Seamless Kidney Dish",
     "shortDescription": "Surgical-grade stainless steel kidney tray engineered for repeated autoclave sterilization and clinical instrument handling.",
     "description": "The Kidney Tray Steel is manufactured from premium AISI 304 stainless steel with a seamless, die-pressed construction and smooth curled edges. Built to withstand continuous high-temperature autoclaving and hospital chemical sterilization without corrosion or staining.",
@@ -3045,10 +3037,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-TRAY-SS01",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL5Mkfeb1luoNpi9.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL5Mkfeb1luoNpi9.jpg"
+      "/images/KidneyTraySteel.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL5Mkfeb1luoNpi9.jpg",
+    "thumbnail": "/images/KidneyTraySteel.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -3148,10 +3139,10 @@
   },
   {
     "id": "prod-044",
-    "slug": "steel-instrument-tray",
-    "name": "Steel Instrument Tray",
-    "subtitle": "Surgical Grade Stainless Steel Instrument & Procedure Tray (10x8 Inch)",
-    "shortDescription": "Heavy-duty SS 304 instrument organizing tray with seamless rounded corners for autoclave sterilization and procedure setups.",
+    "slug": "ss-tray-12x10-instrument-tray",
+    "name": "SS Tray 12x10 (Stainless Steel Instrument Tray)",
+    "subtitle": "Surgical Grade Stainless Steel Instrument & Procedure Tray (12x10 Inch)",
+    "shortDescription": "Heavy gauge polished stainless steel surgical instrument procedure tray (12x10 inch) with seamless hygienic rounded corners.",
     "description": "The Steel Instrument Tray is engineered for surgical suites, dental operatories, and Panchkarma therapy rooms. Precision-fabricated from heavy-gauge surgical stainless steel with seamless radiused corners, it ensures effortless cleaning and organized placement of sterilized instruments.",
     "category": "Clinical Essentials & Disposables",
     "categorySlug": "clinic-essentials",
@@ -3159,43 +3150,42 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-TRAY-INST01",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL3CRS2uhfoOrFhW.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUopSXoj3akgxeBek-7.jpg"
+      "/images/SSTray12x10.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL3CRS2uhfoOrFhW.jpg",
+    "thumbnail": "/images/SSTray12x10.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
-        "price": 195,
-        "unit": "per tray / Unit packing",
-        "minimumOrderQuantity": 3,
+        "price": 280,
+        "unit": "per tray",
+        "minimumOrderQuantity": 2,
         "tiers": [
           {
-            "minQty": 3,
-            "maxQty": 9,
-            "unitPrice": 195,
-            "label": "Clinic Tier (3-9 units)"
+            "minQty": 2,
+            "maxQty": 5,
+            "unitPrice": 280,
+            "label": "Clinic Tier (2-5 trays)"
           },
           {
-            "minQty": 10,
-            "maxQty": 24,
-            "unitPrice": 170,
-            "label": "Hospital Tier (10-24 units)"
+            "minQty": 6,
+            "maxQty": 15,
+            "unitPrice": 260,
+            "label": "Hospital Tier (6-15 trays)"
           },
           {
-            "minQty": 25,
+            "minQty": 16,
             "maxQty": null,
-            "unitPrice": 145,
-            "label": "Bulk Wholesale (25+ units)"
+            "unitPrice": 240,
+            "label": "Wholesale Bulk (16+ trays)"
           }
         ]
       },
       "b2c": {
         "enabled": true,
         "price": 450,
-        "salePrice": 350,
+        "salePrice": 280,
         "currency": "INR",
-        "unit": "per steel tray"
+        "unit": "per tray"
       },
       "special": {
         "enabled": false,
@@ -3664,10 +3654,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-APP-BN01",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKy4Ao8MjYfPQ7tx.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL3f4v01nOH3BS-p.jpg"
+      "/images/BastiNozzle.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKy4Ao8MjYfPQ7tx.jpg",
+    "thumbnail": "/images/BastiNozzle.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -3697,8 +3686,8 @@
       },
       "b2c": {
         "enabled": true,
-        "price": 50,
-        "salePrice": 35,
+        "price": 80,
+        "salePrice": 60,
         "currency": "INR",
         "unit": "per nozzle"
       },
@@ -4076,10 +4065,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-MSK-N95P",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKwKAAGNI2tsZQis.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKwKAAGNI2tsZQis.jpg"
+      "/images/N95FaceMask.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKwKAAGNI2tsZQis.jpg",
+    "thumbnail": "/images/N95FaceMask.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -5213,10 +5201,10 @@
   },
   {
     "id": "prod-064",
-    "slug": "3-ply-face-mask",
-    "name": "3 Ply Face Mask",
-    "subtitle": "Daily Protective 3-Ply Non-Woven Mask with Soft Elastic Earloops (Box of 50)",
-    "shortDescription": "Economical 3-ply pleated face mask with ultrasonic earloop bonding and flexible nose wire for daily clinic and hospital hygiene.",
+    "slug": "blue-3-ply-surgical-face-mask",
+    "name": "Blue 3-Ply Surgical Face Mask (Meltblown Filter)",
+    "subtitle": "Triple Layer High BFE Meltblown Surgical Face Mask with Ultrasonic Earloops",
+    "shortDescription": "Certified blue 3-layer surgical disposable face mask featuring high-filtration meltblown core, soft earloops, and pliable nose clip.",
     "description": "The 3 Ply Face Mask provides dependable everyday barrier protection against airborne particulates, environmental dust, droplets, and clinic aerosols. Featuring a 3-layer pleated design with ultrasonic-bonded earloops and a pliable plastic nose strip, it provides breathable, lightweight comfort during routine clinical consultations and hospital visits.",
     "category": "Clinical Essentials & Disposables",
     "categorySlug": "clinic-essentials",
@@ -5224,43 +5212,42 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-MSK-3PLY",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL1oD-2noxbnS1bm.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUonYaLXD08gdWyT0Bb.jpg"
+      "/images/Blue3PlyMask.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBL1oD-2noxbnS1bm.jpg",
+    "thumbnail": "/images/Blue3PlyMask.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
         "price": 45,
-        "unit": "per box of 50 pcs",
+        "unit": "per box of 50 pcs (₹0.90/pc)",
         "minimumOrderQuantity": 10,
         "tiers": [
           {
             "minQty": 10,
             "maxQty": 49,
             "unitPrice": 45,
-            "label": "Clinic Tier (10-49 boxes)"
+            "label": "Box Pack (10-49 boxes)"
           },
           {
             "minQty": 50,
             "maxQty": 99,
-            "unitPrice": 38,
-            "label": "Hospital Carton (50-99 boxes)"
+            "unitPrice": 40,
+            "label": "Hospital Tier (50-99 boxes)"
           },
           {
             "minQty": 100,
             "maxQty": null,
-            "unitPrice": 30,
-            "label": "Bulk Wholesale (100+ boxes)"
+            "unitPrice": 35,
+            "label": "Wholesale Bulk (100+ boxes)"
           }
         ]
       },
       "b2c": {
         "enabled": true,
-        "price": 2,
-        "salePrice": 1.5,
+        "price": 150,
+        "salePrice": 45,
         "currency": "INR",
-        "unit": "per box of 50"
+        "unit": "per box of 50 pcs"
       },
       "special": {
         "enabled": false,
@@ -5324,10 +5311,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-WEL-BDS01",
     "images": [
-      "https://images.unsplash.com/photo-1512290900672-1f486431e784?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-MmiGzXHUw1uox1gMozl.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1512290900672-1f486431e784?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-MmiGzXHUw1uox1gMozl.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -5520,10 +5506,10 @@
   },
   {
     "id": "prod-067",
-    "slug": "gown",
-    "name": "Gown",
-    "subtitle": "Universal Non-Woven Clinical Isolation & Patient Procedure Gown",
-    "shortDescription": "Single-use 30 GSM fluid-resistant non-woven isolation gown with full back overlap and secure dual tie closures.",
+    "slug": "white-gown-25gsm-disposable-isolation-gown",
+    "name": "White Gown (25 GSM Disposable Isolation Gown)",
+    "subtitle": "25 GSM Spunbond Non-Woven Disposable White Isolation Gown with Elastic Cuffs",
+    "shortDescription": "Lightweight breathable 25 GSM white spunbond polypropylene disposable isolation gown with full back overlap and elasticated wrists.",
     "description": "The Gown is a universal single-use medical examination and isolation gown. Built from 30 GSM fluid-resistant spunbond polypropylene fabric, it offers full frontal coverage with overlap back ties and elasticated cuffs, safeguarding healthcare personnel and therapy patients from light fluid splatter and biological contact.",
     "category": "Clinical Essentials & Disposables",
     "categorySlug": "clinic-essentials",
@@ -5531,41 +5517,40 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-CLIN-GWN01",
     "images": [
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKqdo2E8ReH_mKHZ.jpg",
-      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKqdo2E8ReH_mKHZ.jpg"
+      "/images/WhiteGownIsolation.jpg"
     ],
-    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKqdo2E8ReH_mKHZ.jpg",
+    "thumbnail": "/images/WhiteGownIsolation.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
-        "price": 42,
-        "unit": "per gown / Pack of 20",
-        "minimumOrderQuantity": 20,
+        "price": 20,
+        "unit": "per gown",
+        "minimumOrderQuantity": 10,
         "tiers": [
           {
-            "minQty": 20,
-            "maxQty": 79,
-            "unitPrice": 42,
-            "label": "Clinic Tier (20-79 units)"
+            "minQty": 10,
+            "maxQty": 49,
+            "unitPrice": 20,
+            "label": "Clinic Tier (10-49 pcs)"
           },
           {
-            "minQty": 80,
-            "maxQty": 199,
-            "unitPrice": 35,
-            "label": "Hospital Tier (80-199 units)"
+            "minQty": 50,
+            "maxQty": 99,
+            "unitPrice": 18,
+            "label": "Hospital Tier (50-99 pcs)"
           },
           {
-            "minQty": 200,
+            "minQty": 100,
             "maxQty": null,
-            "unitPrice": 28,
-            "label": "Wholesale Bulk (200+ units)"
+            "unitPrice": 16,
+            "label": "Wholesale Bulk (100+ pcs)"
           }
         ]
       },
       "b2c": {
         "enabled": true,
-        "price": 85,
-        "salePrice": 50,
+        "price": 80,
+        "salePrice": 20,
         "currency": "INR",
         "unit": "per gown"
       },
@@ -5741,9 +5726,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-GLV-NIT-ORG",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "https://5.imimg.com/data5/SELLER/Default/2024/3/399829490/OE/ML/GY/6915824/111111111-500x500.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "https://5.imimg.com/data5/SELLER/Default/2024/3/399829490/OE/ML/GY/6915824/111111111-500x500.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -5774,7 +5759,7 @@
       "b2c": {
         "enabled": true,
         "price": 1500,
-        "salePrice": "220 + GST",
+        "salePrice": 220,
         "currency": "INR",
         "unit": "per box of 100 pcs"
       },
@@ -5846,9 +5831,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-GLV-VIN-CLR",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "/images/VinylHandGloves.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "/images/VinylHandGloves.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -5879,7 +5864,7 @@
       "b2c": {
         "enabled": true,
         "price": 800,
-        "salePrice": "150 + GST",
+        "salePrice": 150,
         "currency": "INR",
         "unit": "per box of 100 pcs"
       },
@@ -5958,9 +5943,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-GLV-VIN-BLU",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKz0XIit5s83dDlJ.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKz0XIit5s83dDlJ.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -5990,8 +5975,8 @@
       },
       "b2c": {
         "enabled": true,
-        "price": 800,
-        "salePrice": "150 + GST",
+        "price": 1500,
+        "salePrice": 200,
         "currency": "INR",
         "unit": "per box of 100 pcs"
       },
@@ -6069,9 +6054,9 @@
     "brand": "Honeywell",
     "sku": "HON-GLV-LTX-DP",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "/images/NitrileHandGloves.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "/images/NitrileHandGloves.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -6102,7 +6087,7 @@
       "b2c": {
         "enabled": true,
         "price": 1500,
-        "salePrice": "220 + GST",
+        "salePrice": 220,
         "currency": "INR",
         "unit": "per box of 100 pcs"
       },
@@ -6174,9 +6159,9 @@
     "brand": "Honeywell",
     "sku": "HON-GLV-NIT-DP",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "/images/NitrileHandGloves.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "/images/NitrileHandGloves.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -6207,7 +6192,7 @@
       "b2c": {
         "enabled": true,
         "price": 1500,
-        "salePrice": "220 + GST",
+        "salePrice": 220,
         "currency": "INR",
         "unit": "per box of 100 pcs"
       },
@@ -6279,9 +6264,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-GLV-NIT-DC",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKz0XIit5s83dDlJ.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKz0XIit5s83dDlJ.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -6384,9 +6369,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-CLIN-NPK01",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvp40nDFLarvzNp.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKvp40nDFLarvzNp.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -6474,9 +6459,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-CLIN-LNG01",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "https://5.imimg.com/data5/SELLER/Default/2024/5/416999518/NV/BO/LL/3793349/disposable-langot.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "https://5.imimg.com/data5/SELLER/Default/2024/5/416999518/NV/BO/LL/3793349/disposable-langot.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -6563,9 +6548,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-CLIN-BFC01",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "/images/BuffonCap.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "/images/BuffonCap.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -6668,9 +6653,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-CLIN-3PM100",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "/images/Blue3PlyMask.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "/images/Blue3PlyMask.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -6758,9 +6743,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-CLIN-SGN45",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "/images/WhiteGownIsolation.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "/images/WhiteGownIsolation.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -6839,7 +6824,7 @@
   {
     "id": "prod-081",
     "slug": "plastic-shoe-cover",
-    "name": "Plastic Shoe Cover",
+    "name": "Plastic Shoe Cover (Waterproof PE)",
     "subtitle": "100% Waterproof PE Plastic Shoe Cover (50 Pair Pocket / 100pc)",
     "shortDescription": "Heavy-duty 100% waterproof polyethylene plastic shoe covers with elasticated opening for clinic entry and cleanroom barrier (50 Pair Pocket).",
     "description": "Plastic Shoe Cover supplied by Bhairavi Surgicals & Distributors. Manufactured from virgin polyethylene (PE) waterproof plastic film. Features an elastic ankle band for a non-slip secure fit over all shoe sizes. Supplied in convenient 50-pair (100 pieces) pocket packs.",
@@ -6849,9 +6834,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-CLIN-PSC50",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "/images/PlasticShoeCover.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "/images/PlasticShoeCover.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -6929,7 +6914,7 @@
   {
     "id": "prod-082",
     "slug": "nitrile-hand-gloves-blue",
-    "name": "Nitrile Hand Gloves blue",
+    "name": "Nitrile Hand Gloves blue (Box of 100pc)",
     "subtitle": "Medical Blue Powder-Free Examination Nitrile Gloves (Box of 100pc)",
     "shortDescription": "Medical blue powder-free synthetic nitrile examination gloves offering superior puncture resistance, tactile sensitivity, and latex-free protection (Box of 100pc).",
     "description": "Nitrile Hand Gloves blue supplied by Bhairavi Surgicals & Distributors. Manufactured from 100% synthetic nitrile polymer with textured fingertips. Completely powder-free and latex-free to prevent Type-I allergic reactions while delivering high chemical and tear resistance.",
@@ -6939,9 +6924,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-GLV-NIT-BLU",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "/images/NitrileHandGloves.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "/images/NitrileHandGloves.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -7058,9 +7043,9 @@
     "brand": "Bhairavi Surgical",
     "sku": "YUG-GLV-LTX-PF-XL",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKxZI2xjJ_VxcI19.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "https://cdn.quicksell.co/-Mk22VBXSH1MIRXlM5TK/products/-NUkBKxZI2xjJ_VxcI19.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
@@ -7145,51 +7130,51 @@
   },
   {
     "id": "prod-084",
-    "slug": "nitrile-chemical-resistant-gloves",
-    "name": "Nitrile Chemical-Resistant Gloves",
-    "subtitle": "Heavy-Duty Chemical Gauntlet Nitrile Gloves (Small & Med)",
-    "shortDescription": "Heavy-duty chemical resistant nitrile gauntlet gloves with flock lining for laboratory reagents, harsh disinfectants, and hospital sanitation.",
+    "slug": "cole-parmer-chemical-resistance-gloves",
+    "name": "Cole Parmer Chemical Resistance Gloves",
+    "subtitle": "Heavy-Duty Chemical & Solvent Resistant Gauntlet Protective Gloves",
+    "shortDescription": "Cole Parmer heavy-duty chemical and solvent resistant protective examination gauntlet gloves in Small and Medium sizes.",
     "description": "Nitrile Chemical-Resistant Gloves supplied by Bhairavi Surgicals & Distributors. Engineered from high-density synthetic nitrile compound designed to resist aggressive chemicals, acids, alkalis, and solvents. Features extended forearm gauntlet protection and soft cotton flock lining for comfort.",
     "category": "Clinical Essentials & Disposables",
     "categorySlug": "clinic-essentials",
     "subcategory": "Hospital & Clinic Disposables",
-    "brand": "Bhairavi Surgical",
-    "sku": "YUG-GLV-NIT-CHEM",
+    "brand": "Cole Parmer",
+    "sku": "CP-GLV-CHEM-RES",
     "images": [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+      "/images/ColeParmerChemicalGloves.jpg"
     ],
-    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+    "thumbnail": "/images/ColeParmerChemicalGloves.jpg",
     "pricing": {
       "b2b": {
         "enabled": true,
-        "price": 50,
+        "price": 20,
         "unit": "per pair",
         "minimumOrderQuantity": 10,
         "tiers": [
           {
             "minQty": 10,
-            "maxQty": 49,
-            "unitPrice": 50,
-            "label": "Standard Tier (10-49 pairs)"
+            "maxQty": 29,
+            "unitPrice": 20,
+            "label": "Small Size Tier (₹20/pair)"
           },
           {
-            "minQty": 50,
+            "minQty": 30,
             "maxQty": 99,
-            "unitPrice": 45,
-            "label": "Clinic Bulk (50-99 pairs)"
+            "unitPrice": 18,
+            "label": "Clinic Pack (30-99 pairs)"
           },
           {
             "minQty": 100,
             "maxQty": null,
-            "unitPrice": 40,
-            "label": "Wholesale Tier (100+ pairs)"
+            "unitPrice": 16,
+            "label": "Wholesale Bulk (100+ pairs)"
           }
         ]
       },
       "b2c": {
         "enabled": true,
-        "price": 200,
-        "salePrice": 50,
+        "price": 120,
+        "salePrice": 35,
         "currency": "INR",
         "unit": "per pair"
       },
@@ -7201,17 +7186,17 @@
     },
     "variants": [
       {
-        "id": "var-nit-chem-s",
+        "id": "var-cp-sm",
         "name": "Small",
-        "sku": "YUG-GLV-NIT-CHEM-S",
-        "price": 50,
+        "sku": "CP-GLV-CHEM-SM",
+        "price": 20,
         "available": true
       },
       {
-        "id": "var-nit-chem-m",
+        "id": "var-cp-md",
         "name": "Medium",
-        "sku": "YUG-GLV-NIT-CHEM-M",
-        "price": 50,
+        "sku": "CP-GLV-CHEM-MD",
+        "price": 35,
         "available": true
       }
     ],
@@ -7237,6 +7222,1574 @@
     "moq": 10,
     "isFeatured": false,
     "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-085",
+    "slug": "steel-brass-glycerin-syringe-100ml",
+    "name": "Steel-Brass Glycerin Syringe 100ml",
+    "subtitle": "Heavy-Duty Brass & Stainless Steel Enema Syringe (100ml)",
+    "shortDescription": "Premium medical-grade steel-brass 100ml glycerin syringe engineered for smooth, controlled Panchkarma Basti and clinical fluid administration.",
+    "description": "Premium Quality Steel-Brass Glycerin Syringe 100ml supplied by Bhairavi Surgicals & Distributors. Fabricated from precision-machined heavy gauge brass and surgical grade stainless steel to withstand medicated oils and high-viscosity Ayurvedic decoctions (Kashayas/Sneha Basti). Features a smooth leak-proof plunger mechanism and ergonomic finger rings.",
+    "category": "Panchkarma Therapy Tools & Sets",
+    "categorySlug": "panchkarma-essentials",
+    "subcategory": "Syringes & Enema Apparatus",
+    "brand": "Yugan Panchkarma Essentials",
+    "sku": "YUG-SYR-GLYC100",
+    "images": [
+      "/images/SteelBrassGlycerinSyringe.jpg"
+    ],
+    "thumbnail": "/images/SteelBrassGlycerinSyringe.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 700,
+        "unit": "per unit",
+        "minimumOrderQuantity": 2,
+        "tiers": [
+          {
+            "minQty": 2,
+            "maxQty": 5,
+            "unitPrice": 700,
+            "label": "Clinic Tier (2-5 units)"
+          },
+          {
+            "minQty": 6,
+            "maxQty": 15,
+            "unitPrice": 650,
+            "label": "Hospital Tier (6-15 units)"
+          },
+          {
+            "minQty": 16,
+            "maxQty": null,
+            "unitPrice": 600,
+            "label": "Wholesale Bulk (16+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 1200,
+        "salePrice": 700,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Engineered specifically for thick medicated Ayurvedic oils and glycerin solutions",
+      "Corrosion-resistant dual metal alloy ensures lifetime durability",
+      "Smooth calibrated plunger ensures exact dosage delivery without backflow",
+      "Fully dismantlable for easy sterilization and autoclaving"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Heavy-Duty Brass Core with Stainless Steel Casing",
+      "Capacity": "100 ml",
+      "Finish": "Polished Mirror Chrome & Brass Finish",
+      "Usage": "Glycerin Administration, Sneha & Kashaya Basti",
+      "Autoclavable": "Yes, High Heat Sterilization Compatible",
+      "Plunger": "Precision Ground Brass Plunger with Oil-Resistant Seal"
+    },
+    "rating": 4.9,
+    "reviewCount": 18,
+    "stock": 250,
+    "moq": 2,
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-086",
+    "slug": "disposable-face-shield",
+    "name": "Disposable Face Shield",
+    "subtitle": "Anti-Fog Optical Clear Protective Face Shield (Individually Packed)",
+    "shortDescription": "Premium optical-clear laminated face shield offering full-face coverage against liquid splashes, clinical sprays, and airborne particles.",
+    "description": "Disposable Face Shield supplied by Bhairavi Surgicals & Distributors. Manufactured from optical-grade PET with anti-fog and anti-glare coating. Comes individually packed with comfortable forehead sponge padding and elastic headband. 180 pcs per carton.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Protective Apparel & PPE",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-PROT-FCS01",
+    "images": [
+      "/images/DisposableFaceShield.jpg"
+    ],
+    "thumbnail": "/images/DisposableFaceShield.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 22,
+        "unit": "per piece",
+        "minimumOrderQuantity": 20,
+        "tiers": [
+          {
+            "minQty": 20,
+            "maxQty": 99,
+            "unitPrice": 22,
+            "label": "Clinic Pack (20-99 pcs)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": 179,
+            "unitPrice": 18,
+            "label": "Hospital Tier (100-179 pcs)"
+          },
+          {
+            "minQty": 180,
+            "maxQty": null,
+            "unitPrice": 15,
+            "label": "Full Carton (180+ pcs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 80,
+        "salePrice": 22,
+        "currency": "INR",
+        "unit": "per piece"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Crystal-clear distortion-free 180-degree facial visibility",
+      "Comfortable soft foam padding for all-day clinical wear",
+      "Shields eyes, nose, and mouth from infectious droplets and chemical splatters",
+      "Fits comfortably over prescription eyewear and surgical masks"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Optical-Grade Clear PET with Anti-Fog Film",
+      "Thickness": "0.3 mm Laminated Sheet",
+      "Padding": "High-Density Foam Forehead Cushion",
+      "Headband": "Elasticized Adjustable Strap",
+      "Packaging": "1 Pc/Pack, 180 Pcs/Carton",
+      "Coverage": "180-Degree Full Face Protection"
+    },
+    "rating": 4.8,
+    "reviewCount": 32,
+    "stock": 1500,
+    "moq": 20,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-087",
+    "slug": "blue-coverall-70-gsm",
+    "name": "Blue Coverall (70 GSM Non-Woven Taped)",
+    "subtitle": "70 GSM Heavy-Duty Laminated Non-Woven Coverall with Sealed Seams",
+    "shortDescription": "Heavy-duty 70 GSM laminated full-body hooded coverall with heat-sealed blue seam tape for maximum fluid and microbiological barrier protection.",
+    "description": "Blue Coverall 70 GSM supplied by Bhairavi Surgicals & Distributors. Constructed from heavyweight 70 GSM non-woven polypropylene with impervious microporous laminate and blue heat-sealed taped seams. Features front zipper with storm flap, elasticated hood, cuffs, and ankles.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-COV-BLU70",
+    "images": [
+      "/images/BlueCoverall70GSM.jpg"
+    ],
+    "thumbnail": "/images/BlueCoverall70GSM.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 120,
+        "unit": "per suit",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 24,
+            "unitPrice": 120,
+            "label": "Clinic Pack (5-24 suits)"
+          },
+          {
+            "minQty": 25,
+            "maxQty": 99,
+            "unitPrice": 110,
+            "label": "Hospital Tier (25-99 suits)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 95,
+            "label": "Wholesale Bulk (100+ suits)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 350,
+        "salePrice": 120,
+        "currency": "INR",
+        "unit": "per suit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Certified 70 GSM thickness provides superior tear and puncture resistance",
+      "Heat-sealed taped seams eliminate stitch holes for 100% fluid holdout",
+      "Breathable microporous membrane prevents heat buildup during long procedures",
+      "Full body hooded design ensures comprehensive head-to-ankle coverage"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Fabric Weight": "70 GSM Heavy Duty",
+      "Material": "Spunbond + Meltblown Microporous Laminate",
+      "Seams": "Heat-Sealed Waterproof Blue Taped Seams",
+      "Closure": "Front Zipper with Adhesive Storm Flap",
+      "Design": "Full Body Hooded with Elastic Cuffs & Ankles",
+      "Color": "White Body with High-Visibility Blue Taped Seams"
+    },
+    "rating": 4.9,
+    "reviewCount": 26,
+    "stock": 600,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-088",
+    "slug": "vip-executive-trolley-bag-black",
+    "name": "VIP Executive Trolley Bag (Black)",
+    "subtitle": "VIP Branded Hard-Shell Luggage Trolley for Corporate & Bulk Gifting",
+    "shortDescription": "VIP branded executive hard-shell trolley suitcase in elegant black finish, designed for corporate, employee, and institutional gifting.",
+    "description": "VIP Branded Trolley Bag in Elegant Black Finish supplied by Bhairavi Surgicals & Distributors. Premium gifting suitcase built with impact-resistant polypropylene hard shell, 360-degree silent spinner wheels, telescopic push-button handle, and integrated combination lock. Ideal for medical conferences, corporate incentives, and Diwali gifting. Special bulk rate: ₹1,700 (MRP ₹10,000). MOQ: 10 Pieces.",
+    "category": "Daily Wellness & Herbal Care",
+    "categorySlug": "wellness-essentials",
+    "subcategory": "Executive & Corporate Gifting",
+    "brand": "VIP Luggage",
+    "sku": "YUG-VIP-TRL-BLK",
+    "images": [
+      "/images/VIPTrolleyBag.jpg"
+    ],
+    "thumbnail": "/images/VIPTrolleyBag.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 1700,
+        "unit": "per piece",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 24,
+            "unitPrice": 1700,
+            "label": "Bulk Tier 1 (10-24 pcs)"
+          },
+          {
+            "minQty": 25,
+            "maxQty": 49,
+            "unitPrice": 1650,
+            "label": "Bulk Tier 2 (25-49 pcs)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 1600,
+            "label": "Institutional Bulk (50+ pcs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 10000,
+        "salePrice": 1700,
+        "currency": "INR",
+        "unit": "per piece"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Genuine VIP luggage brand with full manufacturer assurance",
+      "Massive ₹10,000 MRP with exceptional value for corporate gifting budgets",
+      "Smooth effortless rolling with 360-degree silent multi-directional wheels",
+      "Spacious partitioned interior with compression straps and zip dividers"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Brand": "VIP (Official Branded)",
+      "Color": "Elegant Matte Black",
+      "Material": "High-Impact Resistant Polypropylene Hard-Shell",
+      "Wheels": "4 x 360-Degree Multi-Directional Spinner Wheels",
+      "Handle": "Aircraft-Grade Aluminium Telescopic Trolley Handle",
+      "Lock": "Built-in 3-Digit Recessed Combination Lock",
+      "MOQ": "10 Pieces"
+    },
+    "rating": 5,
+    "reviewCount": 42,
+    "stock": 300,
+    "moq": 10,
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-089",
+    "slug": "synthetic-medical-hand-gloves",
+    "name": "Synthetic Medical Hand Gloves",
+    "subtitle": "Powder-Free Stretch Synthetic Examination Gloves (Small)",
+    "shortDescription": "High-elasticity powder-free synthetic medical examination gloves designed for sensitive hands, offering superior tactile sensitivity.",
+    "description": "Synthetic Hand Gloves supplied by Bhairavi Surgicals & Distributors. Manufactured from advanced synthetic copolymer formulations that mimic the softness and flexibility of latex without containing natural rubber latex proteins. 100% powder-free and allergen-free. Size Small @ ₹110-130+GST per box.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-GLV-SYN-SM",
+    "images": [
+      "/images/SyntheticHandGloves.jpg"
+    ],
+    "thumbnail": "/images/SyntheticHandGloves.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 110,
+        "unit": "per box (100 pcs)",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 110,
+            "label": "Clinic Tier (5-19 boxes)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 105,
+            "label": "Hospital Tier (20-49 boxes)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 98,
+            "label": "Wholesale Bulk (50+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 350,
+        "salePrice": 110,
+        "currency": "INR",
+        "unit": "per box of 100 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "100% latex-free and powder-free, zero risk of Type-I latex allergies",
+      "Exceptional elasticity conforming closely to hand contours",
+      "Textured fingertips for precise grip on delicate instruments",
+      "Cost-effective alternative to nitrile with superior comfort"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "Synthetic Polymeric Copolymer",
+      "Size": "Small (Snug Tactile Fit)",
+      "Type": "Powder-Free, Non-Sterile",
+      "Color": "Semi-Transparent / Off-White",
+      "Packaging": "100 Pcs / Box (50 Pairs)",
+      "Cuff": "Beaded Cuff for Easy Donning"
+    },
+    "rating": 4.8,
+    "reviewCount": 19,
+    "stock": 500,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-090",
+    "slug": "disposable-plastic-arm-sleeve-covers",
+    "name": "Disposable Plastic Arm Sleeve Covers (Pair)",
+    "subtitle": "100% Waterproof Polyethylene Protective Arm Sleeves",
+    "shortDescription": "Waterproof disposable PE arm oversleeves with dual elastic cuffs providing full forearm protection against fluids, oils, and chemicals.",
+    "description": "Disposable Plastic Arm Sleeve Covers supplied by Bhairavi Surgicals & Distributors. Manufactured from premium embossed polyethylene film. Feature dual elasticated bands at both ends to securely seal over wrists and elbows. Essential for Panchkarma oil massages, wet therapies, laboratory work, and hospital sanitation. ₹6 per pair.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-SLV-PE-PAIR",
+    "images": [
+      "/images/PlasticArmSleeveCovers.jpg"
+    ],
+    "thumbnail": "/images/PlasticArmSleeveCovers.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 6,
+        "unit": "per pair",
+        "minimumOrderQuantity": 50,
+        "tiers": [
+          {
+            "minQty": 50,
+            "maxQty": 199,
+            "unitPrice": 6,
+            "label": "Pack (50-199 pairs)"
+          },
+          {
+            "minQty": 200,
+            "maxQty": 499,
+            "unitPrice": 5.5,
+            "label": "Bulk Pack (200-499 pairs)"
+          },
+          {
+            "minQty": 500,
+            "maxQty": null,
+            "unitPrice": 5,
+            "label": "Carton Bulk (500+ pairs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 20,
+        "salePrice": 6,
+        "currency": "INR",
+        "unit": "per pair"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Complete 100% fluid and oil barrier shielding arms and sleeves",
+      "Comfortable dual-end elastic grips firmly without slipping",
+      "Prevents cross-contamination during Ayurvedic Panchkarma oil therapies",
+      "Ultra-lightweight, tear-resistant, and economical"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "100% Waterproof Virgin LDPE",
+      "Length": "16 to 18 inches (Full Forearm Coverage)",
+      "Closure": "Dual Heat-Sealed Elastic Ends",
+      "Color": "Medical Blue / Clear",
+      "Packaging": "Sold per pair (100 pairs/bundle)"
+    },
+    "rating": 4.7,
+    "reviewCount": 15,
+    "stock": 2000,
+    "moq": 50,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-091",
+    "slug": "scuba-face-mask-washable-antibacterial",
+    "name": "Scuba Face Mask (Washable & Antibacterial)",
+    "subtitle": "Imported Washable & Antibacterial Ergonomic Scuba Fabric Mask",
+    "shortDescription": "Imported breathable scuba stretch fabric face mask with antibacterial finish, washable and reusable in adult and kids sizes.",
+    "description": "Scuba Face Mask supplied by Bhairavi Surgicals & Distributors. Crafted from high-density polyurethane scuba stretch fabric offering 3D ergonomic contouring, soft earloops, and high breathability. Washable, reusable up to 30 times, and individually packaged. Available in adult and kids sizes. ₹15+GST per piece.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Face Masks & Respiratory Protection",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-MSK-SCUBA",
+    "images": [
+      "/images/ScubaFaceMask.jpg"
+    ],
+    "thumbnail": "/images/ScubaFaceMask.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 15,
+        "unit": "per mask",
+        "minimumOrderQuantity": 20,
+        "tiers": [
+          {
+            "minQty": 20,
+            "maxQty": 99,
+            "unitPrice": 15,
+            "label": "Clinic Pack (20-99 pcs)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": 499,
+            "unitPrice": 12,
+            "label": "Bulk Tier (100-499 pcs)"
+          },
+          {
+            "minQty": 500,
+            "maxQty": null,
+            "unitPrice": 10,
+            "label": "Wholesale Bulk (500+ pcs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 120,
+        "salePrice": 15,
+        "currency": "INR",
+        "unit": "per piece"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-scuba-adult",
+        "name": "Adult Size",
+        "sku": "YUG-MSK-SCUBA-AD",
+        "price": 15,
+        "available": true
+      },
+      {
+        "id": "var-scuba-kids",
+        "name": "Kids Size",
+        "sku": "YUG-MSK-SCUBA-KD",
+        "price": 15,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Ultra-soft flexible scuba material leaves no ear pressure or strap marks",
+      "3D laser-cut seamless structure hugs facial contours tightly",
+      "Washable and quick-drying for daily hygienic reusability",
+      "Dust, pollen, and droplet filtration with exceptional breathability"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "High-Grade Polyurethane Scuba Stretch",
+      "Reusability": "Washable up to 30+ Times",
+      "Features": "Antibacterial Treated, 3D Ergonomic Fit",
+      "Variants": "Adult Size & Kids Size",
+      "Packaging": "Individually Sealed Hygienic Pouch",
+      "Colors": "Black, Grey, Navy"
+    },
+    "rating": 4.9,
+    "reviewCount": 45,
+    "stock": 1200,
+    "moq": 20,
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-092",
+    "slug": "honeywell-clear-safety-goggles",
+    "name": "Honeywell Clear Safety Goggles",
+    "subtitle": "Honeywell Industrial & Clinical Anti-Fog Protective Eyewear (Case of 200)",
+    "shortDescription": "Honeywell certified protective safety goggles with impact-resistant polycarbonate lens and anti-scratch/anti-fog coating.",
+    "description": "Honeywell Clear Safety Goggles supplied by Bhairavi Surgicals & Distributors. Manufactured by Honeywell to strict ANSI Z87.1 / EN166 optical standards. Features high-clarity wraparound polycarbonate lens with integrated side shields and indirect ventilation ports. In 1 case 200 pcs.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Protective Apparel & PPE",
+    "brand": "Honeywell",
+    "sku": "HON-EYE-GOG01",
+    "images": [
+      "/images/HoneywellSafetyGoggles.jpg"
+    ],
+    "thumbnail": "/images/HoneywellSafetyGoggles.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 65,
+        "unit": "per piece",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 49,
+            "unitPrice": 65,
+            "label": "Clinic Tier (10-49 pcs)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 199,
+            "unitPrice": 58,
+            "label": "Hospital Tier (50-199 pcs)"
+          },
+          {
+            "minQty": 200,
+            "maxQty": null,
+            "unitPrice": 50,
+            "label": "Full Case Tier (200+ pcs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 250,
+        "salePrice": 65,
+        "currency": "INR",
+        "unit": "per piece"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Genuine Honeywell industrial-grade optical and impact protection",
+      "Wraparound wide-angle panoramic field of view",
+      "Can be comfortably worn over prescription glasses",
+      "Indirect ventilation channels airflow while blocking liquid splashes"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Brand": "Honeywell Safety Products",
+      "Lens Material": "Optically Clear High-Impact Polycarbonate",
+      "Coating": "Anti-Fog & Hard-Coat Anti-Scratch",
+      "Ventilation": "Indirect Vented Frame to Prevent Fogging",
+      "Standards": "ANSI Z87.1 & CE EN166 Certified",
+      "Packaging": "Individually Bagged, 200 Pcs/Case"
+    },
+    "rating": 4.9,
+    "reviewCount": 28,
+    "stock": 800,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-093",
+    "slug": "silicone-finger-grip-resistance-exerciser",
+    "name": "Silicone Finger & Grip Resistance Exerciser",
+    "subtitle": "High-Strength Flexible Silicone Hand & Finger Rehabilitation Trainer",
+    "shortDescription": "High-strength flexible silicone finger exerciser and hand grip strengthener for rehabilitation, neuromuscular therapy, and grip strength.",
+    "description": "Silicone Finger Exerciser supplied by Bhairavi Surgicals & Distributors. Crafted from medical-grade tear-resistant silicone polymer with multi-finger ergonomic loops and wrist strap. Designed for Panchkarma rehabilitation, stroke recovery, arthritis therapy, and musician/athlete grip conditioning. Rate: ₹85+GST.",
+    "category": "Daily Wellness & Herbal Care",
+    "categorySlug": "wellness-essentials",
+    "subcategory": "Therapy & Rehabilitation Aids",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-WELL-FNGEX",
+    "images": [
+      "/images/SiliconeFingerExerciser.jpg"
+    ],
+    "thumbnail": "/images/SiliconeFingerExerciser.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 85,
+        "unit": "per piece",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 85,
+            "label": "Clinic Tier (5-19 pcs)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 75,
+            "label": "Therapy Center (20-49 pcs)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 65,
+            "label": "Wholesale Bulk (50+ pcs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 350,
+        "salePrice": 85,
+        "currency": "INR",
+        "unit": "per piece"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Strengthens finger extensor and flexor muscles to relieve joint stiffness",
+      "Essential aid for post-Panchkarma physical therapy and neuromuscular recovery",
+      "Compact, portable, and durable design for anywhere exercise",
+      "Soft hypo-allergenic silicone will not irritate sensitive skin"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "100% High-Strength Food-Grade Silicone",
+      "Resistance Levels": "Multi-Resistance Tension Levels (Light, Medium, Heavy)",
+      "Design": "5-Finger Ergonomic Loop Gripper with Adjustable Wrist Band",
+      "Washable": "100% Water-Washable & Sanitizable"
+    },
+    "rating": 4.9,
+    "reviewCount": 21,
+    "stock": 400,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-094",
+    "slug": "livinguard-antiviral-cotton-mask",
+    "name": "Livinguard Antiviral Cotton Mask",
+    "subtitle": "Livinguard Technology Antiviral & Antibacterial Reusable Cotton Mask",
+    "shortDescription": "Livinguard technology reusable pure cotton face mask with continuous antiviral and antibacterial pathogen deactivation.",
+    "description": "Livinguard Cotton Mask supplied by Bhairavi Surgicals & Distributors. Imbued with patented Livinguard positively charged textile technology that actively destroys negatively charged virus and bacteria membranes on contact. Reusable, washable up to 30 times with plain water, and made of ultra-soft 100% breathable cotton. ₹10+GST per piece.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Face Masks & Respiratory Protection",
+    "brand": "Livinguard",
+    "sku": "LVG-MSK-COT01",
+    "images": [
+      "/images/LivinguardCottonMask.jpg"
+    ],
+    "thumbnail": "/images/LivinguardCottonMask.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 10,
+        "unit": "per mask",
+        "minimumOrderQuantity": 20,
+        "tiers": [
+          {
+            "minQty": 20,
+            "maxQty": 99,
+            "unitPrice": 10,
+            "label": "Clinic Pack (20-99 pcs)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": 499,
+            "unitPrice": 9,
+            "label": "Hospital Tier (100-499 pcs)"
+          },
+          {
+            "minQty": 500,
+            "maxQty": null,
+            "unitPrice": 8,
+            "label": "Wholesale Bulk (500+ pcs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 150,
+        "salePrice": 10,
+        "currency": "INR",
+        "unit": "per piece"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Continuous active viral and bacterial deactivation on contact",
+      "Breathable natural cotton construction prevents moisture accumulation",
+      "Cost-effective, replacing dozens of single-use disposable masks",
+      "Gentle on sensitive facial skin without chemical off-gassing"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Technology": "Patented Livinguard Antiviral Textile Coating",
+      "Fabric": "100% Soft Bio-Washed Cotton",
+      "Washability": "Reusable up to 30 gentle washes",
+      "Fit": "Ergonomic Chin & Nose Contouring with Soft Earloops",
+      "Safety": "Non-Toxic, Zinc & Silver Free Bio-Compatible Treatment"
+    },
+    "rating": 4.8,
+    "reviewCount": 35,
+    "stock": 1000,
+    "moq": 20,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-095",
+    "slug": "blue-cotton-hospital-gown-reusable",
+    "name": "Blue Cotton Hospital Gown (Reusable)",
+    "subtitle": "Heavy-Duty Washable & Autoclavable Blue Cotton Patient/Surgeon Gown",
+    "shortDescription": "High-durability 100% blue cotton hospital gown with overlap back ties and reinforced seams, fully washable and autoclavable.",
+    "description": "Blue Cotton Gown supplied by Bhairavi Surgicals & Distributors. Stitched from premium 100% pre-shrunk cotton fabric dyed in therapeutic hospital blue. Features full back overlap coverage with sturdy double-stitched twill ties and raglan sleeves for unrestricted mobility during surgeries and hospital care. Rate: ₹225+GST.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-GWN-COT-BLU",
+    "images": [
+      "/images/BlueCottonHospitalGown.jpg"
+    ],
+    "thumbnail": "/images/BlueCottonHospitalGown.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 225,
+        "unit": "per gown",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 225,
+            "label": "Clinic Pack (5-19 pcs)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 210,
+            "label": "Hospital Tier (20-49 pcs)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 195,
+            "label": "Institutional Bulk (50+ pcs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 650,
+        "salePrice": 225,
+        "currency": "INR",
+        "unit": "per gown"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Heavy-duty pure cotton stands up to 100+ industrial wash and steam autoclave cycles",
+      "Full overlap back ties ensure patient dignity and total coverage",
+      "Soft breathable natural cotton prevents patient perspiration and rash",
+      "Colorfast reactive blue dye will not fade or bleed in hospital detergents"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "100% Heavy-Duty Cotton Sheeting",
+      "Color": "Hospital Surgeon Blue",
+      "Length": "44 inches (Full Knee Length)",
+      "Sleeves": "Full Length with Ribbed Cuffs",
+      "Closure": "Double Back Tie Closure with Overlap Flap",
+      "Wash Care": "Autoclavable, High-Temp Commercial Laundry Safe"
+    },
+    "rating": 4.9,
+    "reviewCount": 24,
+    "stock": 350,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-096",
+    "slug": "pink-3-ply-surgical-face-mask",
+    "name": "Pink 3-Ply Surgical Face Mask (Meltblown Filter)",
+    "subtitle": "High BFE Meltblown 3-Ply Protective Face Mask (50 Pcs Pouch / 6000 Pcs Bulk)",
+    "shortDescription": "Pastel pink 3-layer surgical disposable face mask featuring high-filtration meltblown core and soft ultrasonic-welded earloops.",
+    "description": "Facemask Pink 3ply supplied by Bhairavi Surgicals & Distributors. Constructed with outer fluid-repellent non-woven layer, high-efficiency meltblown filtration middle layer (>98% BFE), and soft skin-friendly inner layer. Available in 50 pc pouches and 6000 pc master goni sacks. Rate: ₹0.80+GST per piece.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Face Masks & Respiratory Protection",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-MSK-3P-PNK",
+    "images": [
+      "/images/Pink3PlyFaceMask.jpg"
+    ],
+    "thumbnail": "/images/Pink3PlyFaceMask.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 40,
+        "unit": "per pouch of 50 pcs (₹0.80/pc)",
+        "minimumOrderQuantity": 10,
+        "tiers": [
+          {
+            "minQty": 10,
+            "maxQty": 49,
+            "unitPrice": 40,
+            "label": "Pack Tier (10-49 pouches)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": 119,
+            "unitPrice": 38,
+            "label": "Hospital Tier (50-119 pouches)"
+          },
+          {
+            "minQty": 120,
+            "maxQty": null,
+            "unitPrice": 35,
+            "label": "Master Bulk (6000 pcs goni)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 150,
+        "salePrice": 40,
+        "currency": "INR",
+        "unit": "per pouch of 50 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "High-efficiency meltblown filter traps bacteria, pollen, and airborne droplets",
+      "Distinctive attractive pastel pink color popular in dental, aesthetic, and maternity clinics",
+      "Ultrasonic welded earloops eliminate ear fatigue and breakage",
+      "Hypoallergenic soft inner layer prevents mask acne and skin friction"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Color": "Pastel Pink",
+      "Layers": "3-Ply (Non-Woven + Meltblown + Non-Woven)",
+      "BFE": "> 98% Bacterial Filtration Efficiency",
+      "Nose Clip": "Embedded Pliable Aluminum Strip",
+      "Packaging": "50 Pcs Pouch, 6,000 Pcs Master Goni"
+    },
+    "rating": 4.8,
+    "reviewCount": 40,
+    "stock": 3000,
+    "moq": 10,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-097",
+    "slug": "lavender-nitrile-examination-gloves",
+    "name": "Lavender Nitrile Examination Gloves",
+    "subtitle": "Powder-Free Soft Lavender Nitrile Medical Examination Gloves (Box of 100)",
+    "shortDescription": "Medical-grade powder-free soft lavender nitrile examination gloves offering superior tactile sensitivity and relaxed hand comfort.",
+    "description": "Lavender Nitrile Gloves supplied by Bhairavi Surgicals & Distributors. Manufactured with advanced soft nitrile formulation that provides tactile sensitivity approaching latex while delivering 100% latex-free and powder-free chemical resistance. Specially sized in Small and Extra Small (XS) for precise ergonomic fit. 100 pcs per box. Rate: ₹170+GST.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-GLV-NIT-LAV",
+    "images": [
+      "/images/LavenderNitrileGloves.jpg"
+    ],
+    "thumbnail": "/images/LavenderNitrileGloves.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 170,
+        "unit": "per box (100 pcs)",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 170,
+            "label": "Clinic Tier (5-19 boxes)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 160,
+            "label": "Hospital Tier (20-49 boxes)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 150,
+            "label": "Wholesale Bulk (50+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 1200,
+        "salePrice": 170,
+        "currency": "INR",
+        "unit": "per box of 100 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-nit-lav-xs",
+        "name": "Extra Small (XS)",
+        "sku": "YUG-GLV-NIT-LAV-XS",
+        "price": 170,
+        "available": true
+      },
+      {
+        "id": "var-nit-lav-s",
+        "name": "Small (S)",
+        "sku": "YUG-GLV-NIT-LAV-S",
+        "price": 170,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Specially tailored for smaller hands (XS and S) to eliminate finger bunching",
+      "Softer modulus nitrile reduces hand fatigue during extended surgical procedures",
+      "Exceptional puncture resistance and barrier protection against chemicals & pathogens",
+      "100% latex-free and powder-free formulation"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Material": "100% Synthetic Soft Nitrile Polymer",
+      "Color": "Lavender / Soft Violet",
+      "Sizes Available": "Extra Small (XS), Small (S)",
+      "Type": "Medical Grade, Powder-Free, Non-Sterile",
+      "Packaging": "100 Gloves / Box (50 Pairs)",
+      "Texture": "Micro-Textured Fingertips"
+    },
+    "rating": 4.9,
+    "reviewCount": 31,
+    "stock": 750,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-098",
+    "slug": "disposable-boot-covers-extra-large",
+    "name": "Disposable Boot Covers – Extra Large (Box of 50)",
+    "subtitle": "Thick Polypropylene Fluid-Resistant Non-Skid High-Top Boot Covers",
+    "shortDescription": "Heavy-duty extra-large disposable boot covers made from thick fluid-resistant polypropylene with non-skid tread.",
+    "description": "Disposable Boot Covers – X-Large supplied by Bhairavi Surgicals & Distributors. Engineered from heavyweight polypropylene fabric with non-impervious fluid-resistant coating. Features high-traction skid-resistant tread pattern and dual elasticated calf bands for secure stay-up fit over surgical boots and oversized footwear. 50 pcs per box.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-BOOT-XL50",
+    "images": [
+      "/images/DisposableBootCoversXL.jpg"
+    ],
+    "thumbnail": "/images/DisposableBootCoversXL.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 120,
+        "unit": "per box of 50 pcs",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 120,
+            "label": "Clinic Pack (5-19 boxes)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 110,
+            "label": "Hospital Tier (20-49 boxes)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 100,
+            "label": "Wholesale Bulk (50+ boxes)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 450,
+        "salePrice": 120,
+        "currency": "INR",
+        "unit": "per box of 50 pcs"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Extra-large boot profile easily accommodates heavy medical work boots",
+      "Printed non-skid bottom tread prevents slipping on wet or oily hospital floors",
+      "Tear-resistant heavy polypropylene shields lower legs and boots from fluids",
+      "Dual elastic bands ensure covers remain firmly in place without sagging"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Size": "Extra Large (Fits up to Men's Size 14 / Medical Work Boots)",
+      "Material": "Thick Non-Woven Polypropylene with Barrier Laminate",
+      "Tread": "Printed High-Traction Non-Skid Pattern",
+      "Height": "High-Top Ankle & Calf Coverage (16 inch height)",
+      "Packaging": "50 Pcs / Dispenser Box"
+    },
+    "rating": 4.8,
+    "reviewCount": 17,
+    "stock": 500,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-099",
+    "slug": "honeywell-industrial-safety-helmet",
+    "name": "Honeywell Industrial Safety Hard Hat Helmet",
+    "subtitle": "Honeywell High-Impact HDPE Industrial Safety Helmet with Ratchet Suspension",
+    "shortDescription": "Honeywell certified high-density polyethylene industrial safety hard hat with 4-point adjustable ratchet suspension and ventilation.",
+    "description": "Honeywell Industrial Safety Helmet supplied by Bhairavi Surgicals & Distributors. Manufactured by Honeywell in compliance with IS 2925 and ANSI Z89.1 Type I Class C/G standards. Constructed from virgin high-density polyethylene (HDPE) with shock-absorbing 4-point ratchet suspension, replaceable sweatband, and rain trough.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Protective Apparel & PPE",
+    "brand": "Honeywell",
+    "sku": "HON-HLM-IND01",
+    "images": [
+      "/images/HoneywellSafetyHelmet.jpg"
+    ],
+    "thumbnail": "/images/HoneywellSafetyHelmet.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 180,
+        "unit": "per helmet",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 19,
+            "unitPrice": 180,
+            "label": "Institutional Tier (5-19 pcs)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": 49,
+            "unitPrice": 165,
+            "label": "Contractor Tier (20-49 pcs)"
+          },
+          {
+            "minQty": 50,
+            "maxQty": null,
+            "unitPrice": 150,
+            "label": "Wholesale Bulk (50+ pcs)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 650,
+        "salePrice": 180,
+        "currency": "INR",
+        "unit": "per piece"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Genuine Honeywell brand certified for industrial head protection",
+      "Smooth twist-to-fit ratchet suspension adjusts effortlessly to any head size",
+      "Rigid HDPE shell absorbs and disperses impact shock energy",
+      "Built-in moisture-wicking foam brow pad enhances wearer comfort"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Brand": "Honeywell Safety Products",
+      "Shell Material": "High-Density Polyethylene (HDPE)",
+      "Suspension": "4-Point Ratchet Adjustable Suspension",
+      "Standards": "IS:2925 / ANSI Z89.1 Certified",
+      "Features": "Integrated Rain Trough, Air Ventilation Ports, Sweatband"
+    },
+    "rating": 4.9,
+    "reviewCount": 29,
+    "stock": 350,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-100",
+    "slug": "non-woven-protective-coverall-kit",
+    "name": "Non-Woven Protective Coverall Kit",
+    "subtitle": "Full-Body Protective Non-Woven Coverall Kit (With & Without Tape Options)",
+    "shortDescription": "Full body protective non-woven coverall kit with integrated hood, boot covers, and zipper, available in standard and taped seam variants.",
+    "description": "Non-Woven Coverall Kit supplied by Bhairavi Surgicals & Distributors. Manufactured from durable spunbond non-woven fabric providing particulate and splash protection. Available in both Standard Non-Taped (₹110+GST) and Taped Seam (₹145+GST) specifications. Includes full hooded suit with front zipper, elastic wrists, and integrated shoe covers.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Hospital & Clinic Disposables",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-COV-NW-KIT",
+    "images": [
+      "/images/NonWovenCoverallKit.jpg"
+    ],
+    "thumbnail": "/images/NonWovenCoverallKit.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 110,
+        "unit": "per kit",
+        "minimumOrderQuantity": 5,
+        "tiers": [
+          {
+            "minQty": 5,
+            "maxQty": 24,
+            "unitPrice": 110,
+            "label": "Clinic Pack (5-24 kits)"
+          },
+          {
+            "minQty": 25,
+            "maxQty": 99,
+            "unitPrice": 100,
+            "label": "Hospital Tier (25-99 kits)"
+          },
+          {
+            "minQty": 100,
+            "maxQty": null,
+            "unitPrice": 90,
+            "label": "Wholesale Bulk (100+ kits)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 400,
+        "salePrice": 110,
+        "currency": "INR",
+        "unit": "per kit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [
+      {
+        "id": "var-cov-std",
+        "name": "Standard (Without Tape)",
+        "sku": "YUG-COV-NW-STD",
+        "price": 110,
+        "available": true
+      },
+      {
+        "id": "var-cov-tape",
+        "name": "Sealed (With Tape)",
+        "sku": "YUG-COV-NW-TAPE",
+        "price": 145,
+        "available": true
+      }
+    ],
+    "benefits": [
+      "Economical full-body isolation and bio-protection kit",
+      "Available in both budget non-taped and premium sealed-tape variants",
+      "Breathable non-woven fabric allows air circulation while blocking particulates",
+      "Individually packed for sterile clinical storage and quick deployment"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Fabric": "Spunbond Non-Woven Polypropylene (50-60 GSM)",
+      "Variants": "Without Tape (Standard) & With Heat-Sealed Seam Tape",
+      "Design": "Full Body Suit with Attached Hood & Elastic Wrist/Ankles",
+      "Packaging": "Individually Sealed Kit with Shoe Covers"
+    },
+    "rating": 4.8,
+    "reviewCount": 22,
+    "stock": 600,
+    "moq": 5,
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "websiteAvailability": {
+      "b2b": true,
+      "b2c": true,
+      "special": false
+    },
+    "salesMode": {
+      "b2b": "quote",
+      "b2c": "cart",
+      "special": "order"
+    }
+  },
+  {
+    "id": "prod-101",
+    "slug": "infrared-digital-non-contact-thermometer",
+    "name": "Infrared Digital Non-Contact Thermometer",
+    "subtitle": "Medical Grade Forehead Infrared Thermometer with 2-Year Warranty",
+    "shortDescription": "Instant 1-second non-contact digital infrared thermometer with tri-color fever alarm LCD display and 2-year warranty.",
+    "description": "Infrared Thermometer supplied by Bhairavi Surgicals & Distributors. Features advanced German-engineered micro-infrared sensor delivering clinical body temperature readings in under 1 second from a distance of 3–5 cm. Features 3-color backlit LCD display (Green/Yellow/Red fever alert), 32-reading memory recall, and full 2-Year Replacement Warranty. MRP ₹2,999. Rate: ₹650+GST.",
+    "category": "Clinical Essentials & Disposables",
+    "categorySlug": "clinic-essentials",
+    "subcategory": "Diagnostic & Monitoring Equipment",
+    "brand": "Bhairavi Surgical",
+    "sku": "YUG-MED-THRM-IR",
+    "images": [
+      "/images/InfraredThermometer.jpg"
+    ],
+    "thumbnail": "/images/InfraredThermometer.jpg",
+    "pricing": {
+      "b2b": {
+        "enabled": true,
+        "price": 650,
+        "unit": "per unit",
+        "minimumOrderQuantity": 2,
+        "tiers": [
+          {
+            "minQty": 2,
+            "maxQty": 5,
+            "unitPrice": 650,
+            "label": "Clinic Tier (2-5 units)"
+          },
+          {
+            "minQty": 6,
+            "maxQty": 19,
+            "unitPrice": 590,
+            "label": "Hospital Tier (6-19 units)"
+          },
+          {
+            "minQty": 20,
+            "maxQty": null,
+            "unitPrice": 520,
+            "label": "Wholesale Bulk (20+ units)"
+          }
+        ]
+      },
+      "b2c": {
+        "enabled": true,
+        "price": 2999,
+        "salePrice": 650,
+        "currency": "INR",
+        "unit": "per unit"
+      },
+      "special": {
+        "enabled": false,
+        "price": null,
+        "unit": "N/A"
+      }
+    },
+    "variants": [],
+    "benefits": [
+      "Instant 1-second rapid non-contact measurement prevents viral cross-infection",
+      "Tri-color fever alarm backlight provides immediate visual diagnostic cues",
+      "Full 2-Year Manufacturer Replacement Warranty for complete peace of mind",
+      "High-precision German IR sensor calibrated for clinical hospital QA standards"
+    ],
+    "ingredients": [],
+    "specifications": {
+      "Measuring Time": "≤ 1.0 Second",
+      "Measuring Distance": "3 to 5 cm (Non-Contact)",
+      "Accuracy": "± 0.2°C (35.0°C – 42.0°C)",
+      "Display": "Tri-Color Backlit HD LCD (Normal/Mild/High Fever)",
+      "Memory": "32 Measurement Sets Storage",
+      "Warranty": "2-Year Direct Replacement Warranty",
+      "MRP": "₹2,999"
+    },
+    "rating": 5,
+    "reviewCount": 48,
+    "stock": 450,
+    "moq": 2,
+    "isFeatured": true,
+    "isBestSeller": true,
     "isNewArrival": true,
     "websiteAvailability": {
       "b2b": true,
