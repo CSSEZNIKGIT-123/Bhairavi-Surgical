@@ -35,28 +35,63 @@ export async function PUT(request, { params }) {
 
     const body = await request.json();
 
+    const dataToUpdate = {};
+
+    if (body.title !== undefined) dataToUpdate.title = body.title;
+    if (body.sku !== undefined) dataToUpdate.sku = body.sku;
+    if (body.subtitle !== undefined) dataToUpdate.subtitle = body.subtitle || null;
+    if (body.details !== undefined) dataToUpdate.details = body.details || null;
+    if (body.description !== undefined) dataToUpdate.description = body.description;
+    
+    if (body.stock !== undefined) dataToUpdate.stock = parseInt(body.stock, 10) || 0;
+    if (body.moq !== undefined) dataToUpdate.moq = parseInt(body.moq, 10) || 1;
+
+    if (body.isB2B !== undefined) dataToUpdate.isB2B = Boolean(body.isB2B);
+    if (body.isB2C !== undefined) dataToUpdate.isB2C = Boolean(body.isB2C);
+    if (body.isSpecial !== undefined) dataToUpdate.isSpecial = Boolean(body.isSpecial);
+
+    if (body.isFeatured !== undefined) dataToUpdate.isFeatured = Boolean(body.isFeatured);
+    if (body.isBestSeller !== undefined) dataToUpdate.isBestSeller = Boolean(body.isBestSeller);
+    if (body.isNewArrival !== undefined) dataToUpdate.isNewArrival = Boolean(body.isNewArrival);
+
+    if (body.retailPrice !== undefined) dataToUpdate.retailPrice = parseFloat(body.retailPrice) || 0;
+    if (body.salePrice !== undefined) dataToUpdate.salePrice = body.salePrice ? parseFloat(body.salePrice) : null;
+    if (body.b2bBasePrice !== undefined) dataToUpdate.b2bBasePrice = body.b2bBasePrice ? parseFloat(body.b2bBasePrice) : null;
+    if (body.specialBasePrice !== undefined) dataToUpdate.specialBasePrice = body.specialBasePrice ? parseFloat(body.specialBasePrice) : null;
+    
+    if (body.badge !== undefined) dataToUpdate.badge = body.badge || null;
+    if (body.categoryId !== undefined) dataToUpdate.categoryId = body.categoryId || null;
+    if (body.brandId !== undefined) dataToUpdate.brandId = body.brandId || null;
+
+    if (body.images !== undefined) {
+      dataToUpdate.images = typeof body.images === 'string' ? body.images : JSON.stringify(body.images);
+    } else if (body.imageUrl !== undefined) {
+      dataToUpdate.images = JSON.stringify([body.imageUrl]);
+    }
+
+    if (body.specifications !== undefined) {
+      dataToUpdate.specifications = typeof body.specifications === 'string'
+        ? body.specifications
+        : JSON.stringify(body.specifications);
+    }
+
     const product = await prisma.product.update({
       where: { id },
-      data: {
-        title: body.title,
-        subtitle: body.subtitle,
-        description: body.description,
-        stock: body.stock !== undefined ? parseInt(body.stock) : undefined,
-        moq: body.moq !== undefined ? parseInt(body.moq) : undefined,
-        isB2B: body.isB2B !== undefined ? !!body.isB2B : undefined,
-        isB2C: body.isB2C !== undefined ? !!body.isB2C : undefined,
-        isSpecial: body.isSpecial !== undefined ? !!body.isSpecial : undefined,
-        retailPrice: body.retailPrice !== undefined ? parseFloat(body.retailPrice) : undefined,
-        salePrice: body.salePrice !== undefined ? (body.salePrice ? parseFloat(body.salePrice) : null) : undefined,
-        b2bBasePrice: body.b2bBasePrice !== undefined ? (body.b2bBasePrice ? parseFloat(body.b2bBasePrice) : null) : undefined,
-        specialBasePrice: body.specialBasePrice !== undefined ? (body.specialBasePrice ? parseFloat(body.specialBasePrice) : null) : undefined,
-        badge: body.badge !== undefined ? body.badge : undefined,
+      data: dataToUpdate,
+      include: {
+        category: true,
+        brand: true,
+        priceTiers: true,
       },
     });
 
     return NextResponse.json({ success: true, product });
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to update product' }, { status: 500 });
+    console.error('Error updating product:', error);
+    return NextResponse.json(
+      { error: error?.message || 'Failed to update product' },
+      { status: 500 }
+    );
   }
 }
 
