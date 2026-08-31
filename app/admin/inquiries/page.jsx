@@ -112,20 +112,20 @@ export default function AdminInquiriesPage() {
   }, [inquiries, searchTerm, selectedStatus]);
 
   return (
-    <div className="space-y-6 font-poppins text-slate-100">
+    <div className="space-y-6 font-poppins text-slate-900">
       
-      {/* 1. Header */}
+      {/* 1. Header (Pure Light) */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2.5">
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
               Special Bespoke Commissions & Consultations
             </h1>
-            <span className="px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 font-mono text-xs font-semibold">
+            <span className="px-2.5 py-0.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 font-mono text-xs font-bold">
               {inquiries.length} Commissions
             </span>
           </div>
-          <p className="text-xs sm:text-sm text-slate-400 mt-1">
+          <p className="text-xs sm:text-sm text-slate-500 mt-1">
             Private requests for single-log carved Burmese teak Droni tables, hand-beaten brass Shirodhara apparatus, and sanctuary suites.
           </p>
         </div>
@@ -134,9 +134,9 @@ export default function AdminInquiriesPage() {
           type="button"
           onClick={loadInquiries}
           title="Refresh Inquiries"
-          className="self-start md:self-auto p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
+          className="self-start md:self-auto p-2.5 rounded-xl bg-white border border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors shadow-2xs"
         >
-          <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin text-emerald-400' : ''}`} />
+          <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin text-emerald-600' : ''}`} />
         </button>
       </div>
 
@@ -145,17 +145,17 @@ export default function AdminInquiriesPage() {
         <div
           className={`p-3.5 rounded-2xl border text-xs flex items-center gap-2.5 animate-in fade-in duration-200 ${
             notification.type === 'success'
-              ? 'bg-emerald-950/90 border-emerald-700/80 text-emerald-200'
-              : 'bg-rose-950/90 border-rose-700/80 text-rose-200'
+              ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
+              : 'bg-rose-50 border-rose-200 text-rose-800'
           }`}
         >
-          <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-          <span className="font-medium">{notification.text}</span>
+          <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+          <span className="font-semibold">{notification.text}</span>
         </div>
       )}
 
-      {/* 2. Filters & Status Tabs */}
-      <div className="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 backdrop-blur-xl shadow-lg space-y-3.5">
+      {/* 2. Filters & Status Tabs (Pure Light) */}
+      <div className="bg-white border border-slate-200/80 rounded-2xl p-4 shadow-sm space-y-3.5">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
           
           {/* Search */}
@@ -166,13 +166,13 @@ export default function AdminInquiriesPage() {
               placeholder="Search client, organization, inquiry #..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-9 pr-8 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-amber-500 transition-colors"
+              className="w-full pl-9 pr-8 py-2 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:bg-white focus:border-amber-500 transition-colors"
             />
             {searchTerm && (
               <button
                 type="button"
                 onClick={() => setSearchTerm('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700"
               >
                 <X className="w-3.5 h-3.5" />
               </button>
@@ -186,10 +186,10 @@ export default function AdminInquiriesPage() {
                 key={st}
                 type="button"
                 onClick={() => setSelectedStatus(st)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all shrink-0 ${
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all shrink-0 ${
                   selectedStatus === st
-                    ? 'bg-amber-600 text-white font-bold shadow-md shadow-amber-950'
-                    : 'bg-slate-950 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800'
+                    ? 'bg-amber-600 text-white font-bold shadow-2xs'
+                    : 'bg-slate-100 text-slate-600 hover:text-slate-900 hover:bg-slate-200/80 border border-slate-200/60'
                 }`}
               >
                 {st === 'ALL'
@@ -209,8 +209,8 @@ export default function AdminInquiriesPage() {
         </div>
       </div>
 
-      {/* 3. Inquiries Table */}
-      <div className="bg-slate-900/60 border border-slate-800/80 rounded-3xl overflow-hidden backdrop-blur-xl shadow-xl">
+      {/* 3. Inquiries Table (Pure Light) */}
+      <div className="bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-sm">
         {loading ? (
           <div className="p-6">
             <AdminTableSkeleton rows={5} cols={6} />
@@ -229,7 +229,7 @@ export default function AdminInquiriesPage() {
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-xs text-left">
-              <thead className="text-slate-400 uppercase tracking-wider text-[10px] bg-slate-950/80 border-b border-slate-800/80">
+              <thead className="text-slate-500 uppercase tracking-wider text-[10px] bg-slate-50 border-b border-slate-200 font-bold">
                 <tr>
                   <th className="py-3.5 px-4">Ref & Date</th>
                   <th className="py-3.5 px-4">Vaidya / Patron</th>
@@ -240,31 +240,31 @@ export default function AdminInquiriesPage() {
                   <th className="py-3.5 px-4 text-right">Actions</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-800/50 text-slate-200">
+              <tbody className="divide-y divide-slate-100 text-slate-700">
                 {filteredInquiries.map((inq) => (
-                  <tr key={inq.id} className="hover:bg-slate-800/40 transition-colors group">
+                  <tr key={inq.id} className="hover:bg-slate-50/80 transition-colors group">
                     <td className="py-3.5 px-4">
-                      <div className="font-mono font-bold text-amber-400">{inq.inquiryNumber}</div>
-                      <div className="text-[10px] text-slate-400 mt-0.5">
+                      <div className="font-mono font-bold text-amber-800">{inq.inquiryNumber}</div>
+                      <div className="text-[10px] text-slate-500 mt-0.5">
                         {inq.createdAt ? new Date(inq.createdAt).toLocaleDateString() : 'Recent'}
                       </div>
                     </td>
 
-                    <td className="py-3.5 px-4 font-semibold text-white">
-                      <div>{inq.name}</div>
-                      <div className="text-[10px] text-slate-400 flex items-center gap-2 mt-0.5">
+                    <td className="py-3.5 px-4 font-semibold text-slate-900">
+                      <div className="font-bold">{inq.name}</div>
+                      <div className="text-[10px] text-slate-500 flex items-center gap-2 mt-0.5">
                         <span>{inq.phone}</span>
                         <span>•</span>
                         <span>{inq.email}</span>
                       </div>
                     </td>
 
-                    <td className="py-3.5 px-3 text-slate-300">
+                    <td className="py-3.5 px-3 text-slate-700 font-medium">
                       {inq.organization || 'Private Sanctuary'}
                     </td>
 
                     <td className="py-3.5 px-3">
-                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-950 text-slate-300 border border-slate-800">
+                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
                         {inq.requirementType || 'Custom Artisan Commission'}
                       </span>
                     </td>
@@ -272,10 +272,10 @@ export default function AdminInquiriesPage() {
                     <td className="py-3.5 px-3">
                       <span className={`text-[10px] font-bold px-2 py-0.5 rounded ${
                         inq.priority === 'URGENT'
-                          ? 'bg-rose-500/20 text-rose-300 border border-rose-500/30'
+                          ? 'bg-rose-50 text-rose-700 border border-rose-200'
                           : inq.priority === 'HIGH'
-                          ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30'
-                          : 'bg-slate-800 text-slate-400'
+                          ? 'bg-amber-50 text-amber-700 border border-amber-200'
+                          : 'bg-slate-100 text-slate-700'
                       }`}>
                         {inq.priority || 'NORMAL'}
                       </span>
@@ -289,7 +289,7 @@ export default function AdminInquiriesPage() {
                       <button
                         type="button"
                         onClick={() => handleOpenInquiry(inq)}
-                        className="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 text-slate-300 hover:text-white hover:bg-amber-600 transition-all font-semibold text-xs"
+                        className="px-3 py-1.5 rounded-xl bg-white border border-slate-200 hover:border-amber-300 text-slate-700 hover:text-amber-800 hover:bg-amber-50 transition-all font-semibold text-xs shadow-2xs"
                       >
                         Consult
                       </button>
@@ -302,23 +302,23 @@ export default function AdminInquiriesPage() {
         )}
       </div>
 
-      {/* 4. Consultation & Status Modal */}
+      {/* 4. Consultation & Status Modal (Pure Light) */}
       {selectedInquiry && (
         <Modal
           isOpen={Boolean(selectedInquiry)}
           onClose={() => setSelectedInquiry(null)}
           title={`Consultation: Ref #${selectedInquiry.inquiryNumber}`}
           subtitle={`Client: ${selectedInquiry.name} • ${selectedInquiry.organization || 'Private'}`}
-          className="bg-slate-900 border-slate-800 text-slate-100 max-w-2xl"
+          className="bg-white border-slate-200 text-slate-900 max-w-2xl shadow-2xl"
         >
           <form onSubmit={handleUpdateStatus} className="space-y-5 text-xs">
             
             {/* Contact quick actions */}
-            <div className="p-3.5 bg-slate-950/70 rounded-2xl border border-slate-800 space-y-3">
+            <div className="p-3.5 bg-slate-50 rounded-2xl border border-slate-200 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <div>
-                  <div className="text-sm font-bold text-white">{selectedInquiry.name}</div>
-                  <div className="text-slate-400">{selectedInquiry.email} • {selectedInquiry.phone}</div>
+                  <div className="text-sm font-bold text-slate-900">{selectedInquiry.name}</div>
+                  <div className="text-slate-500">{selectedInquiry.email} • {selectedInquiry.phone}</div>
                 </div>
 
                 <div className="flex items-center gap-2">
@@ -326,14 +326,14 @@ export default function AdminInquiriesPage() {
                     href={`https://wa.me/${selectedInquiry.phone?.replace(/[^0-9]/g, '')}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-600 hover:text-white transition-all font-semibold text-xs"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 hover:bg-emerald-600 hover:text-white transition-all font-semibold text-xs shadow-2xs"
                   >
                     <MessageSquare className="w-3.5 h-3.5" />
                     <span>WhatsApp</span>
                   </a>
                   <a
                     href={`tel:${selectedInquiry.phone}`}
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800 text-slate-300 hover:text-white transition-colors font-semibold text-xs"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition-colors font-semibold text-xs shadow-2xs"
                   >
                     <Phone className="w-3.5 h-3.5" />
                     <span>Call</span>
@@ -342,11 +342,11 @@ export default function AdminInquiriesPage() {
               </div>
 
               {selectedInquiry.message && (
-                <div className="pt-2 border-t border-slate-800/80">
-                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">
+                <div className="pt-2.5 border-t border-slate-200">
+                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block mb-1">
                     Client Requirements / Vision
                   </span>
-                  <p className="text-slate-200 leading-relaxed bg-slate-900/60 p-2.5 rounded-xl border border-slate-800/60">
+                  <p className="text-slate-800 leading-relaxed bg-white p-2.5 rounded-xl border border-slate-200 shadow-2xs">
                     {selectedInquiry.message}
                   </p>
                 </div>
@@ -356,13 +356,13 @@ export default function AdminInquiriesPage() {
             {/* Status selector & Notes */}
             <div className="space-y-3">
               <div>
-                <label className="block text-[11px] font-semibold text-slate-300 mb-1">
-                  Commission Pipeline Status <span className="text-rose-400">*</span>
+                <label className="block text-[11px] font-bold text-slate-700 mb-1">
+                  Commission Pipeline Status <span className="text-rose-600">*</span>
                 </label>
                 <select
                   value={inquiryStatus}
                   onChange={(e) => setInquiryStatus(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:bg-white focus:outline-none focus:border-amber-500 font-medium"
                 >
                   <option value="NEW">NEW (Awaiting First Review)</option>
                   <option value="CONTACTED">CONTACTED (Initial Discovery Sent)</option>
@@ -373,7 +373,7 @@ export default function AdminInquiriesPage() {
               </div>
 
               <div>
-                <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                <label className="block text-[11px] font-bold text-slate-700 mb-1">
                   Master Artisan Consultation Notes
                 </label>
                 <textarea
@@ -381,24 +381,24 @@ export default function AdminInquiriesPage() {
                   value={adminNotes}
                   onChange={(e) => setAdminNotes(e.target.value)}
                   placeholder="Record wood specifications (e.g. Single teak log 7.5ft x 3ft), brass gauge preferences, delivery schedule..."
-                  className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:bg-white focus:outline-none focus:border-amber-500"
                 />
               </div>
             </div>
 
             {/* Actions */}
-            <div className="flex items-center justify-end gap-3 pt-3 border-t border-slate-800">
+            <div className="flex items-center justify-end gap-3 pt-3 border-t border-slate-100">
               <button
                 type="button"
                 onClick={() => setSelectedInquiry(null)}
-                className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-colors"
+                className="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold transition-colors"
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 disabled={updating}
-                className="flex items-center gap-2 px-5 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 disabled:opacity-50 text-white font-bold transition-all shadow-lg shadow-amber-950"
+                className="flex items-center gap-2 px-5 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 disabled:opacity-50 text-white font-bold transition-all shadow-md shadow-amber-900/10"
               >
                 {updating ? (
                   <>

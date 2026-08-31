@@ -28,9 +28,6 @@ import AdminStatusBadge from '@/components/admin/AdminStatusBadge';
 import AdminEmptyState from '@/components/admin/AdminEmptyState';
 import AdminTableSkeleton from '@/components/admin/AdminTableSkeleton';
 import Modal from '@/components/ui/Modal';
-import Input from '@/components/ui/Input';
-import Select from '@/components/ui/Select';
-import Textarea from '@/components/ui/Textarea';
 
 const ITEMS_PER_PAGE = 15;
 
@@ -325,20 +322,20 @@ export default function AdminProductsPage() {
   };
 
   return (
-    <div className="space-y-6 font-poppins text-slate-100">
+    <div className="space-y-6 font-poppins text-slate-900">
       
-      {/* 1. Header & Actions */}
+      {/* 1. Header & Actions (Pure Light) */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2.5">
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
               Multi-Mode Catalog Management
             </h1>
-            <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+            <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-bold">
               {products.length} SKUs
             </span>
           </div>
-          <p className="text-xs sm:text-sm text-slate-400 mt-1">
+          <p className="text-xs sm:text-sm text-slate-500 mt-1">
             Manage pricing tiers, inventory levels, clinical specifications, and channel visibility across B2B, B2C, and Special Atelier.
           </p>
         </div>
@@ -348,14 +345,14 @@ export default function AdminProductsPage() {
             type="button"
             onClick={loadData}
             title="Refresh Catalog"
-            className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
+            className="p-2.5 rounded-xl bg-white border border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors shadow-2xs"
           >
-            <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin text-emerald-400' : ''}`} />
+            <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin text-emerald-600' : ''}`} />
           </button>
           <button
             type="button"
             onClick={handleOpenAdd}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-lg shadow-emerald-950 hover:shadow-emerald-900 hover:-translate-y-0.5"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-900/10 hover:shadow-emerald-900/20 hover:-translate-y-0.5"
           >
             <Plus className="w-4 h-4" />
             <span>Add New Product</span>
@@ -368,21 +365,21 @@ export default function AdminProductsPage() {
         <div
           className={`p-3.5 rounded-2xl border text-xs flex items-center gap-2.5 animate-in fade-in slide-in-from-top-2 duration-200 ${
             notification.type === 'success'
-              ? 'bg-emerald-950/90 border-emerald-700/80 text-emerald-200'
-              : 'bg-rose-950/90 border-rose-700/80 text-rose-200'
+              ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
+              : 'bg-rose-50 border-rose-200 text-rose-800'
           }`}
         >
           {notification.type === 'success' ? (
-            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
           ) : (
-            <AlertCircle className="w-4 h-4 text-rose-400 shrink-0" />
+            <AlertCircle className="w-4 h-4 text-rose-600 shrink-0" />
           )}
-          <span className="font-medium">{notification.text}</span>
+          <span className="font-semibold">{notification.text}</span>
         </div>
       )}
 
-      {/* 2. Filter, Search & Stock Status Controls */}
-      <div className="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 backdrop-blur-xl shadow-lg space-y-3.5">
+      {/* 2. Filter, Search & Stock Status Controls (Pure Light) */}
+      <div className="bg-white border border-slate-200/80 rounded-2xl p-4 shadow-sm space-y-3.5">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 items-center">
           
           {/* Search Bar */}
@@ -396,13 +393,13 @@ export default function AdminProductsPage() {
                 setSearchTerm(e.target.value);
                 setCurrentPage(1);
               }}
-              className="w-full pl-9 pr-8 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-emerald-500 transition-colors"
+              className="w-full pl-9 pr-8 py-2 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:bg-white focus:border-emerald-500 transition-colors"
             />
             {searchTerm && (
               <button
                 type="button"
                 onClick={() => setSearchTerm('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700"
               >
                 <X className="w-3.5 h-3.5" />
               </button>
@@ -417,7 +414,7 @@ export default function AdminProductsPage() {
                 setSelectedCategory(e.target.value);
                 setCurrentPage(1);
               }}
-              className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors"
+              className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 font-medium focus:outline-none focus:bg-white focus:border-emerald-500 transition-colors"
             >
               <option value="ALL">All Categories ({categories.length})</option>
               {categories.map((c) => (
@@ -436,7 +433,7 @@ export default function AdminProductsPage() {
                 setSelectedStockStatus(e.target.value);
                 setCurrentPage(1);
               }}
-              className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors"
+              className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 font-medium focus:outline-none focus:bg-white focus:border-emerald-500 transition-colors"
             >
               <option value="ALL">All Stock Levels</option>
               <option value="IN_STOCK">In Stock (&gt; 20 units)</option>
@@ -447,10 +444,10 @@ export default function AdminProductsPage() {
         </div>
 
         {/* Mode Filter Pills */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-800/60 text-xs">
+        <div className="flex flex-wrap items-center justify-between gap-3 pt-2.5 border-t border-slate-100 text-xs">
           <div className="flex items-center gap-1.5 overflow-x-auto">
-            <span className="text-[11px] font-semibold text-slate-400 mr-1 flex items-center gap-1">
-              <Layers className="w-3.5 h-3.5 text-emerald-400" />
+            <span className="text-[11px] font-bold text-slate-500 mr-1 flex items-center gap-1">
+              <Layers className="w-3.5 h-3.5 text-emerald-600" />
               Channel Filter:
             </span>
             {[
@@ -466,10 +463,10 @@ export default function AdminProductsPage() {
                   setSelectedMode(tab.key);
                   setCurrentPage(1);
                 }}
-                className={`px-3 py-1 rounded-lg text-xs font-medium transition-all ${
+                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all ${
                   selectedMode === tab.key
-                    ? 'bg-emerald-600 text-white font-bold shadow-md shadow-emerald-950'
-                    : 'bg-slate-950 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800'
+                    ? 'bg-emerald-600 text-white font-bold shadow-2xs'
+                    : 'bg-slate-100 text-slate-600 hover:text-slate-900 hover:bg-slate-200/80 border border-slate-200/60'
                 }`}
               >
                 {tab.label}
@@ -477,15 +474,15 @@ export default function AdminProductsPage() {
             ))}
           </div>
 
-          <div className="text-[11px] text-slate-400 font-medium">
-            Showing <span className="text-white font-bold">{paginatedProducts.length}</span> of{' '}
-            <span className="text-white font-bold">{filteredProducts.length}</span> matched items
+          <div className="text-[11px] text-slate-500 font-medium">
+            Showing <span className="text-slate-900 font-bold">{paginatedProducts.length}</span> of{' '}
+            <span className="text-slate-900 font-bold">{filteredProducts.length}</span> matched items
           </div>
         </div>
       </div>
 
-      {/* 3. Catalog Products Table */}
-      <div className="bg-slate-900/60 border border-slate-800/80 rounded-3xl overflow-hidden backdrop-blur-xl shadow-xl">
+      {/* 3. Catalog Products Table (Pure Light) */}
+      <div className="bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-sm">
         {loading ? (
           <div className="p-6">
             <AdminTableSkeleton rows={8} cols={6} />
@@ -506,7 +503,7 @@ export default function AdminProductsPage() {
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-xs text-left">
-              <thead className="text-slate-400 uppercase tracking-wider text-[10px] bg-slate-950/80 border-b border-slate-800/80">
+              <thead className="text-slate-500 uppercase tracking-wider text-[10px] bg-slate-50 border-b border-slate-200 font-bold">
                 <tr>
                   <th className="py-3.5 px-4">Item & SKU</th>
                   <th className="py-3.5 px-3">Category</th>
@@ -516,7 +513,7 @@ export default function AdminProductsPage() {
                   <th className="py-3.5 px-4 text-right">Actions</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-800/50 text-slate-200">
+              <tbody className="divide-y divide-slate-100 text-slate-700">
                 {paginatedProducts.map((prod) => {
                   let img = '/images/products/placeholder.jpg';
                   if (Array.isArray(prod.images) && prod.images.length > 0) {
@@ -534,12 +531,12 @@ export default function AdminProductsPage() {
                   return (
                     <tr
                       key={prod.id}
-                      className="hover:bg-slate-800/40 transition-colors group"
+                      className="hover:bg-slate-50/80 transition-colors group"
                     >
                       {/* Product & SKU */}
                       <td className="py-3.5 px-4">
                         <div className="flex items-center gap-3">
-                          <div className="relative w-11 h-11 rounded-xl bg-slate-950 border border-slate-800 overflow-hidden shrink-0 group-hover:border-emerald-500/40 transition-colors">
+                          <div className="relative w-11 h-11 rounded-xl bg-slate-100 border border-slate-200 overflow-hidden shrink-0 group-hover:border-emerald-500/40 transition-colors shadow-2xs">
                             <Image
                               src={img}
                               alt={prod.title}
@@ -549,15 +546,15 @@ export default function AdminProductsPage() {
                             />
                           </div>
                           <div className="min-w-0 max-w-xs">
-                            <div className="font-bold text-white group-hover:text-emerald-300 transition-colors truncate">
+                            <div className="font-bold text-slate-900 group-hover:text-emerald-700 transition-colors truncate">
                               {prod.title}
                             </div>
                             <div className="flex items-center gap-2 mt-0.5">
-                              <span className="font-mono text-[10px] text-slate-400 bg-slate-950 px-1.5 py-0.5 rounded border border-slate-800">
+                              <span className="font-mono text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200 font-semibold">
                                 {prod.sku || 'SKU-N/A'}
                               </span>
                               {prod.badge && (
-                                <span className="text-[9px] font-semibold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded">
+                                <span className="text-[9px] font-bold text-emerald-800 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200/80">
                                   {prod.badge}
                                 </span>
                               )}
@@ -568,7 +565,7 @@ export default function AdminProductsPage() {
 
                       {/* Category */}
                       <td className="py-3.5 px-3">
-                        <span className="text-[11px] font-medium text-slate-300 bg-slate-950 px-2.5 py-1 rounded-lg border border-slate-800">
+                        <span className="text-[11px] font-medium text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg border border-slate-200/80">
                           {prod.category?.name || 'Ayurvedic Instruments'}
                         </span>
                       </td>
@@ -582,15 +579,15 @@ export default function AdminProductsPage() {
                                 isOut
                                   ? 'bg-rose-500'
                                   : isLow
-                                  ? 'bg-amber-400'
-                                  : 'bg-emerald-400'
+                                  ? 'bg-amber-500'
+                                  : 'bg-emerald-500'
                               }`}
                             />
-                            <span className="font-bold text-white font-mono">
+                            <span className="font-bold text-slate-900 font-mono">
                               {prod.stock} units
                             </span>
                           </div>
-                          <div className="text-[10px] text-slate-400">
+                          <div className="text-[10px] text-slate-500 font-medium">
                             MOQ: {prod.moq || 1}
                           </div>
                         </div>
@@ -600,23 +597,23 @@ export default function AdminProductsPage() {
                       <td className="py-3.5 px-3 font-poppins">
                         <div className="space-y-0.5">
                           <div className="flex items-center gap-2">
-                            <span className="text-[10px] text-slate-400">Retail:</span>
-                            <span className="font-bold text-white">
+                            <span className="text-[10px] text-slate-500">Retail:</span>
+                            <span className="font-bold text-slate-900">
                               {formatCurrency(prod.retailPrice)}
                             </span>
                             {prod.salePrice && (
-                              <span className="text-[10px] text-emerald-400 font-semibold">
+                              <span className="text-[10px] text-emerald-700 font-semibold">
                                 ({formatCurrency(prod.salePrice)})
                               </span>
                             )}
                           </div>
                           {prod.b2bBasePrice && (
-                            <div className="text-[10px] text-blue-400">
+                            <div className="text-[10px] text-blue-700 font-medium">
                               Wholesale: {formatCurrency(prod.b2bBasePrice)}
                             </div>
                           )}
                           {prod.specialBasePrice && (
-                            <div className="text-[10px] text-amber-400">
+                            <div className="text-[10px] text-amber-700 font-medium">
                               Atelier: {formatCurrency(prod.specialBasePrice)}
                             </div>
                           )}
@@ -625,14 +622,14 @@ export default function AdminProductsPage() {
 
                       {/* Channel Visibility Toggles */}
                       <td className="py-3.5 px-3 text-center">
-                        <div className="inline-flex items-center gap-1 p-1 bg-slate-950 rounded-xl border border-slate-800">
+                        <div className="inline-flex items-center gap-1 p-1 bg-slate-100 rounded-xl border border-slate-200">
                           <button
                             type="button"
                             onClick={() => handleToggleMode(prod, 'isB2C')}
                             className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all ${
                               prod.isB2C
-                                ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
-                                : 'text-slate-500 hover:text-slate-300'
+                                ? 'bg-emerald-600 text-white shadow-2xs'
+                                : 'text-slate-500 hover:text-slate-900'
                             }`}
                             title="Toggle B2C Retail Visibility"
                           >
@@ -643,8 +640,8 @@ export default function AdminProductsPage() {
                             onClick={() => handleToggleMode(prod, 'isB2B')}
                             className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all ${
                               prod.isB2B
-                                ? 'bg-blue-500/20 text-blue-300 border border-blue-500/30'
-                                : 'text-slate-500 hover:text-slate-300'
+                                ? 'bg-blue-600 text-white shadow-2xs'
+                                : 'text-slate-500 hover:text-slate-900'
                             }`}
                             title="Toggle B2B Wholesale Visibility"
                           >
@@ -655,8 +652,8 @@ export default function AdminProductsPage() {
                             onClick={() => handleToggleMode(prod, 'isSpecial')}
                             className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all ${
                               prod.isSpecial
-                                ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30'
-                                : 'text-slate-500 hover:text-slate-300'
+                                ? 'bg-amber-600 text-white shadow-2xs'
+                                : 'text-slate-500 hover:text-slate-900'
                             }`}
                             title="Toggle Bespoke Atelier Visibility"
                           >
@@ -671,7 +668,7 @@ export default function AdminProductsPage() {
                           <button
                             type="button"
                             onClick={() => handleOpenEdit(prod)}
-                            className="p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-500/40 text-slate-300 hover:text-emerald-300 hover:bg-emerald-950/30 transition-all"
+                            className="p-2 rounded-xl bg-white border border-slate-200 hover:border-emerald-500/50 text-slate-600 hover:text-emerald-700 hover:bg-emerald-50 transition-all shadow-2xs"
                             title="Edit Product Details"
                           >
                             <Edit2 className="w-3.5 h-3.5" />
@@ -679,7 +676,7 @@ export default function AdminProductsPage() {
                           <button
                             type="button"
                             onClick={() => setDeleteConfirmId(prod.id)}
-                            className="p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-rose-500/40 text-slate-300 hover:text-rose-400 hover:bg-rose-950/30 transition-all"
+                            className="p-2 rounded-xl bg-white border border-slate-200 hover:border-rose-300 text-slate-600 hover:text-rose-600 hover:bg-rose-50 transition-all shadow-2xs"
                             title="Delete Product"
                           >
                             <Trash2 className="w-3.5 h-3.5" />
@@ -696,10 +693,10 @@ export default function AdminProductsPage() {
 
         {/* 4. Pagination Controls */}
         {!loading && filteredProducts.length > 0 && (
-          <div className="p-4 border-t border-slate-800/80 bg-slate-950/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-            <div className="text-slate-400">
-              Page <span className="text-white font-bold">{currentPage}</span> of{' '}
-              <span className="text-white font-bold">{totalPages}</span> ({filteredProducts.length} items total)
+          <div className="p-4 border-t border-slate-100 bg-slate-50/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+            <div className="text-slate-500">
+              Page <span className="text-slate-900 font-bold">{currentPage}</span> of{' '}
+              <span className="text-slate-900 font-bold">{totalPages}</span> ({filteredProducts.length} items total)
             </div>
 
             <div className="flex items-center gap-1.5">
@@ -707,7 +704,7 @@ export default function AdminProductsPage() {
                 type="button"
                 disabled={currentPage === 1}
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-                className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-800 transition-colors"
+                className="p-2 rounded-xl bg-white border border-slate-200 text-slate-600 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-100 transition-colors shadow-2xs"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
@@ -726,8 +723,8 @@ export default function AdminProductsPage() {
                     onClick={() => setCurrentPage(pageNum)}
                     className={`w-8 h-8 rounded-xl font-bold text-xs transition-colors ${
                       currentPage === pageNum
-                        ? 'bg-emerald-600 text-white shadow-md'
-                        : 'bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800'
+                        ? 'bg-emerald-600 text-white shadow-xs'
+                        : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'
                     }`}
                   >
                     {pageNum}
@@ -739,7 +736,7 @@ export default function AdminProductsPage() {
                 type="button"
                 disabled={currentPage === totalPages}
                 onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-                className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-800 transition-colors"
+                className="p-2 rounded-xl bg-white border border-slate-200 text-slate-600 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-100 transition-colors shadow-2xs"
               >
                 <ChevronRight className="w-4 h-4" />
               </button>
@@ -748,7 +745,7 @@ export default function AdminProductsPage() {
         )}
       </div>
 
-      {/* 5. Comprehensive Add / Edit Product Modal */}
+      {/* 5. Comprehensive Add / Edit Product Modal (Light Mode) */}
       {(editingProduct || isAddModalOpen) && (
         <Modal
           isOpen={Boolean(editingProduct || isAddModalOpen)}
@@ -758,42 +755,42 @@ export default function AdminProductsPage() {
           }}
           title={editingProduct ? `Edit Product: ${editingProduct.title}` : 'Add New Surgical / Ayurvedic Product'}
           subtitle="Update product specifications, multi-tier pricing, inventory levels, and visibility across B2B, B2C, and Special Atelier."
-          className="bg-slate-900 border-slate-800 text-slate-100 max-w-3xl"
+          className="bg-white border-slate-200 text-slate-900 max-w-3xl shadow-2xl"
         >
           <form onSubmit={handleSaveProduct} className="space-y-6 text-xs">
             
             {/* Basic Info */}
             <div className="space-y-3">
-              <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5 pb-1 border-b border-slate-800">
-                <Package className="w-3.5 h-3.5" />
+              <h4 className="text-xs font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5 pb-1.5 border-b border-slate-100">
+                <Package className="w-3.5 h-3.5 text-emerald-600" />
                 <span>1. Core Product Information</span>
               </h4>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div className="sm:col-span-2">
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
-                    Product Title <span className="text-rose-400">*</span>
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
+                    Product Title <span className="text-rose-600">*</span>
                   </label>
                   <input
                     type="text"
                     required
                     value={formData.title}
                     onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-emerald-500"
                     placeholder="e.g. Copper Shirodhara Pot with Control Valve"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
-                    SKU Code <span className="text-rose-400">*</span>
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
+                    SKU Code <span className="text-rose-600">*</span>
                   </label>
                   <input
                     type="text"
                     required
                     value={formData.sku}
                     onChange={(e) => setFormData({ ...formData, sku: e.target.value })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono focus:bg-white focus:outline-none focus:border-emerald-500"
                     placeholder="BS-SHIR-01"
                   />
                 </div>
@@ -801,26 +798,26 @@ export default function AdminProductsPage() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
                     Tagline / Subtitle
                   </label>
                   <input
                     type="text"
                     value={formData.subtitle}
                     onChange={(e) => setFormData({ ...formData, subtitle: e.target.value })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-emerald-500"
                     placeholder="e.g. Pure Virgin Copper with Flow Control"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
-                    Category <span className="text-rose-400">*</span>
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
+                    Category <span className="text-rose-600">*</span>
                   </label>
                   <select
                     value={formData.categoryId}
                     onChange={(e) => setFormData({ ...formData, categoryId: e.target.value })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-emerald-500 font-medium"
                   >
                     {categories.map((c) => (
                       <option key={c.id} value={c.id}>
@@ -834,27 +831,27 @@ export default function AdminProductsPage() {
 
             {/* Media & Images */}
             <div className="space-y-3">
-              <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5 pb-1 border-b border-slate-800">
-                <Layers className="w-3.5 h-3.5" />
+              <h4 className="text-xs font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5 pb-1.5 border-b border-slate-100">
+                <Layers className="w-3.5 h-3.5 text-emerald-600" />
                 <span>2. Media & Image Asset</span>
               </h4>
 
               <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 items-center">
                 <div className="sm:col-span-3">
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
                     Primary Image URL
                   </label>
                   <input
                     type="text"
                     value={formData.imageUrl}
                     onChange={(e) => setFormData({ ...formData, imageUrl: e.target.value })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-emerald-500"
                     placeholder="https://... or /images/products/..."
                   />
                 </div>
 
                 <div className="flex flex-col items-center">
-                  <div className="relative w-16 h-16 rounded-xl bg-slate-950 border border-slate-800 overflow-hidden shadow-md">
+                  <div className="relative w-16 h-16 rounded-xl bg-slate-100 border border-slate-200 overflow-hidden shadow-2xs">
                     <Image
                       src={formData.imageUrl || '/images/products/placeholder.jpg'}
                       alt="Preview"
@@ -863,22 +860,22 @@ export default function AdminProductsPage() {
                       unoptimized
                     />
                   </div>
-                  <span className="text-[10px] text-slate-500 mt-1">Live Preview</span>
+                  <span className="text-[10px] text-slate-400 mt-1 font-medium">Live Preview</span>
                 </div>
               </div>
             </div>
 
             {/* Multi-Tier Pricing & Inventory */}
             <div className="space-y-3">
-              <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5 pb-1 border-b border-slate-800">
-                <DollarSign className="w-3.5 h-3.5" />
+              <h4 className="text-xs font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5 pb-1.5 border-b border-slate-100">
+                <DollarSign className="w-3.5 h-3.5 text-emerald-600" />
                 <span>3. Multi-Tier Pricing & Inventory</span>
               </h4>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div>
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
-                    Retail Price (₹) <span className="text-rose-400">*</span>
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
+                    Retail Price (₹) <span className="text-rose-600">*</span>
                   </label>
                   <input
                     type="number"
@@ -886,12 +883,12 @@ export default function AdminProductsPage() {
                     required
                     value={formData.retailPrice}
                     onChange={(e) => setFormData({ ...formData, retailPrice: e.target.value })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono focus:bg-white focus:outline-none focus:border-emerald-500"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
                     Sale Price (₹)
                   </label>
                   <input
@@ -899,12 +896,12 @@ export default function AdminProductsPage() {
                     step="0.01"
                     value={formData.salePrice}
                     onChange={(e) => setFormData({ ...formData, salePrice: e.target.value })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono focus:bg-white focus:outline-none focus:border-emerald-500"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
                     Wholesale B2B (₹)
                   </label>
                   <input
@@ -912,12 +909,12 @@ export default function AdminProductsPage() {
                     step="0.01"
                     value={formData.b2bBasePrice}
                     onChange={(e) => setFormData({ ...formData, b2bBasePrice: e.target.value })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono focus:bg-white focus:outline-none focus:border-emerald-500"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
                     Special Atelier (₹)
                   </label>
                   <input
@@ -925,45 +922,45 @@ export default function AdminProductsPage() {
                     step="0.01"
                     value={formData.specialBasePrice}
                     onChange={(e) => setFormData({ ...formData, specialBasePrice: e.target.value })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono focus:bg-white focus:outline-none focus:border-emerald-500"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div>
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
                     Stock Quantity
                   </label>
                   <input
                     type="number"
                     value={formData.stock}
                     onChange={(e) => setFormData({ ...formData, stock: parseInt(e.target.value, 10) || 0 })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono focus:bg-white focus:outline-none focus:border-emerald-500"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
                     Minimum Order Qty
                   </label>
                   <input
                     type="number"
                     value={formData.moq}
                     onChange={(e) => setFormData({ ...formData, moq: parseInt(e.target.value, 10) || 1 })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono focus:bg-white focus:outline-none focus:border-emerald-500"
                   />
                 </div>
 
                 <div className="sm:col-span-2">
-                  <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                  <label className="block text-[11px] font-bold text-slate-700 mb-1">
                     Badge / Tag
                   </label>
                   <input
                     type="text"
                     value={formData.badge}
                     onChange={(e) => setFormData({ ...formData, badge: e.target.value })}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-emerald-500"
                     placeholder="e.g. ISO 13485, Best Seller, New"
                   />
                 </div>
@@ -972,124 +969,124 @@ export default function AdminProductsPage() {
 
             {/* Visibility & Mode Toggles */}
             <div className="space-y-3">
-              <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5 pb-1 border-b border-slate-800">
-                <SlidersHorizontal className="w-3.5 h-3.5" />
+              <h4 className="text-xs font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5 pb-1.5 border-b border-slate-100">
+                <SlidersHorizontal className="w-3.5 h-3.5 text-emerald-600" />
                 <span>4. Storefront Channel Visibility</span>
               </h4>
 
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
-                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer">
+                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100">
                   <input
                     type="checkbox"
                     checked={formData.isB2C}
                     onChange={(e) => setFormData({ ...formData, isB2C: e.target.checked })}
-                    className="w-4 h-4 accent-emerald-500 rounded"
+                    className="w-4 h-4 accent-emerald-600 rounded"
                   />
-                  <span className="text-[11px] text-white font-semibold">B2C Retail</span>
+                  <span className="text-[11px] text-slate-900 font-bold">B2C Retail</span>
                 </label>
 
-                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer">
+                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100">
                   <input
                     type="checkbox"
                     checked={formData.isB2B}
                     onChange={(e) => setFormData({ ...formData, isB2B: e.target.checked })}
-                    className="w-4 h-4 accent-emerald-500 rounded"
+                    className="w-4 h-4 accent-emerald-600 rounded"
                   />
-                  <span className="text-[11px] text-white font-semibold">B2B Wholesale</span>
+                  <span className="text-[11px] text-slate-900 font-bold">B2B Wholesale</span>
                 </label>
 
-                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer">
+                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100">
                   <input
                     type="checkbox"
                     checked={formData.isSpecial}
                     onChange={(e) => setFormData({ ...formData, isSpecial: e.target.checked })}
-                    className="w-4 h-4 accent-emerald-500 rounded"
+                    className="w-4 h-4 accent-emerald-600 rounded"
                   />
-                  <span className="text-[11px] text-white font-semibold">Special Atelier</span>
+                  <span className="text-[11px] text-slate-900 font-bold">Special Atelier</span>
                 </label>
 
-                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer">
+                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100">
                   <input
                     type="checkbox"
                     checked={formData.isFeatured}
                     onChange={(e) => setFormData({ ...formData, isFeatured: e.target.checked })}
-                    className="w-4 h-4 accent-emerald-500 rounded"
+                    className="w-4 h-4 accent-emerald-600 rounded"
                   />
-                  <span className="text-[11px] text-white font-semibold">Featured</span>
+                  <span className="text-[11px] text-slate-900 font-bold">Featured</span>
                 </label>
 
-                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer">
+                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100">
                   <input
                     type="checkbox"
                     checked={formData.isBestSeller}
                     onChange={(e) => setFormData({ ...formData, isBestSeller: e.target.checked })}
-                    className="w-4 h-4 accent-emerald-500 rounded"
+                    className="w-4 h-4 accent-emerald-600 rounded"
                   />
-                  <span className="text-[11px] text-white font-semibold">Best Seller</span>
+                  <span className="text-[11px] text-slate-900 font-bold">Best Seller</span>
                 </label>
 
-                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer">
+                <label className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100">
                   <input
                     type="checkbox"
                     checked={formData.isNewArrival}
                     onChange={(e) => setFormData({ ...formData, isNewArrival: e.target.checked })}
-                    className="w-4 h-4 accent-emerald-500 rounded"
+                    className="w-4 h-4 accent-emerald-600 rounded"
                   />
-                  <span className="text-[11px] text-white font-semibold">New Arrival</span>
+                  <span className="text-[11px] text-slate-900 font-bold">New Arrival</span>
                 </label>
               </div>
             </div>
 
             {/* Descriptions & Specs */}
             <div className="space-y-3">
-              <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5 pb-1 border-b border-slate-800">
-                <FileText className="w-3.5 h-3.5" />
+              <h4 className="text-xs font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5 pb-1.5 border-b border-slate-100">
+                <FileText className="w-3.5 h-3.5 text-emerald-600" />
                 <span>5. Description & Clinical Specifications</span>
               </h4>
 
               <div>
-                <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                <label className="block text-[11px] font-bold text-slate-700 mb-1">
                   Full Description
                 </label>
                 <textarea
                   rows={3}
                   value={formData.description}
                   onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                  className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-emerald-500"
                   placeholder="Detailed product information, therapeutic applications, and metallurgical composition..."
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                <label className="block text-[11px] font-bold text-slate-700 mb-1">
                   Specifications (JSON or Key-Value)
                 </label>
                 <textarea
                   rows={3}
                   value={formData.specifications}
                   onChange={(e) => setFormData({ ...formData, specifications: e.target.value })}
-                  className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono text-[11px] focus:outline-none focus:border-emerald-500"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono text-[11px] focus:bg-white focus:outline-none focus:border-emerald-500"
                   placeholder='{\n  "Material": "Medical Grade SS-304",\n  "Capacity": "2.5 Litres"\n}'
                 />
               </div>
             </div>
 
             {/* Modal Actions */}
-            <div className="flex items-center justify-end gap-3 pt-4 border-t border-slate-800">
+            <div className="flex items-center justify-end gap-3 pt-4 border-t border-slate-100">
               <button
                 type="button"
                 onClick={() => {
                   setEditingProduct(null);
                   setIsAddModalOpen(false);
                 }}
-                className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-colors"
+                className="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold transition-colors"
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 disabled={submitting}
-                className="flex items-center gap-2 px-5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white font-bold transition-all shadow-lg shadow-emerald-950"
+                className="flex items-center gap-2 px-5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white font-bold transition-all shadow-md shadow-emerald-900/10"
               >
                 {submitting ? (
                   <>
@@ -1109,31 +1106,31 @@ export default function AdminProductsPage() {
         </Modal>
       )}
 
-      {/* 6. Delete Confirmation Dialog */}
+      {/* 6. Delete Confirmation Dialog (Light Mode) */}
       {deleteConfirmId && (
         <Modal
           isOpen={Boolean(deleteConfirmId)}
           onClose={() => setDeleteConfirmId(null)}
           title="Confirm Product Deletion"
           subtitle="Are you sure you want to permanently delete this product from the database?"
-          className="bg-slate-900 border-slate-800 text-slate-100 max-w-md"
+          className="bg-white border-slate-200 text-slate-900 max-w-md shadow-2xl"
         >
           <div className="space-y-4 text-xs">
-            <p className="text-slate-400">
+            <p className="text-slate-600">
               This will remove the product and its associated B2B price tiers from PostgreSQL. This action cannot be undone.
             </p>
             <div className="flex justify-end gap-3 pt-2">
               <button
                 type="button"
                 onClick={() => setDeleteConfirmId(null)}
-                className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-colors"
+                className="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold transition-colors"
               >
                 Cancel
               </button>
               <button
                 type="button"
                 onClick={() => handleDeleteProduct(deleteConfirmId)}
-                className="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold transition-colors"
+                className="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold transition-colors shadow-xs"
               >
                 Yes, Delete Product
               </button>

@@ -111,19 +111,19 @@ export default function AdminStaffManagementPage() {
   };
 
   return (
-    <div className="space-y-8 font-poppins text-slate-100">
+    <div className="space-y-8 font-poppins text-slate-900">
       
-      {/* 1. Header */}
+      {/* 1. Header (Pure Light) */}
       <div>
         <div className="flex items-center gap-2.5">
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
             Staff Personnel & Role Governance (RBAC)
           </h1>
-          <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+          <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 font-mono text-xs font-bold">
             {adminsList.length} Personnel
           </span>
         </div>
-        <p className="text-xs sm:text-sm text-slate-400 mt-1">
+        <p className="text-xs sm:text-sm text-slate-500 mt-1">
           Role-Based Access Control (RBAC) granting fine-grained privileges across Super Admin, Normal Admin, Sales Manager, and Account Manager.
         </p>
       </div>
@@ -133,41 +133,41 @@ export default function AdminStaffManagementPage() {
         <div
           className={`p-3.5 rounded-2xl border text-xs flex items-center gap-2.5 animate-in fade-in duration-200 ${
             notification.type === 'success'
-              ? 'bg-emerald-950/90 border-emerald-700/80 text-emerald-200'
-              : 'bg-rose-950/90 border-rose-700/80 text-rose-200'
+              ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
+              : 'bg-rose-50 border-rose-200 text-rose-800'
           }`}
         >
           {notification.type === 'success' ? (
-            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
           ) : (
-            <AlertCircle className="w-4 h-4 text-rose-400 shrink-0" />
+            <AlertCircle className="w-4 h-4 text-rose-600 shrink-0" />
           )}
-          <span className="font-medium">{notification.text}</span>
+          <span className="font-semibold">{notification.text}</span>
         </div>
       )}
 
-      {/* 2. Main Two-Column Layout */}
+      {/* 2. Main Two-Column Layout (Pure Light) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         
         {/* Left Column: Staff Directory (7 Cols) */}
-        <div className="lg:col-span-7 bg-slate-900/60 border border-slate-800/80 rounded-3xl p-5 sm:p-6 backdrop-blur-xl shadow-xl space-y-4">
-          <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
+        <div className="lg:col-span-7 bg-white border border-slate-200/80 rounded-3xl p-5 sm:p-6 shadow-sm space-y-4">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-100">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+              <div className="w-8 h-8 rounded-xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-700">
                 <ShieldCheck className="w-4 h-4" />
               </div>
               <div>
-                <h2 className="text-sm sm:text-base font-bold text-white tracking-tight">
+                <h2 className="text-sm sm:text-base font-bold text-slate-900 tracking-tight">
                   Active Admin Personnel
                 </h2>
-                <p className="text-[11px] text-slate-400">Staff members authorized with console credentials</p>
+                <p className="text-[11px] text-slate-500">Staff members authorized with console credentials</p>
               </div>
             </div>
           </div>
 
           <div className="overflow-x-auto">
             <table className="w-full text-xs text-left">
-              <thead className="text-slate-400 uppercase tracking-wider text-[10px] bg-slate-950/60 border-b border-slate-800/80">
+              <thead className="text-slate-500 uppercase tracking-wider text-[10px] bg-slate-50 border-b border-slate-200 font-bold">
                 <tr>
                   <th className="py-3 px-3">Staff Member</th>
                   <th className="py-3 px-3">Role</th>
@@ -175,19 +175,19 @@ export default function AdminStaffManagementPage() {
                   <th className="py-3 px-3 text-right">Status</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-800/50 text-slate-200">
+              <tbody className="divide-y divide-slate-100 text-slate-700">
                 {adminsList.map((adm) => (
-                  <tr key={adm.id} className="hover:bg-slate-800/40 transition-colors group">
+                  <tr key={adm.id} className="hover:bg-slate-50/80 transition-colors group">
                     <td className="py-3.5 px-3">
                       <div className="flex items-center gap-2.5">
-                        <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-700 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-md">
+                        <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-xs">
                           {adm.name.charAt(0)}
                         </div>
                         <div>
-                          <div className="font-bold text-white group-hover:text-emerald-300 transition-colors">
+                          <div className="font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
                             {adm.name}
                           </div>
-                          <div className="text-[10px] text-slate-400">{adm.email}</div>
+                          <div className="text-[10px] text-slate-500">{adm.email}</div>
                         </div>
                       </div>
                     </td>
@@ -196,13 +196,13 @@ export default function AdminStaffManagementPage() {
                       <AdminStatusBadge status={adm.role} type="role" size="xs" />
                     </td>
 
-                    <td className="py-3.5 px-3 text-slate-300 text-[11px]">
+                    <td className="py-3.5 px-3 text-slate-700 text-[11px] font-medium">
                       {adm.assignedArea}
                     </td>
 
                     <td className="py-3.5 px-3 text-right">
-                      <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                      <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/80">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
                         <span>Active</span>
                       </span>
                     </td>
@@ -213,66 +213,66 @@ export default function AdminStaffManagementPage() {
           </div>
 
           {/* Role Permissions Matrix */}
-          <div className="pt-4 border-t border-slate-800/80 space-y-3">
-            <h3 className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
-              <Layers className="w-3.5 h-3.5 text-emerald-400" />
+          <div className="pt-4 border-t border-slate-100 space-y-3">
+            <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+              <Layers className="w-3.5 h-3.5 text-emerald-600" />
               <span>RBAC Role Permission Matrix</span>
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-              <div className="p-2.5 rounded-xl bg-slate-950/60 border border-slate-800/70 space-y-1">
-                <div className="font-bold text-amber-400 flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-amber-400" />
+              <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                <div className="font-bold text-amber-800 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-amber-500" />
                   <span>SUPER_ADMIN</span>
                 </div>
-                <p className="text-[10px] text-slate-400">Full database control, staff provisioning, price tier mutations, and catalog exports.</p>
+                <p className="text-[10px] text-slate-500">Full database control, staff provisioning, price tier mutations, and catalog exports.</p>
               </div>
 
-              <div className="p-2.5 rounded-xl bg-slate-950/60 border border-slate-800/70 space-y-1">
-                <div className="font-bold text-sky-400 flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-sky-400" />
+              <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                <div className="font-bold text-sky-800 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-sky-500" />
                   <span>SALES_MANAGER</span>
                 </div>
-                <p className="text-[10px] text-slate-400">Review wholesale B2B quotes, assign custom discount totals, and issue formal PDF quotations.</p>
+                <p className="text-[10px] text-slate-500">Review wholesale B2B quotes, assign custom discount totals, and issue formal PDF quotations.</p>
               </div>
 
-              <div className="p-2.5 rounded-xl bg-slate-950/60 border border-slate-800/70 space-y-1">
-                <div className="font-bold text-teal-400 flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-teal-400" />
+              <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                <div className="font-bold text-teal-800 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-teal-600" />
                   <span>ACCOUNT_MANAGER</span>
                 </div>
-                <p className="text-[10px] text-slate-400">Customer order inspection, shipping status fulfillment, and customer inquiry communication.</p>
+                <p className="text-[10px] text-slate-500">Customer order inspection, shipping status fulfillment, and customer inquiry communication.</p>
               </div>
 
-              <div className="p-2.5 rounded-xl bg-slate-950/60 border border-slate-800/70 space-y-1">
-                <div className="font-bold text-emerald-400 flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
+              <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                <div className="font-bold text-emerald-800 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-600" />
                   <span>ADMIN</span>
                 </div>
-                <p className="text-[10px] text-slate-400">Standard catalog management, inventory tracking, and customer transactions.</p>
+                <p className="text-[10px] text-slate-500">Standard catalog management, inventory tracking, and customer transactions.</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Right Column: Provision New Staff Member (5 Cols) */}
-        <div className="lg:col-span-5 bg-slate-900/60 border border-slate-800/80 rounded-3xl p-5 sm:p-6 backdrop-blur-xl shadow-xl space-y-4">
-          <div className="pb-3 border-b border-slate-800/80">
+        <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 sm:p-6 shadow-sm space-y-4">
+          <div className="pb-3 border-b border-slate-100">
             <div className="flex items-center gap-2">
-              <Plus className="w-4 h-4 text-emerald-400" />
-              <h2 className="text-sm sm:text-base font-bold text-white tracking-tight">
+              <Plus className="w-4 h-4 text-emerald-600" />
+              <h2 className="text-sm sm:text-base font-bold text-slate-900 tracking-tight">
                 Provision New Admin Staff
               </h2>
             </div>
-            <p className="text-[11px] text-slate-400 mt-0.5">
+            <p className="text-[11px] text-slate-500 mt-0.5">
               Authorize a new staff member with encrypted credentials in PostgreSQL.
             </p>
           </div>
 
           <form onSubmit={handleCreateStaff} className="space-y-4 text-xs">
             <div>
-              <label className="block text-[11px] font-semibold text-slate-300 mb-1">
-                Full Name <span className="text-rose-400">*</span>
+              <label className="block text-[11px] font-bold text-slate-700 mb-1">
+                Full Name <span className="text-rose-600">*</span>
               </label>
               <input
                 type="text"
@@ -280,13 +280,13 @@ export default function AdminStaffManagementPage() {
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 placeholder="e.g. Dr. Anand Verma"
-                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+                className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-emerald-500 font-medium"
               />
             </div>
 
             <div>
-              <label className="block text-[11px] font-semibold text-slate-300 mb-1">
-                Corporate Email <span className="text-rose-400">*</span>
+              <label className="block text-[11px] font-bold text-slate-700 mb-1">
+                Corporate Email <span className="text-rose-600">*</span>
               </label>
               <input
                 type="email"
@@ -294,13 +294,13 @@ export default function AdminStaffManagementPage() {
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="anand@yuganayurved.com"
-                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+                className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-emerald-500 font-medium"
               />
             </div>
 
             <div>
-              <label className="block text-[11px] font-semibold text-slate-300 mb-1">
-                Login Password <span className="text-rose-400">*</span>
+              <label className="block text-[11px] font-bold text-slate-700 mb-1">
+                Login Password <span className="text-rose-600">*</span>
               </label>
               <input
                 type="password"
@@ -308,18 +308,18 @@ export default function AdminStaffManagementPage() {
                 value={form.password}
                 onChange={(e) => setForm({ ...form, password: e.target.value })}
                 placeholder="••••••••••••"
-                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+                className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-emerald-500 font-medium"
               />
             </div>
 
             <div>
-              <label className="block text-[11px] font-semibold text-slate-300 mb-1">
-                Role & Permission Level <span className="text-rose-400">*</span>
+              <label className="block text-[11px] font-bold text-slate-700 mb-1">
+                Role & Permission Level <span className="text-rose-600">*</span>
               </label>
               <select
                 value={form.role}
                 onChange={(e) => setForm({ ...form, role: e.target.value })}
-                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-emerald-500"
+                className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:bg-white focus:outline-none focus:border-emerald-500 font-medium"
               >
                 <option value="SALES_MANAGER">SALES_MANAGER (B2B Quotes & Tender Desk)</option>
                 <option value="ACCOUNT_MANAGER">ACCOUNT_MANAGER (Hospital Orders & Fulfillment)</option>
@@ -329,16 +329,16 @@ export default function AdminStaffManagementPage() {
             </div>
 
             <div>
-              <label className="block text-[11px] font-semibold text-slate-300 mb-1 flex items-center justify-between">
+              <label className="block text-[11px] font-bold text-slate-700 mb-1 flex items-center justify-between">
                 <span>Admin Secret Key</span>
-                <span className="text-[10px] text-emerald-400 font-mono">BHAIRAVI-ADMIN-KEY-2026</span>
+                <span className="text-[10px] text-emerald-700 font-mono font-bold">BHAIRAVI-ADMIN-KEY-2026</span>
               </label>
               <input
                 type="text"
                 required
                 value={form.adminKey}
                 onChange={(e) => setForm({ ...form, adminKey: e.target.value })}
-                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono text-[11px] focus:outline-none focus:border-emerald-500"
+                className="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-mono text-[11px] focus:bg-white focus:outline-none focus:border-emerald-500 font-medium"
               />
             </div>
 
@@ -346,7 +346,7 @@ export default function AdminStaffManagementPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white font-bold transition-all shadow-lg shadow-emerald-950 hover:shadow-emerald-900"
+                className="w-full flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white font-bold transition-all shadow-md shadow-emerald-900/10 hover:shadow-emerald-900/20"
               >
                 {loading ? (
                   <>
