@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import prisma from '@/lib/prisma';
+import prisma, { formatPrismaError } from '@/lib/prisma';
 import { verifyPassword, signToken } from '@/lib/auth';
 
 export const dynamic = 'force-dynamic';
@@ -75,10 +75,10 @@ export async function POST(request) {
 
     return response;
   } catch (error) {
-    console.error('Customer login error:', error);
+    const formatted = formatPrismaError(error, 'Customer Login');
     return NextResponse.json(
-      { error: 'Database connection or login service error. Please try again.' },
-      { status: 500 }
+      { error: formatted.message },
+      { status: formatted.status }
     );
   }
 }

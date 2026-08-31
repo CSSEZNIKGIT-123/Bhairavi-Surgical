@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import prisma from '@/lib/prisma';
+import prisma, { formatPrismaError } from '@/lib/prisma';
 import { hashPassword, signToken } from '@/lib/auth';
 
 export const dynamic = 'force-dynamic';
@@ -145,18 +145,11 @@ export async function POST(request) {
 
     return response;
   } catch (error) {
-    console.error('Customer registration error:', error);
-
-    if (error?.code === 'P2002') {
-      return NextResponse.json(
-        { error: 'An account with this email address already exists' },
-        { status: 409 }
-      );
-    }
-
+    const formatted = formatPrismaError(error, 'Customer Registration');
     return NextResponse.json(
-      { error: 'Database connection or registration failure. Please try again later.' },
-      { status: 500 }
+      { error: formatted.message },
+      { status: formatted.status }
     );
   }
 }
+

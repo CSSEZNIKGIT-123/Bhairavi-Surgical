@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import prisma from '@/lib/prisma';
+import prisma, { formatPrismaError } from '@/lib/prisma';
 import { verifyPassword, signToken } from '@/lib/auth';
 
 export const dynamic = 'force-dynamic';
@@ -76,10 +76,10 @@ export async function POST(request) {
 
     return response;
   } catch (error) {
-    console.error('Admin login error:', error);
+    const formatted = formatPrismaError(error, 'Admin Login');
     return NextResponse.json(
-      { error: 'Database connection or admin authentication error. Please try again.' },
-      { status: 500 }
+      { error: formatted.message },
+      { status: formatted.status }
     );
   }
 }
