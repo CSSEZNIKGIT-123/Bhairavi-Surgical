@@ -41,14 +41,29 @@ export default function B2BProductDetailPage() {
 
   useEffect(() => {
     if (slug) {
-      const prod = getProductBySlug(slug);
-      if (prod) {
-        setProduct(prod);
-        setQuantity(prod.moq || 10);
-        const rel = getRelatedProducts(prod, 'b2b', 4);
-        setRelated(rel);
+      // 1. Instant optimistic fallback load
+      const initialProd = getProductBySlug(slug);
+      if (initialProd) {
+        setProduct(initialProd);
+        setQuantity(initialProd.moq || 10);
+        setRelated(getRelatedProducts(initialProd, 'b2b', 4));
+        setLoading(false);
       }
-      setLoading(false);
+
+      // 2. Fetch fresh database record
+      fetch(`/api/products/${slug}?mode=b2b`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.success && data.product) {
+            setProduct(data.product);
+            setQuantity((prev) => Math.max(data.product.moq || 5, prev));
+            if (data.relatedProducts && data.relatedProducts.length > 0) {
+              setRelated(data.relatedProducts);
+            }
+          }
+        })
+        .catch(console.error)
+        .finally(() => setLoading(false));
     }
   }, [slug]);
 

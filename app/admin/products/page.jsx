@@ -19,8 +19,10 @@ import Input from '@/components/ui/Input';
 import Select from '@/components/ui/Select';
 import Textarea from '@/components/ui/Textarea';
 import Button from '@/components/ui/Button';
+import { useAuth } from '@/context/AuthContext';
 
 export default function AdminProductsPage() {
+  const { adminToken } = useAuth();
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -28,6 +30,8 @@ export default function AdminProductsPage() {
   const [editingProduct, setEditingProduct] = useState(null);
   const [isNewModalOpen, setIsNewModalOpen] = useState(false);
   const [notification, setNotification] = useState(null);
+  const [modalError, setModalError] = useState(null);
+  const [creating, setCreating] = useState(false);
 
   // New product form
   const [form, setForm] = useState({
@@ -45,13 +49,14 @@ export default function AdminProductsPage() {
     specialBasePrice: 4000,
     badge: 'NEW ARRIVAL',
     categoryId: '',
-    images: ['https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80'],
+    imageUrl: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80',
   });
 
   const loadData = async () => {
     try {
+      const headers = adminToken ? { Authorization: `Bearer ${adminToken}` } : {};
       const [pRes, cRes] = await Promise.all([
-        fetch('/api/admin/products'),
+        fetch('/api/admin/products', { headers }),
         fetch('/api/categories'),
       ]);
       const pData = await pRes.json();
@@ -59,7 +64,7 @@ export default function AdminProductsPage() {
       if (pData.success) setProducts(pData.products);
       if (cData.success) setCategories(cData.categories);
     } catch (e) {
-      console.error(e);
+      console.error('Error loading admin catalog data:', e);
     } finally {
       setLoading(false);
     }
@@ -67,15 +72,19 @@ export default function AdminProductsPage() {
 
   useEffect(() => {
     loadData();
-  }, []);
+  }, [adminToken]);
 
   // Quick toggle mode visibility directly in the table
   const handleToggleMode = async (product, modeKey) => {
     const updatedVal = !product[modeKey];
     try {
+      const headers = {
+        'Content-Type': 'application/json',
+        ...(adminToken ? { Authorization: `Bearer ${adminToken}` } : {}),
+      };
       const res = await fetch(`/api/admin/products/${product.id}`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({ [modeKey]: updatedVal }),
       });
       if (res.ok) {
@@ -95,28 +104,65 @@ export default function AdminProductsPage() {
 
   const handleCreateProduct = async (e) => {
     e.preventDefault();
+    setModalError(null);
+    setCreating(true);
+
     try {
+      const headers = {
+        'Content-Type': 'application/json',
+        ...(adminToken ? { Authorization: `Bearer ${adminToken}` } : {}),
+      };
+
+      const payload = {
+        ...form,
+        images: form.imageUrl ? [form.imageUrl] : ['https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80'],
+      };
+
       const res = await fetch('/api/admin/products', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        headers,
+        body: JSON.stringify(payload),
       });
+
       const data = await res.json();
-      if (data.success) {
-        setIsNewModalOpen(false);
-        loadData();
-        setNotification({ type: 'success', text: 'New product added to catalog' });
-        setTimeout(() => setNotification(null), 2500);
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Failed to create product');
       }
+
+      setIsNewModalOpen(false);
+      setForm({
+        title: '',
+        sku: '',
+        subtitle: '',
+        description: '',
+        stock: 50,
+        moq: 1,
+        isB2B: true,
+        isB2C: true,
+        isSpecial: false,
+        retailPrice: 2500,
+        b2bBasePrice: 1600,
+        specialBasePrice: 4000,
+        badge: 'NEW ARRIVAL',
+        categoryId: '',
+        imageUrl: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80',
+      });
+      loadData();
+      setNotification({ type: 'success', text: 'New product added to catalog and PostgreSQL database!' });
+      setTimeout(() => setNotification(null), 2500);
     } catch (e) {
       console.error(e);
+      setModalError(e.message);
+    } finally {
+      setCreating(false);
     }
   };
 
   const handleDeleteProduct = async (id) => {
     if (!confirm('Are you sure you want to delete this product?')) return;
     try {
-      const res = await fetch(`/api/admin/products/${id}`, { method: 'DELETE' });
+      const headers = adminToken ? { Authorization: `Bearer ${adminToken}` } : {};
+      const res = await fetch(`/api/admin/products/${id}`, { method: 'DELETE', headers });
       if (res.ok) {
         setProducts((prev) => prev.filter((p) => p.id !== id));
         setNotification({ type: 'success', text: 'Product removed' });
@@ -284,12 +330,22 @@ export default function AdminProductsPage() {
       {/* Modal: Create New Multi-Mode Product */}
       <Modal
         isOpen={isNewModalOpen}
-        onClose={() => setIsNewModalOpen(false)}
+        onClose={() => {
+          setIsNewModalOpen(false);
+          setModalError(null);
+        }}
         title="Add Multi-Mode Surgical Product"
-        subtitle="Configure title, SKU, pricing, and mode visibility"
+        subtitle="Configure title, SKU, category, pricing, and mode visibility"
         className="bg-slate-950 border-slate-800 text-slate-100"
       >
         <form onSubmit={handleCreateProduct} className="space-y-4 text-xs">
+          {modalError && (
+            <div className="p-3 bg-red-950/80 border border-red-700 text-red-300 text-xs rounded-xl flex items-center gap-2">
+              <AlertCircle className="w-4 h-4 text-red-400 shrink-0" />
+              <span>{modalError}</span>
+            </div>
+          )}
+
           <div className="grid grid-cols-2 gap-3">
             <Input
               label="Product Title"
@@ -309,12 +365,33 @@ export default function AdminProductsPage() {
             />
           </div>
 
+          <div className="grid grid-cols-2 gap-3">
+            <Input
+              label="Subtitle / Tagline"
+              placeholder="Tungsten carbide micro-grip jaws"
+              value={form.subtitle}
+              onChange={(e) => setForm({ ...form, subtitle: e.target.value })}
+              inputClassName="bg-slate-900 border-slate-700 text-white"
+            />
+            <Select
+              label="Product Category"
+              value={form.categoryId}
+              onChange={(e) => setForm({ ...form, categoryId: e.target.value })}
+              selectClassName="bg-slate-900 border-slate-700 text-white"
+              options={[
+                { value: '', label: 'Select Category (Optional)' },
+                ...categories.map((c) => ({ value: c.id, label: c.name })),
+              ]}
+            />
+          </div>
+
           <Input
-            label="Subtitle / Tagline"
-            placeholder="Tungsten carbide micro-grip jaws"
-            value={form.subtitle}
-            onChange={(e) => setForm({ ...form, subtitle: e.target.value })}
-            inputClassName="bg-slate-900 border-slate-700 text-white"
+            label="Product Image URL"
+            placeholder="https://images.unsplash.com/... or CDN link"
+            value={form.imageUrl}
+            onChange={(e) => setForm({ ...form, imageUrl: e.target.value })}
+            inputClassName="bg-slate-900 border-slate-700 text-white font-mono text-[11px]"
+            helperText="Direct image URL for Cloudinary, S3, Unsplash, or external media CDN."
           />
 
           <Textarea
@@ -404,7 +481,7 @@ export default function AdminProductsPage() {
             </div>
           </div>
 
-          <Button type="submit" variant="primary" size="lg" className="w-full">
+          <Button type="submit" variant="primary" size="lg" className="w-full" loading={creating}>
             SAVE & PUBLISH PRODUCT
           </Button>
         </form>

@@ -36,16 +36,33 @@ export default function SpecialProductDetailPage() {
 
   useEffect(() => {
     if (slug) {
-      const prod = getProductBySlug(slug);
-      if (prod) {
-        setProduct(prod);
-        if (prod.variants && prod.variants.length > 0) {
-          setSelectedVariant(prod.variants[0]);
+      // 1. Instant optimistic fallback load
+      const initialProd = getProductBySlug(slug);
+      if (initialProd) {
+        setProduct(initialProd);
+        if (initialProd.variants && initialProd.variants.length > 0) {
+          setSelectedVariant(initialProd.variants[0]);
         }
-        const rel = getRelatedProducts(prod, 'special', 3);
-        setRelated(rel);
+        setRelated(getRelatedProducts(initialProd, 'special', 3));
+        setLoading(false);
       }
-      setLoading(false);
+
+      // 2. Fetch fresh database record
+      fetch(`/api/products/${slug}?mode=special`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.success && data.product) {
+            setProduct(data.product);
+            if (data.product.variants && data.product.variants.length > 0) {
+              setSelectedVariant(data.product.variants[0]);
+            }
+            if (data.relatedProducts && data.relatedProducts.length > 0) {
+              setRelated(data.relatedProducts);
+            }
+          }
+        })
+        .catch(console.error)
+        .finally(() => setLoading(false));
     }
   }, [slug]);
 

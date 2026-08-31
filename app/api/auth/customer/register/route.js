@@ -36,8 +36,24 @@ export async function POST(request) {
       );
     }
 
+    const cleanEmail = email.toLowerCase().trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(cleanEmail)) {
+      return NextResponse.json(
+        { error: 'Please enter a valid email address' },
+        { status: 400 }
+      );
+    }
+
+    if (typeof password !== 'string' || password.length < 6) {
+      return NextResponse.json(
+        { error: 'Password must be at least 6 characters long' },
+        { status: 400 }
+      );
+    }
+
     const existing = await prisma.user.findUnique({
-      where: { email: email.toLowerCase().trim() },
+      where: { email: cleanEmail },
     });
 
     if (existing) {
@@ -52,10 +68,10 @@ export async function POST(request) {
 
     // Create user with mode-specific profile
     const userData = {
-      email: email.toLowerCase().trim(),
+      email: cleanEmail,
       passwordHash,
       name: fullName,
-      phone: phone || null,
+      phone: phone ? String(phone).trim() : null,
       role: 'CUSTOMER',
     };
 
@@ -129,9 +145,17 @@ export async function POST(request) {
 
     return response;
   } catch (error) {
-    console.error('Registration error:', error);
+    console.error('Customer registration error:', error);
+
+    if (error?.code === 'P2002') {
+      return NextResponse.json(
+        { error: 'An account with this email address already exists' },
+        { status: 409 }
+      );
+    }
+
     return NextResponse.json(
-      { error: 'Internal server error during registration' },
+      { error: 'Database connection or registration failure. Please try again later.' },
       { status: 500 }
     );
   }

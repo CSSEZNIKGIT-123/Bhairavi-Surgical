@@ -9,7 +9,9 @@ export async function POST(request) {
     const body = await request.json();
     const { email, password } = body;
 
-    if (!email || !password) {
+    const cleanEmail = email ? email.toLowerCase().trim() : '';
+
+    if (!cleanEmail || !password) {
       return NextResponse.json(
         { error: 'Email and password are required' },
         { status: 400 }
@@ -17,7 +19,7 @@ export async function POST(request) {
     }
 
     const user = await prisma.user.findUnique({
-      where: { email: email.toLowerCase().trim() },
+      where: { email: cleanEmail },
     });
 
     if (!user) {
@@ -76,7 +78,7 @@ export async function POST(request) {
   } catch (error) {
     console.error('Admin login error:', error);
     return NextResponse.json(
-      { error: 'Internal server error during admin authentication' },
+      { error: 'Database connection or admin authentication error. Please try again.' },
       { status: 500 }
     );
   }

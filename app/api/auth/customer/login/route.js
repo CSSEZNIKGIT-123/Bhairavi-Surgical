@@ -9,7 +9,9 @@ export async function POST(request) {
     const body = await request.json();
     const { email, password } = body;
 
-    if (!email || !password) {
+    const cleanEmail = email ? email.toLowerCase().trim() : '';
+
+    if (!cleanEmail || !password) {
       return NextResponse.json(
         { error: 'Email and password are required' },
         { status: 400 }
@@ -17,7 +19,7 @@ export async function POST(request) {
     }
 
     const user = await prisma.user.findUnique({
-      where: { email: email.toLowerCase().trim() },
+      where: { email: cleanEmail },
       include: {
         customerProfile: true,
         businessProfile: true,
@@ -75,7 +77,7 @@ export async function POST(request) {
   } catch (error) {
     console.error('Customer login error:', error);
     return NextResponse.json(
-      { error: 'Internal server error during login' },
+      { error: 'Database connection or login service error. Please try again.' },
       { status: 500 }
     );
   }

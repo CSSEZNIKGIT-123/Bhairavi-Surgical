@@ -15,9 +15,20 @@ export async function POST(request) {
     const body = await request.json();
     const { name, email, password, role = 'ADMIN', adminKey } = body;
 
-    if (!name || !email || !password) {
+    const cleanEmail = email ? email.toLowerCase().trim() : '';
+    const cleanName = name ? name.trim() : '';
+
+    if (!cleanName || !cleanEmail || !password) {
       return NextResponse.json(
         { error: 'Name, email, and password are required' },
+        { status: 400 }
+      );
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(cleanEmail)) {
+      return NextResponse.json(
+        { error: 'Please enter a valid email address' },
         { status: 400 }
       );
     }
@@ -41,7 +52,7 @@ export async function POST(request) {
     }
 
     const existingUser = await prisma.user.findUnique({
-      where: { email: email.toLowerCase().trim() },
+      where: { email: cleanEmail },
     });
 
     if (existingUser) {
@@ -58,8 +69,8 @@ export async function POST(request) {
 
     const newUser = await prisma.user.create({
       data: {
-        name: name.trim(),
-        email: email.toLowerCase().trim(),
+        name: cleanName,
+        email: cleanEmail,
         passwordHash,
         role: assignedRole,
       },
@@ -95,8 +106,16 @@ export async function POST(request) {
     return response;
   } catch (error) {
     console.error('Admin registration error:', error);
+
+    if (error?.code === 'P2002') {
+      return NextResponse.json(
+        { error: 'An account with this email already exists' },
+        { status: 409 }
+      );
+    }
+
     return NextResponse.json(
-      { error: 'Internal server error creating admin account' },
+      { error: 'Database connection or admin account creation error. Please try again.' },
       { status: 500 }
     );
   }
