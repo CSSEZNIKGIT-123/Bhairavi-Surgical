@@ -1,15 +1,16 @@
 import { NextResponse } from 'next/server';
-import prisma from '@/lib/prisma';
+import prisma, { getDatabaseUrl } from '@/lib/prisma';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET(request) {
+  const activeDbUrl = getDatabaseUrl();
   const diagnostic = {
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV || 'unknown',
-    databaseConfigured: Boolean(process.env.DATABASE_URL),
-    databaseUrlType: process.env.DATABASE_URL
-      ? process.env.DATABASE_URL.startsWith('postgresql://') || process.env.DATABASE_URL.startsWith('postgres://')
+    databaseConfigured: Boolean(activeDbUrl),
+    databaseUrlType: activeDbUrl
+      ? activeDbUrl.startsWith('postgresql://') || activeDbUrl.startsWith('postgres://')
         ? 'PostgreSQL'
         : 'Other'
       : 'Missing',
@@ -18,7 +19,7 @@ export async function GET(request) {
     errors: [],
   };
 
-  if (!process.env.DATABASE_URL) {
+  if (!activeDbUrl) {
     diagnostic.connectionStatus = 'FAILED_MISSING_DATABASE_URL';
     diagnostic.errors.push('DATABASE_URL environment variable is not set in Vercel environment.');
     return NextResponse.json(diagnostic, { status: 500 });
