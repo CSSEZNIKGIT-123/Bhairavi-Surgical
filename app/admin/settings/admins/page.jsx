@@ -1,10 +1,23 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Users, Shield, Plus, KeyRound, CheckCircle2, UserCheck, ShieldAlert } from 'lucide-react';
-import Input from '@/components/ui/Input';
-import Select from '@/components/ui/Select';
-import Button from '@/components/ui/Button';
+import {
+  Users,
+  Shield,
+  Plus,
+  KeyRound,
+  CheckCircle2,
+  AlertCircle,
+  Lock,
+  UserCheck,
+  ShieldCheck,
+  Briefcase,
+  Layers,
+  RefreshCw,
+  Check,
+  X
+} from 'lucide-react';
+import AdminStatusBadge from '@/components/admin/AdminStatusBadge';
 
 export default function AdminStaffManagementPage() {
   const [adminsList, setAdminsList] = useState([
@@ -14,7 +27,7 @@ export default function AdminStaffManagementPage() {
       email: 'admin@yuganayurved.com',
       role: 'SUPER_ADMIN',
       status: 'ACTIVE',
-      assignedArea: 'Executive Platform Governance',
+      assignedArea: 'Executive Governance & Platform Control',
     },
     {
       id: '2',
@@ -22,7 +35,7 @@ export default function AdminStaffManagementPage() {
       email: 'sales@yuganayurved.com',
       role: 'SALES_MANAGER',
       status: 'ACTIVE',
-      assignedArea: 'B2B Wholesale Quotes & RFQ Approvals',
+      assignedArea: 'B2B Wholesale Quotes & Hospital Tender Approvals',
     },
     {
       id: '3',
@@ -30,7 +43,7 @@ export default function AdminStaffManagementPage() {
       email: 'account@yuganayurved.com',
       role: 'ACCOUNT_MANAGER',
       status: 'ACTIVE',
-      assignedArea: 'Panchkarma Center Accounts & POs',
+      assignedArea: 'Panchkarma Center Accounts & Purchase Orders',
     },
   ]);
 
@@ -48,6 +61,7 @@ export default function AdminStaffManagementPage() {
   const handleCreateStaff = async (e) => {
     e.preventDefault();
     setLoading(true);
+
     try {
       const res = await fetch('/api/auth/admin/register', {
         method: 'POST',
@@ -67,13 +81,20 @@ export default function AdminStaffManagementPage() {
           status: 'ACTIVE',
           assignedArea:
             form.role === 'SALES_MANAGER'
-              ? 'B2B Quotes & Inquiries'
+              ? 'B2B Wholesale Quotes & RFQ Approvals'
               : form.role === 'ACCOUNT_MANAGER'
-              ? 'Hospital POs'
-              : 'General Operations',
+              ? 'Hospital POs & Inquiries'
+              : form.role === 'SUPER_ADMIN'
+              ? 'Executive Platform Governance'
+              : 'General Operations Desk',
         },
       ]);
-      setNotification({ type: 'success', text: `Provisioned new ${form.role} account for ${form.name}` });
+
+      setNotification({
+        type: 'success',
+        text: `Provisioned new ${form.role} account for ${form.name} in PostgreSQL!`,
+      });
+
       setForm({
         name: '',
         email: '',
@@ -92,166 +113,257 @@ export default function AdminStaffManagementPage() {
   return (
     <div className="space-y-8 font-poppins text-slate-100">
       
+      {/* 1. Header */}
       <div>
-        <h1 className="text-2xl font-bold text-white tracking-tight">
-          Admin Personnel & Role Governance
-        </h1>
-        <p className="text-xs text-slate-400 mt-0.5">
-          Role-Based Access Control (RBAC) across Super Admin, Normal Admin, Sales Manager, and Account Manager.
+        <div className="flex items-center gap-2.5">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Staff Personnel & Role Governance (RBAC)
+          </h1>
+          <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+            {adminsList.length} Personnel
+          </span>
+        </div>
+        <p className="text-xs sm:text-sm text-slate-400 mt-1">
+          Role-Based Access Control (RBAC) granting fine-grained privileges across Super Admin, Normal Admin, Sales Manager, and Account Manager.
         </p>
       </div>
 
+      {/* Notification Toast */}
       {notification && (
-        <div className={`p-3 border text-xs rounded-xl flex items-center gap-2 animate-slide-up ${
-          notification.type === 'success'
-            ? 'bg-emerald-950/80 border-emerald-700 text-emerald-300'
-            : 'bg-red-950/80 border-red-700 text-red-300'
-        }`}>
+        <div
+          className={`p-3.5 rounded-2xl border text-xs flex items-center gap-2.5 animate-in fade-in duration-200 ${
+            notification.type === 'success'
+              ? 'bg-emerald-950/90 border-emerald-700/80 text-emerald-200'
+              : 'bg-rose-950/90 border-rose-700/80 text-rose-200'
+          }`}
+        >
           {notification.type === 'success' ? (
-            <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
           ) : (
-            <ShieldAlert className="w-4 h-4 text-red-400" />
+            <AlertCircle className="w-4 h-4 text-rose-400 shrink-0" />
           )}
-          <span>{notification.text}</span>
+          <span className="font-medium">{notification.text}</span>
         </div>
       )}
 
-      {/* Staff List Table */}
-      <div className="bg-slate-950 rounded-3xl border border-slate-800 overflow-hidden shadow-soft">
-        <div className="p-5 border-b border-slate-800 flex items-center justify-between">
-          <h2 className="text-sm font-bold text-white uppercase tracking-wider">
-            Active Administrative Staff & Responsibilities
-          </h2>
-          <span className="text-xs font-mono text-emerald-400 font-bold bg-emerald-950 px-2.5 py-1 rounded-lg border border-emerald-800">
-            {adminsList.length} Active Accounts
-          </span>
-        </div>
+      {/* 2. Main Two-Column Layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        
+        {/* Left Column: Staff Directory (7 Cols) */}
+        <div className="lg:col-span-7 bg-slate-900/60 border border-slate-800/80 rounded-3xl p-5 sm:p-6 backdrop-blur-xl shadow-xl space-y-4">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+                <ShieldCheck className="w-4 h-4" />
+              </div>
+              <div>
+                <h2 className="text-sm sm:text-base font-bold text-white tracking-tight">
+                  Active Admin Personnel
+                </h2>
+                <p className="text-[11px] text-slate-400">Staff members authorized with console credentials</p>
+              </div>
+            </div>
+          </div>
 
-        <div className="overflow-x-auto">
-          <table className="w-full text-xs text-left">
-            <thead className="text-slate-400 uppercase tracking-wider text-[10px] bg-slate-900/80 border-b border-slate-800">
-              <tr>
-                <th className="py-3 px-4">Staff Member</th>
-                <th className="py-3 px-4">Assigned Role</th>
-                <th className="py-3 px-4">Functional Jurisdiction</th>
-                <th className="py-3 px-4">Security Status</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-900 text-slate-200">
-              {adminsList.map((st) => (
-                <tr key={st.id} className="hover:bg-slate-900/50 transition-colors">
-                  <td className="py-3.5 px-4 font-semibold text-white">
-                    <div>{st.name}</div>
-                    <div className="text-[10px] text-slate-400">{st.email}</div>
-                  </td>
-                  <td className="py-3.5 px-4 font-mono font-bold">
-                    <span className={`text-[10px] px-2.5 py-0.5 rounded-full ${
-                      st.role === 'SUPER_ADMIN'
-                        ? 'bg-purple-950 text-purple-400 border border-purple-800'
-                        : st.role === 'SALES_MANAGER'
-                        ? 'bg-blue-950 text-blue-400 border border-blue-800'
-                        : st.role === 'ACCOUNT_MANAGER'
-                        ? 'bg-amber-950 text-amber-400 border border-amber-800'
-                        : 'bg-emerald-950 text-emerald-400 border border-emerald-800'
-                    }`}>
-                      {st.role}
-                    </span>
-                  </td>
-                  <td className="py-3.5 px-4 text-slate-300">
-                    {st.assignedArea}
-                  </td>
-                  <td className="py-3.5 px-4">
-                    <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded">
-                      ● Active Verified Session
-                    </span>
-                  </td>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs text-left">
+              <thead className="text-slate-400 uppercase tracking-wider text-[10px] bg-slate-950/60 border-b border-slate-800/80">
+                <tr>
+                  <th className="py-3 px-3">Staff Member</th>
+                  <th className="py-3 px-3">Role</th>
+                  <th className="py-3 px-3">Operational Scope</th>
+                  <th className="py-3 px-3 text-right">Status</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody className="divide-y divide-slate-800/50 text-slate-200">
+                {adminsList.map((adm) => (
+                  <tr key={adm.id} className="hover:bg-slate-800/40 transition-colors group">
+                    <td className="py-3.5 px-3">
+                      <div className="flex items-center gap-2.5">
+                        <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-700 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-md">
+                          {adm.name.charAt(0)}
+                        </div>
+                        <div>
+                          <div className="font-bold text-white group-hover:text-emerald-300 transition-colors">
+                            {adm.name}
+                          </div>
+                          <div className="text-[10px] text-slate-400">{adm.email}</div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td className="py-3.5 px-3">
+                      <AdminStatusBadge status={adm.role} type="role" size="xs" />
+                    </td>
+
+                    <td className="py-3.5 px-3 text-slate-300 text-[11px]">
+                      {adm.assignedArea}
+                    </td>
+
+                    <td className="py-3.5 px-3 text-right">
+                      <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                        <span>Active</span>
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Role Permissions Matrix */}
+          <div className="pt-4 border-t border-slate-800/80 space-y-3">
+            <h3 className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
+              <Layers className="w-3.5 h-3.5 text-emerald-400" />
+              <span>RBAC Role Permission Matrix</span>
+            </h3>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+              <div className="p-2.5 rounded-xl bg-slate-950/60 border border-slate-800/70 space-y-1">
+                <div className="font-bold text-amber-400 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-amber-400" />
+                  <span>SUPER_ADMIN</span>
+                </div>
+                <p className="text-[10px] text-slate-400">Full database control, staff provisioning, price tier mutations, and catalog exports.</p>
+              </div>
+
+              <div className="p-2.5 rounded-xl bg-slate-950/60 border border-slate-800/70 space-y-1">
+                <div className="font-bold text-sky-400 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-sky-400" />
+                  <span>SALES_MANAGER</span>
+                </div>
+                <p className="text-[10px] text-slate-400">Review wholesale B2B quotes, assign custom discount totals, and issue formal PDF quotations.</p>
+              </div>
+
+              <div className="p-2.5 rounded-xl bg-slate-950/60 border border-slate-800/70 space-y-1">
+                <div className="font-bold text-teal-400 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-teal-400" />
+                  <span>ACCOUNT_MANAGER</span>
+                </div>
+                <p className="text-[10px] text-slate-400">Customer order inspection, shipping status fulfillment, and customer inquiry communication.</p>
+              </div>
+
+              <div className="p-2.5 rounded-xl bg-slate-950/60 border border-slate-800/70 space-y-1">
+                <div className="font-bold text-emerald-400 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
+                  <span>ADMIN</span>
+                </div>
+                <p className="text-[10px] text-slate-400">Standard catalog management, inventory tracking, and customer transactions.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* Provision New Admin / Staff Section */}
-      <div className="bg-slate-950 rounded-3xl p-6 sm:p-8 border border-slate-800 shadow-soft max-w-3xl space-y-6">
-        <div>
-          <div className="flex items-center gap-2 text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">
-            <Plus className="w-4 h-4" />
-            <span>Controlled Security Provisioning</span>
+        {/* Right Column: Provision New Staff Member (5 Cols) */}
+        <div className="lg:col-span-5 bg-slate-900/60 border border-slate-800/80 rounded-3xl p-5 sm:p-6 backdrop-blur-xl shadow-xl space-y-4">
+          <div className="pb-3 border-b border-slate-800/80">
+            <div className="flex items-center gap-2">
+              <Plus className="w-4 h-4 text-emerald-400" />
+              <h2 className="text-sm sm:text-base font-bold text-white tracking-tight">
+                Provision New Admin Staff
+              </h2>
+            </div>
+            <p className="text-[11px] text-slate-400 mt-0.5">
+              Authorize a new staff member with encrypted credentials in PostgreSQL.
+            </p>
           </div>
-          <h2 className="text-xl font-bold text-white">
-            Provision New Administrator or Manager
-          </h2>
-          <p className="text-xs text-slate-400 mt-0.5">
-            Super Admin credentials and Master Setup Key are required for creating privileged roles.
-          </p>
+
+          <form onSubmit={handleCreateStaff} className="space-y-4 text-xs">
+            <div>
+              <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                Full Name <span className="text-rose-400">*</span>
+              </label>
+              <input
+                type="text"
+                required
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                placeholder="e.g. Dr. Anand Verma"
+                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+              />
+            </div>
+
+            <div>
+              <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                Corporate Email <span className="text-rose-400">*</span>
+              </label>
+              <input
+                type="email"
+                required
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                placeholder="anand@yuganayurved.com"
+                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+              />
+            </div>
+
+            <div>
+              <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                Login Password <span className="text-rose-400">*</span>
+              </label>
+              <input
+                type="password"
+                required
+                value={form.password}
+                onChange={(e) => setForm({ ...form, password: e.target.value })}
+                placeholder="••••••••••••"
+                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
+              />
+            </div>
+
+            <div>
+              <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                Role & Permission Level <span className="text-rose-400">*</span>
+              </label>
+              <select
+                value={form.role}
+                onChange={(e) => setForm({ ...form, role: e.target.value })}
+                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-emerald-500"
+              >
+                <option value="SALES_MANAGER">SALES_MANAGER (B2B Quotes & Tender Desk)</option>
+                <option value="ACCOUNT_MANAGER">ACCOUNT_MANAGER (Hospital Orders & Fulfillment)</option>
+                <option value="ADMIN">ADMIN (Catalog & Inventory Operations)</option>
+                <option value="SUPER_ADMIN">SUPER_ADMIN (Full Platform Governance)</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-[11px] font-semibold text-slate-300 mb-1 flex items-center justify-between">
+                <span>Admin Secret Key</span>
+                <span className="text-[10px] text-emerald-400 font-mono">BHAIRAVI-ADMIN-KEY-2026</span>
+              </label>
+              <input
+                type="text"
+                required
+                value={form.adminKey}
+                onChange={(e) => setForm({ ...form, adminKey: e.target.value })}
+                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono text-[11px] focus:outline-none focus:border-emerald-500"
+              />
+            </div>
+
+            <div className="pt-2">
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white font-bold transition-all shadow-lg shadow-emerald-950 hover:shadow-emerald-900"
+              >
+                {loading ? (
+                  <>
+                    <RefreshCw className="w-4 h-4 animate-spin" />
+                    <span>Provisioning in DB...</span>
+                  </>
+                ) : (
+                  <>
+                    <UserCheck className="w-4 h-4" />
+                    <span>Authorize & Create Account</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </form>
         </div>
 
-        <form onSubmit={handleCreateStaff} className="space-y-4 text-xs">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Input
-              label="Staff Full Name"
-              required
-              placeholder="e.g. Ramesh Kulkarni"
-              value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
-              inputClassName="bg-slate-900 border-slate-700 text-white"
-            />
-            <Input
-              label="Official Work Email"
-              type="email"
-              required
-              placeholder="r.kulkarni@yuganayurved.com"
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
-              inputClassName="bg-slate-900 border-slate-700 text-white"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Input
-              label="Initial Password"
-              type="password"
-              required
-              placeholder="••••••••"
-              value={form.password}
-              onChange={(e) => setForm({ ...form, password: e.target.value })}
-              inputClassName="bg-slate-900 border-slate-700 text-white"
-            />
-            <Select
-              label="Assigned Role"
-              value={form.role}
-              onChange={(e) => setForm({ ...form, role: e.target.value })}
-              selectClassName="bg-slate-900 border-slate-700 text-white"
-              options={[
-                { value: 'ADMIN', label: 'Admin (Operations & Catalog)' },
-                { value: 'SUPER_ADMIN', label: 'Super Admin (All Privileges)' },
-                { value: 'SALES_MANAGER', label: 'Sales Manager (B2B Quotes & Inquiries)' },
-                { value: 'ACCOUNT_MANAGER', label: 'Account Manager (Hospital Accounts & Orders)' },
-              ]}
-            />
-          </div>
-
-          <Input
-            label="Master Admin Authorization Key"
-            type="password"
-            required
-            value={form.adminKey}
-            onChange={(e) => setForm({ ...form, adminKey: e.target.value })}
-            inputClassName="bg-slate-900 border-slate-700 text-white font-mono"
-            helperText="Controlled secret key for role creation"
-          />
-
-          <Button
-            type="submit"
-            variant="primary"
-            size="lg"
-            className="w-full"
-            loading={loading}
-          >
-            PROVISION PRIVILEGED ACCOUNT
-          </Button>
-        </form>
       </div>
 
     </div>

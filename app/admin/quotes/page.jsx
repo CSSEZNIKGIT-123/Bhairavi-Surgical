@@ -1,17 +1,32 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { FileSpreadsheet, Eye, Check, X, Building2, Send, CheckCircle2 } from 'lucide-react';
+import React, { useState, useEffect, useMemo } from 'react';
+import {
+  FileSpreadsheet,
+  Building2,
+  Send,
+  CheckCircle2,
+  AlertCircle,
+  Search,
+  Check,
+  X,
+  RefreshCw,
+  Eye,
+  DollarSign,
+  Clock,
+  Briefcase
+} from 'lucide-react';
 import { formatCurrency } from '@/lib/utils';
+import AdminStatusBadge from '@/components/admin/AdminStatusBadge';
+import AdminEmptyState from '@/components/admin/AdminEmptyState';
+import AdminTableSkeleton from '@/components/admin/AdminTableSkeleton';
 import Modal from '@/components/ui/Modal';
-import Input from '@/components/ui/Input';
-import Select from '@/components/ui/Select';
-import Textarea from '@/components/ui/Textarea';
-import Button from '@/components/ui/Button';
 
 export default function AdminQuotesPage() {
   const [quotes, setQuotes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedStatus, setSelectedStatus] = useState('ALL');
   const [selectedQuote, setSelectedQuote] = useState(null);
   const [offeredTotal, setOfferedTotal] = useState('');
   const [adminNotes, setAdminNotes] = useState('');
@@ -21,11 +36,14 @@ export default function AdminQuotesPage() {
 
   const loadQuotes = async () => {
     try {
+      setLoading(true);
       const res = await fetch('/api/quotes');
       const data = await res.json();
-      if (data.success) setQuotes(data.quotes);
+      if (data.success) {
+        setQuotes(data.quotes || []);
+      }
     } catch (e) {
-      console.error(e);
+      console.error('Error loading quotes:', e);
     } finally {
       setLoading(false);
     }
@@ -35,9 +53,14 @@ export default function AdminQuotesPage() {
     loadQuotes();
   }, []);
 
+  const showNotification = (type, text) => {
+    setNotification({ type, text });
+    setTimeout(() => setNotification(null), 3000);
+  };
+
   const handleOpenQuote = (quote) => {
     setSelectedQuote(quote);
-    setOfferedTotal(quote.offeredTotal || '');
+    setOfferedTotal(quote.offeredTotal || quote.targetTotal || '');
     setAdminNotes(quote.adminNotes || '');
     setQuoteStatus(quote.status || 'UNDER_REVIEW');
   };
@@ -59,192 +82,327 @@ export default function AdminQuotesPage() {
       });
 
       if (res.ok) {
-        setNotification({ type: 'success', text: `Quote #${selectedQuote.quoteNumber} updated successfully` });
+        showNotification('success', `RFQ #${selectedQuote.quoteNumber} pricing updated successfully!`);
         setSelectedQuote(null);
         loadQuotes();
-        setTimeout(() => setNotification(null), 2500);
+      } else {
+        throw new Error('Failed to update quote');
       }
     } catch (e) {
-      console.error(e);
+      showNotification('error', e.message);
     } finally {
       setUpdating(false);
     }
   };
 
+  // Filtered calculation
+  const filteredQuotes = useMemo(() => {
+    return quotes.filter((q) => {
+      const searchMatch =
+        !searchTerm ||
+        q.quoteNumber?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        q.companyName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        q.contactName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        q.email?.toLowerCase().includes(searchTerm.toLowerCase());
+
+      const statusMatch =
+        selectedStatus === 'ALL' ||
+        String(q.status).toUpperCase() === selectedStatus;
+
+      return searchMatch && statusMatch;
+    });
+  }, [quotes, searchTerm, selectedStatus]);
+
   return (
     <div className="space-y-6 font-poppins text-slate-100">
       
-      <div>
-        <h1 className="text-2xl font-bold text-white tracking-tight">
-          B2B Quotations & RFQ Pipeline
-        </h1>
-        <p className="text-xs text-slate-400 mt-0.5">
-          Review institutional tenders, evaluate buyer target prices, and issue formal PDF quotations.
-        </p>
+      {/* 1. Header */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div className="flex items-center gap-2.5">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+              B2B Institutional RFQs & Pricing Desk
+            </h1>
+            <span className="px-2.5 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 font-mono text-xs font-semibold">
+              {quotes.length} RFQs
+            </span>
+          </div>
+          <p className="text-xs sm:text-sm text-slate-400 mt-1">
+            Review hospital tenders, evaluate bulk wholesale target pricing, and issue binding formal PDF quotations.
+          </p>
+        </div>
+
+        <button
+          type="button"
+          onClick={loadQuotes}
+          title="Refresh Quotes"
+          className="self-start md:self-auto p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
+        >
+          <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin text-emerald-400' : ''}`} />
+        </button>
       </div>
 
+      {/* Notification */}
       {notification && (
-        <div className="p-3 bg-emerald-950/80 border border-emerald-700 text-emerald-300 text-xs rounded-xl flex items-center gap-2 animate-slide-up">
+        <div
+          className={`p-3.5 rounded-2xl border text-xs flex items-center gap-2.5 animate-in fade-in duration-200 ${
+            notification.type === 'success'
+              ? 'bg-emerald-950/90 border-emerald-700/80 text-emerald-200'
+              : 'bg-rose-950/90 border-rose-700/80 text-rose-200'
+          }`}
+        >
           <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-          <span>{notification.text}</span>
+          <span className="font-medium">{notification.text}</span>
         </div>
       )}
 
-      {/* Quotes Table */}
-      <div className="bg-slate-950 rounded-3xl border border-slate-800 overflow-hidden shadow-soft">
-        <div className="overflow-x-auto">
-          <table className="w-full text-xs text-left">
-            <thead className="text-slate-400 uppercase tracking-wider text-[10px] bg-slate-900/80 border-b border-slate-800">
-              <tr>
-                <th className="py-3 px-4">RFQ Number</th>
-                <th className="py-3 px-4">Organization / Hospital</th>
-                <th className="py-3 px-3">Contact Officer</th>
-                <th className="py-3 px-3">Line Items</th>
-                <th className="py-3 px-3">Budget / Timeline</th>
-                <th className="py-3 px-3">Status</th>
-                <th className="py-3 px-4 text-right">Action</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-900 text-slate-200">
-              {quotes.map((q) => (
-                <tr key={q.id} className="hover:bg-slate-900/50 transition-colors">
-                  <td className="py-3.5 px-4 font-mono font-bold text-emerald-400">
-                    {q.quoteNumber}
-                  </td>
-                  <td className="py-3.5 px-4 font-semibold text-white">
-                    {q.companyName}
-                    {q.taxId && (
-                      <span className="text-[10px] text-slate-500 block font-mono">
-                        GST: {q.taxId}
-                      </span>
-                    )}
-                  </td>
-                  <td className="py-3.5 px-3">
-                    <div>{q.contactPerson}</div>
-                    <div className="text-[10px] text-slate-400">{q.email}</div>
-                  </td>
-                  <td className="py-3.5 px-3 font-semibold">
-                    {q.items?.length || 1} line items
-                  </td>
-                  <td className="py-3.5 px-3 text-slate-400">
-                    <div>{q.estimatedBudget || 'Standard'}</div>
-                    <div className="text-[10px] text-slate-500">{q.deliveryTimeline}</div>
-                  </td>
-                  <td className="py-3.5 px-3">
-                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                      q.status === 'SUBMITTED'
-                        ? 'bg-amber-950 text-amber-400 border border-amber-800'
-                        : q.status === 'QUOTED'
-                        ? 'bg-blue-950 text-blue-400 border border-blue-800'
-                        : q.status === 'ACCEPTED'
-                        ? 'bg-emerald-950 text-emerald-400 border border-emerald-800'
-                        : 'bg-slate-800 text-slate-300'
-                    }`}>
-                      {q.status}
-                    </span>
-                  </td>
-                  <td className="py-3.5 px-4 text-right">
-                    <button
-                      type="button"
-                      onClick={() => handleOpenQuote(q)}
-                      className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-emerald-600 hover:text-white text-slate-200 transition-colors font-bold text-xs inline-flex items-center gap-1"
-                    >
-                      <Eye className="w-3.5 h-3.5" /> Review RFQ
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      {/* 2. Filters & Status Tabs */}
+      <div className="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 backdrop-blur-xl shadow-lg space-y-3.5">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+          
+          {/* Search */}
+          <div className="relative w-full sm:w-80">
+            <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <input
+              type="text"
+              placeholder="Search by RFQ #, hospital, email..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full pl-9 pr-8 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-emerald-500 transition-colors"
+            />
+            {searchTerm && (
+              <button
+                type="button"
+                onClick={() => setSearchTerm('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            )}
+          </div>
+
+          {/* Status Tabs */}
+          <div className="flex items-center gap-1.5 overflow-x-auto w-full sm:w-auto">
+            {['ALL', 'UNDER_REVIEW', 'QUOTED', 'APPROVED', 'REJECTED'].map((st) => (
+              <button
+                key={st}
+                type="button"
+                onClick={() => setSelectedStatus(st)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all shrink-0 ${
+                  selectedStatus === st
+                    ? 'bg-blue-600 text-white font-bold shadow-md shadow-blue-950'
+                    : 'bg-slate-950 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800'
+                }`}
+              >
+                {st === 'ALL'
+                  ? 'All RFQs'
+                  : st === 'UNDER_REVIEW'
+                  ? 'Under Review'
+                  : st === 'QUOTED'
+                  ? 'Formal Quoted'
+                  : st === 'APPROVED'
+                  ? 'PO Approved'
+                  : 'Declined'}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Quote Review & Evaluation Modal */}
+      {/* 3. Quotes Table */}
+      <div className="bg-slate-900/60 border border-slate-800/80 rounded-3xl overflow-hidden backdrop-blur-xl shadow-xl">
+        {loading ? (
+          <div className="p-6">
+            <AdminTableSkeleton rows={5} cols={6} />
+          </div>
+        ) : filteredQuotes.length === 0 ? (
+          <AdminEmptyState
+            icon={FileSpreadsheet}
+            title="No quotations found"
+            description="Submitted wholesale RFQs from hospitals and Panchkarma clinics will appear here."
+            actionLabel={searchTerm || selectedStatus !== 'ALL' ? 'Reset Filters' : null}
+            onAction={() => {
+              setSearchTerm('');
+              setSelectedStatus('ALL');
+            }}
+          />
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs text-left">
+              <thead className="text-slate-400 uppercase tracking-wider text-[10px] bg-slate-950/80 border-b border-slate-800/80">
+                <tr>
+                  <th className="py-3.5 px-4">RFQ Ref & Date</th>
+                  <th className="py-3.5 px-4">Institution / Hospital</th>
+                  <th className="py-3.5 px-3">Contact Person</th>
+                  <th className="py-3.5 px-3">Target Price</th>
+                  <th className="py-3.5 px-3">Offered Price</th>
+                  <th className="py-3.5 px-3">Status</th>
+                  <th className="py-3.5 px-4 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-800/50 text-slate-200">
+                {filteredQuotes.map((q) => (
+                  <tr key={q.id} className="hover:bg-slate-800/40 transition-colors group">
+                    <td className="py-3.5 px-4">
+                      <div className="font-mono font-bold text-sky-400">{q.quoteNumber}</div>
+                      <div className="text-[10px] text-slate-400 mt-0.5">
+                        {q.createdAt ? new Date(q.createdAt).toLocaleDateString() : 'Recent'}
+                      </div>
+                    </td>
+
+                    <td className="py-3.5 px-4 font-semibold text-white">
+                      <div className="flex items-center gap-2">
+                        <Building2 className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                        <div>
+                          <div>{q.companyName || 'Institutional Buyer'}</div>
+                          {q.gstNumber && (
+                            <div className="text-[10px] text-slate-400 font-mono">GST: {q.gstNumber}</div>
+                          )}
+                        </div>
+                      </div>
+                    </td>
+
+                    <td className="py-3.5 px-3">
+                      <div className="text-white font-medium">{q.contactName}</div>
+                      <div className="text-[10px] text-slate-400">{q.email}</div>
+                    </td>
+
+                    <td className="py-3.5 px-3 font-mono font-medium text-slate-300">
+                      {q.targetTotal ? formatCurrency(q.targetTotal) : 'Unspecified'}
+                    </td>
+
+                    <td className="py-3.5 px-3 font-mono font-bold text-emerald-400">
+                      {q.offeredTotal ? formatCurrency(q.offeredTotal) : '—'}
+                    </td>
+
+                    <td className="py-3.5 px-3">
+                      <AdminStatusBadge status={q.status || 'UNDER_REVIEW'} type="quote" />
+                    </td>
+
+                    <td className="py-3.5 px-4 text-right">
+                      <button
+                        type="button"
+                        onClick={() => handleOpenQuote(q)}
+                        className="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/40 text-slate-300 hover:text-white hover:bg-sky-600 transition-all font-semibold text-xs"
+                      >
+                        Evaluate
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+
+      {/* 4. Quotation Evaluation & Formal Pricing Modal */}
       {selectedQuote && (
         <Modal
-          isOpen={!!selectedQuote}
+          isOpen={Boolean(selectedQuote)}
           onClose={() => setSelectedQuote(null)}
-          title={`RFQ Evaluation #${selectedQuote.quoteNumber}`}
-          subtitle={`Client: ${selectedQuote.companyName} • Officer: ${selectedQuote.contactPerson}`}
-          className="bg-slate-950 border-slate-800 text-slate-100 max-w-3xl"
+          title={`Evaluate B2B RFQ #${selectedQuote.quoteNumber}`}
+          subtitle={`Client: ${selectedQuote.companyName} (${selectedQuote.contactName})`}
+          className="bg-slate-900 border-slate-800 text-slate-100 max-w-2xl"
         >
           <form onSubmit={handleSaveQuote} className="space-y-5 text-xs">
             
-            {/* Line items review table */}
-            <div className="space-y-2">
-              <h4 className="font-bold text-slate-300 uppercase tracking-wider text-[11px]">
-                Requested Line Items:
-              </h4>
-              <div className="bg-slate-900 rounded-2xl border border-slate-800 divide-y divide-slate-800 overflow-hidden">
-                {selectedQuote.items?.map((it, idx) => (
-                  <div key={idx} className="p-3 flex items-center justify-between">
-                    <div>
-                      <div className="font-bold text-white">{it.product?.title}</div>
-                      <span className="text-[10px] font-mono text-slate-400">SKU: {it.product?.sku}</span>
-                    </div>
-                    <div className="text-right">
-                      <div className="font-bold text-emerald-400">Qty: {it.quantity} units</div>
-                      <div className="text-[10px] text-slate-400">
-                        Target Price: {it.targetPrice ? formatCurrency(it.targetPrice) : 'Default Wholesale'}
-                      </div>
-                    </div>
+            {/* Hospital snapshot */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-3.5 bg-slate-950/70 rounded-2xl border border-slate-800">
+              <div className="space-y-1">
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Institution Details</span>
+                <div className="font-bold text-white text-sm">{selectedQuote.companyName}</div>
+                <div className="text-slate-400">Contact: {selectedQuote.contactName} ({selectedQuote.phone})</div>
+                <div className="text-slate-400">Email: {selectedQuote.email}</div>
+              </div>
+
+              <div className="space-y-1 sm:border-l sm:border-slate-800/80 sm:pl-3">
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Requirements Summary</span>
+                <div className="text-slate-300">{selectedQuote.requirements || 'Standard wholesale procurement request'}</div>
+                {selectedQuote.targetTotal && (
+                  <div className="text-amber-400 font-mono mt-1 font-semibold">
+                    Client Target Budget: {formatCurrency(selectedQuote.targetTotal)}
                   </div>
-                ))}
+                )}
               </div>
             </div>
 
-            {/* Buyer Notes */}
-            {selectedQuote.notes && (
-              <div className="p-3 rounded-xl bg-slate-900 border border-slate-800 space-y-1">
-                <span className="font-bold text-slate-400 text-[10px] uppercase">Buyer Tender Notes:</span>
-                <p className="text-slate-200">{selectedQuote.notes}</p>
+            {/* Pricing Offer & Pipeline Status */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                  Offered Formal Quote Total (₹) <span className="text-rose-400">*</span>
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  required
+                  value={offeredTotal}
+                  onChange={(e) => setOfferedTotal(e.target.value)}
+                  placeholder="e.g. 145000"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white font-mono text-sm focus:outline-none focus:border-sky-500"
+                />
               </div>
-            )}
 
-            {/* Manager Pricing Evaluation */}
-            <div className="grid grid-cols-2 gap-4 pt-2 border-t border-slate-800">
-              <Input
-                label="Offered Total Amount (₹ Excl. GST)"
-                type="number"
-                placeholder="e.g. 195000"
-                value={offeredTotal}
-                onChange={(e) => setOfferedTotal(e.target.value)}
-                inputClassName="bg-slate-900 border-slate-700 text-white font-bold"
-              />
+              <div>
+                <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                  Pipeline Stage / Decision <span className="text-rose-400">*</span>
+                </label>
+                <select
+                  value={quoteStatus}
+                  onChange={(e) => setQuoteStatus(e.target.value)}
+                  className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-sky-500"
+                >
+                  <option value="UNDER_REVIEW">UNDER_REVIEW (Pending Sales Eval)</option>
+                  <option value="QUOTED">QUOTED (Formal Price Issued)</option>
+                  <option value="APPROVED">APPROVED (Purchase Order Accepted)</option>
+                  <option value="REJECTED">REJECTED (Declined / Unfeasible)</option>
+                </select>
+              </div>
+            </div>
 
-              <Select
-                label="RFQ Workflow Status"
-                value={quoteStatus}
-                onChange={(e) => setQuoteStatus(e.target.value)}
-                selectClassName="bg-slate-900 border-slate-700 text-white"
-                options={[
-                  { value: 'UNDER_REVIEW', label: 'Under Technical Review' },
-                  { value: 'QUOTED', label: 'Quoted (Offer Dispatched)' },
-                  { value: 'ACCEPTED', label: 'Accepted by Hospital' },
-                  { value: 'REJECTED', label: 'Rejected / Expired' },
-                ]}
+            {/* Admin & Delivery Notes */}
+            <div>
+              <label className="block text-[11px] font-semibold text-slate-300 mb-1">
+                Executive & Logistics Notes (Terms of Delivery & Validity)
+              </label>
+              <textarea
+                rows={3}
+                value={adminNotes}
+                onChange={(e) => setAdminNotes(e.target.value)}
+                placeholder="e.g. 18% GST included, CIF Hospital dock delivery within 14 business days. Quote valid for 30 days."
+                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-sky-500"
               />
             </div>
 
-            <Textarea
-              label="Manager Terms & Technical Evaluation Notes"
-              rows={2}
-              placeholder="Include warranty terms, delivery schedule, and GST breakdown..."
-              value={adminNotes}
-              onChange={(e) => setAdminNotes(e.target.value)}
-              textareaClassName="bg-slate-900 border-slate-700 text-white"
-            />
+            {/* Actions */}
+            <div className="flex items-center justify-end gap-3 pt-3 border-t border-slate-800">
+              <button
+                type="button"
+                onClick={() => setSelectedQuote(null)}
+                className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                disabled={updating}
+                className="flex items-center gap-2 px-5 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 disabled:opacity-50 text-white font-bold transition-all shadow-lg shadow-sky-950"
+              >
+                {updating ? (
+                  <>
+                    <RefreshCw className="w-4 h-4 animate-spin" />
+                    <span>Updating RFQ...</span>
+                  </>
+                ) : (
+                  <>
+                    <Check className="w-4 h-4" />
+                    <span>Confirm & Issue Quote</span>
+                  </>
+                )}
+              </button>
+            </div>
 
-            <Button
-              type="submit"
-              variant="primary"
-              size="lg"
-              className="w-full"
-              loading={updating}
-              icon={Send}
-            >
-              UPDATE RFQ STATUS & DISPATCH OFFER
-            </Button>
           </form>
         </Modal>
       )}
