@@ -17,6 +17,10 @@ import {
   LogOut,
   ChevronRight,
   ExternalLink,
+  UserCheck,
+  User,
+  UserCog,
+  Settings,
 } from 'lucide-react';
 import AdminHeader from '@/components/admin/AdminHeader';
 
@@ -46,6 +50,7 @@ export default function AdminLayout({ children }) {
       title: 'SYSTEM & GOVERNANCE',
       items: [
         { label: 'Staff & Roles (RBAC)', href: '/admin/settings/admins', icon: Users },
+        { label: 'Executive Profile', href: '/admin/settings/profile', icon: UserCog },
       ],
     },
   ];
@@ -173,30 +178,51 @@ export default function AdminLayout({ children }) {
             <ExternalLink className="w-3 h-3 text-slate-400 group-hover:text-slate-600" />
           </Link>
 
-          {/* User Card */}
-          <div className="bg-slate-50 border border-slate-200/80 p-2.5 rounded-2xl flex items-center justify-between gap-2 shadow-2xs">
-            <div className="flex items-center gap-2.5 min-w-0">
-              <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-xs">
-                {admin?.name?.charAt(0) || 'A'}
+          {/* User Card with direct link to Profile */}
+          <div className="bg-slate-50 border border-slate-200/80 p-2.5 rounded-2xl flex items-center justify-between gap-2 shadow-2xs group">
+            <Link
+              href="/admin/settings/profile"
+              className="flex items-center gap-2.5 min-w-0 flex-1 hover:opacity-80 transition-opacity"
+              title="Edit Profile"
+            >
+              <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-xs overflow-hidden">
+                {admin?.avatar ? (
+                  <img
+                    src={admin.avatar}
+                    alt={admin?.name || 'Admin'}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <span>{admin?.name?.charAt(0) || 'A'}</span>
+                )}
               </div>
               <div className="min-w-0">
-                <div className="text-xs font-bold text-slate-900 truncate leading-tight">
+                <div className="text-xs font-bold text-slate-900 truncate leading-tight group-hover:text-emerald-700 transition-colors">
                   {admin?.name || 'Administrator'}
                 </div>
                 <div className="text-[10px] text-emerald-700 font-mono font-semibold truncate leading-tight">
                   {admin?.role || 'SUPER_ADMIN'}
                 </div>
               </div>
-            </div>
+            </Link>
 
-            <button
-              type="button"
-              onClick={handleLogout}
-              title="Sign Out"
-              className="p-1.5 rounded-lg text-slate-400 hover:text-rose-600 hover:bg-rose-50 transition-colors"
-            >
-              <LogOut className="w-4 h-4" />
-            </button>
+            <div className="flex items-center gap-1">
+              <Link
+                href="/admin/settings/profile"
+                title="Edit Profile"
+                className="p-1.5 rounded-lg text-slate-400 hover:text-emerald-700 hover:bg-emerald-50 transition-colors"
+              >
+                <UserCog className="w-3.5 h-3.5" />
+              </Link>
+              <button
+                type="button"
+                onClick={handleLogout}
+                title="Sign Out"
+                className="p-1.5 rounded-lg text-slate-400 hover:text-rose-600 hover:bg-rose-50 transition-colors"
+              >
+                <LogOut className="w-3.5 h-3.5" />
+              </button>
+            </div>
           </div>
         </div>
       </aside>
